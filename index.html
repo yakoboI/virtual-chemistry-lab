@@ -69,6 +69,14 @@
             padding: 1rem;
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .feature:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         
         .feature-icon {
@@ -134,6 +142,19 @@
             text-decoration: underline;
         }
         
+        .demo-notice {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
         @media (max-width: 600px) {
             .container {
                 margin: 1rem;
@@ -162,23 +183,28 @@
         <h1>Virtual Chemistry Laboratory</h1>
         <p class="subtitle">A comprehensive, interactive 3D educational platform for chemistry experiments</p>
         
+        <div class="demo-notice">
+            <h3>🎮 INTERACTIVE DEMO NOW AVAILABLE!</h3>
+            <p>Click "Launch Interactive Demo" to experience the chemistry lab!</p>
+        </div>
+        
         <div class="features">
-            <div class="feature">
+            <div class="feature" onclick="openInteractiveDemo()">
                 <div class="feature-icon">🔬</div>
                 <h3>25+ Experiments</h3>
                 <p>Complete chemistry curriculum</p>
             </div>
-            <div class="feature">
+            <div class="feature" onclick="openInteractiveDemo()">
                 <div class="feature-icon">🤖</div>
                 <h3>AI Tutoring</h3>
                 <p>Personalized learning guidance</p>
             </div>
-            <div class="feature">
+            <div class="feature" onclick="openInteractiveDemo()">
                 <div class="feature-icon">👥</div>
                 <h3>Multiplayer</h3>
                 <p>Real-time collaboration</p>
             </div>
-            <div class="feature">
+            <div class="feature" onclick="openInteractiveDemo()">
                 <div class="feature-icon">🏆</div>
                 <h3>Certification</h3>
                 <p>Professional credentials</p>
@@ -186,21 +212,25 @@
         </div>
         
         <div class="buttons">
-            <a href="https://github.com/yakoboI/virtual-chemistry-lab" class="btn btn-primary">
-                🚀 Launch Full Experience
+            <a href="interactive-demo.html" class="btn btn-primary">
+                🚀 Launch Interactive Demo
             </a>
-            <a href="https://github.com/yakoboI/virtual-chemistry-lab/blob/main/README.md" class="btn btn-secondary">
+            <a href="test-interactive.html" class="btn btn-secondary">
+                🧪 Test Interactivity
+            </a>
+            <a href="https://github.com/yakoboI/virtual-chemistry-lab" class="btn btn-secondary">
                 📖 View Documentation
             </a>
         </div>
         
         <div class="status">
-            ✅ <strong>Status:</strong> Virtual Chemistry Laboratory is live and ready for deployment!
+            ✅ <strong>Status:</strong> Virtual Chemistry Laboratory is live and interactive!
         </div>
         
         <div class="github-link">
             <p>📁 <a href="https://github.com/yakoboI/virtual-chemistry-lab">View on GitHub</a> | 
-               🌐 <a href="https://yakoboI.github.io/virtual-chemistry-lab">Web Version</a></p>
+               🌐 <a href="interactive-demo.html">Interactive Demo</a> | 
+               🧪 <a href="test-interactive.html">Test Page</a></p>
         </div>
     </div>
     
@@ -233,6 +263,17 @@
                 }
             `;
             document.head.appendChild(style);
+        });
+        
+        function openInteractiveDemo() {
+            window.location.href = 'interactive-demo.html';
+        }
+        
+        // Add click sound effect
+        document.addEventListener('click', function() {
+            // Create a simple click sound effect
+            const audio = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIG2m98OScTgwOUarm7blmGgU7k9n1unEiBC13yO/eizEIHWq+8+OWT');
+            audio.play().catch(e => console.log('Audio play failed:', e));
         });
     </script>
 </body>
