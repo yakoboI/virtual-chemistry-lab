@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 Interactive Chemistry Lab Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .lab-container {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .lab-bench {
+            flex: 2;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-height: 600px;
+            position: relative;
+        }
+        
+        .equipment-panel {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            height: fit-content;
+        }
+        
+        .equipment-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .equipment-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .equipment-item.dragging {
+            opacity: 0.5;
+        }
+        
+        .lab-item {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: move;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .lab-item:hover {
+            transform: scale(1.1);
+            border-color: #4ecdc4;
+        }
+        
+        .beaker {
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+        }
+        
+        .flask {
+            background: linear-gradient(45deg, #fd79a8, #e84393);
+        }
+        
+        .burette {
+            background: linear-gradient(45deg, #fdcb6e, #e17055);
+        }
+        
+        .pipette {
+            background: linear-gradient(45deg, #00b894, #00a085);
+        }
+        
+        .chemical {
+            background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+        }
+        
+        .info-panel {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+        
+        .experiment-log {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .log-entry {
+            padding: 0.5rem;
+            margin: 0.25rem 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .reaction-area {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        .reaction-area.active {
+            background: rgba(76, 175, 80, 0.3);
+            border-color: #4caf50;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.05); }
+        }
+        
+        .full-experience-notice {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .lab-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .lab-bench {
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧪 Interactive Chemistry Laboratory Demo</h1>
+        <p>Drag equipment to the lab bench and experiment with chemistry!</p>
+    </div>
+    
+    <div class="lab-container">
+        <div class="lab-bench" id="labBench">
+            <div class="reaction-area" id="reactionArea">
+                Drop chemicals here to mix
+            </div>
+        </div>
+        
+        <div class="equipment-panel">
+            <h3>🧪 Laboratory Equipment</h3>
+            <div class="equipment-item" draggable="true" data-type="beaker">
+                🧪 Beaker (100ml)
+            </div>
+            <div class="equipment-item" draggable="true" data-type="flask">
+                🧪 Erlenmeyer Flask
+            </div>
+            <div class="equipment-item" draggable="true" data-type="burette">
+                🧪 Burette
+            </div>
+            <div class="equipment-item" draggable="true" data-type="pipette">
+                🧪 Pipette
+            </div>
+            
+            <h3 style="margin-top: 2rem;">🧪 Chemicals</h3>
+            <div class="equipment-item" draggable="true" data-type="hcl">
+                🧪 Hydrochloric Acid (HCl)
+            </div>
+            <div class="equipment-item" draggable="true" data-type="naoh">
+                🧪 Sodium Hydroxide (NaOH)
+            </div>
+            <div class="equipment-item" draggable="true" data-type="phenolphthalein">
+                🧪 Phenolphthalein Indicator
+            </div>
+            
+            <div class="info-panel">
+                <h4>📊 Current Experiment</h4>
+                <p><strong>Acid-Base Titration</strong></p>
+                <p>Mix HCl and NaOH with indicator to observe color changes</p>
+            </div>
+            
+            <div class="experiment-log" id="experimentLog">
+                <h4>📝 Experiment Log</h4>
+                <div class="log-entry">Welcome to the Virtual Chemistry Lab!</div>
+            </div>
+            
+            <div style="margin-top: 1rem;">
+                <button class="btn" onclick="resetLab()">🔄 Reset Lab</button>
+                <button class="btn btn-secondary" onclick="showFullExperience()">🚀 Full Experience</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="full-experience-notice">
+        <h3>🎮 Want the Full Interactive Experience?</h3>
+        <p>This is a demo. For the complete Virtual Chemistry Laboratory with 25+ experiments, AI tutoring, and multiplayer features, you need the Unity build.</p>
+        <button class="btn" onclick="downloadUnity()">📥 Download Unity & Build</button>
+    </div>
+
+    <script>
+        let draggedElement = null;
+        let labItems = [];
+        let experimentStep = 0;
+        
+        // Equipment data
+        const equipment = {
+            beaker: { name: "Beaker", volume: "100ml", color: "#74b9ff" },
+            flask: { name: "Erlenmeyer Flask", volume: "250ml", color: "#fd79a8" },
+            burette: { name: "Burette", volume: "50ml", color: "#fdcb6e" },
+            pipette: { name: "Pipette", volume: "10ml", color: "#00b894" },
+            hcl: { name: "HCl", concentration: "0.1M", color: "#a29bfe" },
+            naoh: { name: "NaOH", concentration: "0.1M", color: "#a29bfe" },
+            phenolphthalein: { name: "Phenolphthalein", type: "Indicator", color: "#a29bfe" }
+        };
+        
+        // Initialize drag and drop
+        document.addEventListener('DOMContentLoaded', function() {
+            const equipmentItems = document.querySelectorAll('.equipment-item');
+            const labBench = document.getElementById('labBench');
+            
+            equipmentItems.forEach(item => {
+                item.addEventListener('dragstart', handleDragStart);
+                item.addEventListener('dragend', handleDragEnd);
+            });
+            
+            labBench.addEventListener('dragover', handleDragOver);
+            labBench.addEventListener('drop', handleDrop);
+            
+            addLogEntry("Lab initialized. Drag equipment to the bench to begin experiments.");
+        });
+        
+        function handleDragStart(e) {
+            draggedElement = e.target;
+            e.target.classList.add('dragging');
+        }
+        
+        function handleDragEnd(e) {
+            e.target.classList.remove('dragging');
+        }
+        
+        function handleDragOver(e) {
+            e.preventDefault();
+        }
+        
+        function handleDrop(e) {
+            e.preventDefault();
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = e.clientX - rect.left - 40;
+            const y = e.clientY - rect.top - 40;
+            
+            const type = draggedElement.dataset.type;
+            const item = equipment[type];
+            
+            if (item) {
+                createLabItem(type, x, y);
+                addLogEntry(`Added ${item.name} to the lab bench`);
+            }
+        }
+        
+        function createLabItem(type, x, y) {
+            const item = document.createElement('div');
+            item.className = `lab-item ${type}`;
+            item.style.left = x + 'px';
+            item.style.top = y + 'px';
+            item.dataset.type = type;
+            
+            const equipmentData = equipment[type];
+            item.innerHTML = `🧪<br><small>${equipmentData.name}</small>`;
+            
+            item.addEventListener('click', () => interactWithItem(type));
+            item.addEventListener('dblclick', () => removeItem(item));
+            
+            document.getElementById('labBench').appendChild(item);
+            labItems.push(item);
+        }
+        
+        function interactWithItem(type) {
+            const item = equipment[type];
+            addLogEntry(`Interacting with ${item.name}`);
+            
+            // Check for reactions
+            if (type === 'hcl' || type === 'naoh') {
+                checkForReaction(type);
+            }
+        }
+        
+        function checkForReaction(chemical) {
+            const hasHCl = labItems.some(item => item.dataset.type === 'hcl');
+            const hasNaOH = labItems.some(item => item.dataset.type === 'naoh');
+            const hasIndicator = labItems.some(item => item.dataset.type === 'phenolphthalein');
+            
+            if (hasHCl && hasNaOH && hasIndicator) {
+                addLogEntry("🎉 Acid-Base reaction detected! Color change observed.");
+                document.getElementById('reactionArea').classList.add('active');
+                document.getElementById('reactionArea').innerHTML = "🧪 Reaction in Progress!";
+                
+                setTimeout(() => {
+                    addLogEntry("✅ Titration complete! Endpoint reached.");
+                    document.getElementById('reactionArea').classList.remove('active');
+                    document.getElementById('reactionArea').innerHTML = "Drop chemicals here to mix";
+                }, 3000);
+            }
+        }
+        
+        function removeItem(item) {
+            item.remove();
+            labItems = labItems.filter(i => i !== item);
+            addLogEntry("Removed item from lab bench");
+        }
+        
+        function addLogEntry(message) {
+            const log = document.getElementById('experimentLog');
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            log.appendChild(entry);
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        function resetLab() {
+            labItems.forEach(item => item.remove());
+            labItems = [];
+            document.getElementById('reactionArea').classList.remove('active');
+            document.getElementById('reactionArea').innerHTML = "Drop chemicals here to mix";
+            addLogEntry("Lab bench cleared");
+        }
+        
+        function showFullExperience() {
+            alert("For the complete Virtual Chemistry Laboratory experience:\n\n1. Install Unity Hub from unity.com\n2. Install Unity 2022.3 LTS with WebGL support\n3. Open this project in Unity\n4. Build WebGL version for full interactivity\n\nThis demo shows basic interactions, but the full version includes:\n• 25+ complete experiments\n• AI-powered tutoring\n• Real-time multiplayer\n• Professional certification\n• Advanced 3D graphics");
+        }
+        
+        function downloadUnity() {
+            window.open('https://unity.com/download', '_blank');
+        }
+    </script>
+</body>
+</html> 
