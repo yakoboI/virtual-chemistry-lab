@@ -769,7 +769,7 @@ public class ButtonHandler : MonoBehaviour
     // Public getters and setters
     public bool IsButtonEnabled(string buttonId) => buttonStates.ContainsKey(buttonId) && buttonStates[buttonId];
     public bool IsButtonVisible(string buttonId) => buttonRegistry.ContainsKey(buttonId) && buttonRegistry[buttonId].isVisible;
-    public bool IsButtonOnCooldown(string buttonId) => IsButtonOnCooldown(buttonId);
+    public bool IsButtonOnCooldown(string buttonId) => buttonCooldowns.ContainsKey(buttonId) && buttonCooldowns[buttonId] > 0f;
     public string GetLastClickedButton() => lastClickedButton;
     public bool IsProcessingClick() => isProcessingClick;
     
