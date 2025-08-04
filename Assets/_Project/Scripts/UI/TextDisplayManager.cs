@@ -747,5 +747,4 @@ public class TextDisplayManager : MonoBehaviour
         Debug.Log($"Text Pool Size: {textPool.Count}");
         Debug.Log("===================================");
     }
-} 
-} 
+}
