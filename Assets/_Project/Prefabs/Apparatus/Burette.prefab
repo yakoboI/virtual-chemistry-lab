@@ -1,0 +1,41 @@
+# Burette Prefab
+# Unity Prefab File
+# Description: Laboratory burette for precise volume measurement
+# Components: Mesh, Collider, Scripts, Liquid system
+
+# Main GameObject: Burette
+# - MeshFilter (Cylinder mesh)
+# - MeshRenderer (Glass material)
+# - CapsuleCollider (For interaction)
+# - BuretteController script
+# - InteractableObject script
+
+# Child Objects:
+# - Liquid (MeshRenderer with liquid material)
+# - Stopcock (Rotatable valve)
+# - GraduationMarks (Text elements)
+
+# Script References:
+# - BuretteController
+# - LiquidSystem
+# - InteractableObject
+# - VolumeMeasurement
+
+# Properties:
+# - Capacity: 50ml
+# - Graduation: 0.1ml intervals
+# - Material: Glass
+# - Stopcock: PTFE
+# - Accuracy: ±0.05ml
+
+# Interactions:
+# - Rotate stopcock
+# - Add/remove liquid
+# - Read volume
+# - Calibrate
+
+# Visual Effects:
+# - Liquid level indicator
+# - Graduation marks
+# - Stopcock rotation
+# - Liquid flow animation 

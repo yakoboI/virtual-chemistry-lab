@@ -1,0 +1,44 @@
+# 3D Model: Bunsen Burner
+# Format: FBX (placeholder)
+# Description: Gas burner for heating and flame tests
+# Dimensions: 20cm height, 8cm base diameter, 2cm flame port
+# Material: Metal with rubber tubing connection
+# Usage: Heating, flame tests, and sterilization
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Heating Equipment
+- Subcategory: Burners
+- Fuel: Natural gas or propane
+- Material: Brass and steel
+- Temperature Range: Up to 1500°C
+- Flame Types: Blue (hot), Yellow (cool)
+- Gas Control: Adjustable valve
+- Air Control: Adjustable air intake
+
+# Geometry Data (simplified):
+- Vertices: 512
+- Faces: 1024
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- Gas valve rotation (0-360 degrees)
+- Air intake adjustment (0-100%)
+- Flame intensity variation
+
+# Collision:
+- Type: Cylinder
+- Radius: 4cm
+- Height: 20cm
+
+# LOD Levels:
+- LOD0: High detail (512 vertices)
+- LOD1: Medium detail (256 vertices)
+- LOD2: Low detail (128 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

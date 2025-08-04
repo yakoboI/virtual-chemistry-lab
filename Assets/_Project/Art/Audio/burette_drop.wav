@@ -1,0 +1,32 @@
+# Audio: Burette Drop Sound
+# Format: WAV (placeholder)
+# Description: Precise drop sound from burette during titration
+# Duration: 0.3 seconds
+# Usage: Titration procedures and precise measurements
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: Laboratory Sounds
+- Subcategory: Titration
+- Format: WAV
+- Sample Rate: 44.1 kHz
+- Bit Depth: 16-bit
+- Channels: Stereo
+- Compression: PCM
+
+# Sound Characteristics:
+- Frequency Range: 1-5 kHz
+- Peak Frequency: 2.5 kHz
+- Decay Time: 0.2s
+- Attack Time: 0.01s
+- Sustain Level: -25 dB
+- Release Time: 0.1s
+
+# Usage Context:
+- Titration procedures
+- Precise volume measurement
+- Endpoint detection
+- Drop counting
+
+# File Size: ~26KB
+# Memory Usage: ~26KB 

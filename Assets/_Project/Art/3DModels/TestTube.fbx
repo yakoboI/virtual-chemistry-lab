@@ -1,0 +1,43 @@
+# 3D Model: Laboratory Test Tube
+# Format: FBX (placeholder)
+# Description: Standard laboratory test tube for small-scale experiments
+# Dimensions: 15ml capacity, 15cm height, 1.5cm diameter
+# Material: Glass with measurement markings
+# Usage: Small-scale chemical reactions and observations
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Glassware
+- Subcategory: Test Tubes
+- Capacity: 15ml
+- Material: Borosilicate Glass
+- Temperature Range: -40°C to +400°C
+- Graduation Marks: 2ml intervals
+- Spout: No
+- Handle: No
+- Stopper: Optional (rubber)
+
+# Geometry Data (simplified):
+- Vertices: 128
+- Faces: 256
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- None (static object)
+
+# Collision:
+- Type: Cylinder
+- Radius: 0.75cm
+- Height: 15cm
+
+# LOD Levels:
+- LOD0: High detail (128 vertices)
+- LOD1: Medium detail (64 vertices)
+- LOD2: Low detail (32 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

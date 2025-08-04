@@ -1,0 +1,42 @@
+# 3D Model: Wire Gauze
+# Format: FBX (placeholder)
+# Description: Wire mesh screen for even heat distribution
+# Dimensions: 15cm diameter, 0.5cm thickness, 1mm wire spacing
+# Material: Steel wire with ceramic center
+# Usage: Heat distribution and support for glassware
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Support Equipment
+- Subcategory: Screens
+- Material: Steel wire
+- Center: Ceramic or asbestos
+- Diameter: 15cm
+- Thickness: 0.5cm
+- Wire Spacing: 1mm
+- Heat Resistance: Up to 1000°C
+
+# Geometry Data (simplified):
+- Vertices: 256
+- Faces: 512
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- None (static object)
+
+# Collision:
+- Type: Cylinder
+- Radius: 7.5cm
+- Height: 0.5cm
+
+# LOD Levels:
+- LOD0: High detail (256 vertices)
+- LOD1: Medium detail (128 vertices)
+- LOD2: Low detail (64 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

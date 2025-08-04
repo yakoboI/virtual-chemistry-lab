@@ -1,0 +1,108 @@
+{
+  "id": "naoh",
+  "name": "Sodium Hydroxide",
+  "formula": "NaOH",
+  "commonNames": ["Caustic Soda", "Lye"],
+  "molecularWeight": 40.0,
+  "density": 2.13,
+  "meltingPoint": 318.4,
+  "boilingPoint": 1388.0,
+  "solubility": "Highly soluble in water",
+  "physicalProperties": {
+    "appearance": "White crystalline solid",
+    "odor": "Odorless",
+    "state": "Solid",
+    "color": "White",
+    "crystalStructure": "Orthorhombic"
+  },
+  "chemicalProperties": {
+    "pH": 14.0,
+    "pKa": "Strong base",
+    "reactivity": "Highly reactive",
+    "stability": "Stable under normal conditions",
+    "oxidizingProperties": "None",
+    "reducingProperties": "None"
+  },
+  "safetyData": {
+    "hazardClass": "Corrosive",
+    "riskPhrases": ["R35", "R37", "R38"],
+    "safetyPhrases": ["S26", "S37", "S39", "S45"],
+    "flashPoint": "Non-flammable",
+    "autoIgnition": "Non-flammable",
+    "explosiveLimits": "Non-explosive",
+    "exposureLimits": {
+      "TWA": "2 mg/m³",
+      "STEL": "4 mg/m³"
+    },
+    "healthHazards": [
+      "Severe skin burns",
+      "Eye damage",
+      "Respiratory irritation"
+    ],
+    "firstAid": {
+      "skin": "Rinse with plenty of water",
+      "eyes": "Rinse with plenty of water for 15 minutes",
+      "inhalation": "Move to fresh air",
+      "ingestion": "Do not induce vomiting, seek medical attention"
+    }
+  },
+  "behaviorData": {
+    "reactions": [
+      "Neutralizes acids",
+      "Reacts with metals",
+      "Hydrolyzes esters",
+      "Saponifies fats"
+    ],
+    "indicators": {
+      "phenolphthalein": "Pink in basic solution",
+      "methylOrange": "Yellow in basic solution",
+      "litmus": "Blue in basic solution"
+    },
+    "colorChanges": {
+      "inWater": "Colorless solution",
+      "withIndicators": "Various color changes based on pH"
+    }
+  },
+  "visualSettings": {
+    "color": "#FFFFFF",
+    "transparency": 0.8,
+    "texture": "crystalline",
+    "particleEffect": "none",
+    "glowEffect": "none"
+  },
+  "concentrations": [
+    {
+      "name": "0.1M",
+      "molarity": 0.1,
+      "normality": 0.1,
+      "density": 1.004,
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "1.0M",
+      "molarity": 1.0,
+      "normality": 1.0,
+      "density": 1.04,
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "6.0M",
+      "molarity": 6.0,
+      "normality": 6.0,
+      "density": 1.22,
+      "color": "#FFFFFF"
+    }
+  ],
+  "uses": [
+    "Titration standard",
+    "pH adjustment",
+    "Cleaning agent",
+    "Saponification reactions"
+  ],
+  "storage": {
+    "container": "Plastic or glass",
+    "conditions": "Dry, cool place",
+    "shelfLife": "Indefinite if properly stored",
+    "incompatibilities": ["Acids", "Metals", "Organic compounds"]
+  }
+} 

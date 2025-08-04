@@ -1,0 +1,104 @@
+{
+  "id": "agno3",
+  "name": "Silver Nitrate",
+  "formula": "AgNO3",
+  "commonNames": ["Lunar Caustic"],
+  "molecularWeight": 169.87,
+  "density": 4.35,
+  "meltingPoint": 212.0,
+  "boilingPoint": 444.0,
+  "solubility": "Soluble in water",
+  "physicalProperties": {
+    "appearance": "Colorless crystalline solid",
+    "odor": "Odorless",
+    "state": "Solid",
+    "color": "Colorless",
+    "crystalStructure": "Orthorhombic"
+  },
+  "chemicalProperties": {
+    "pH": 5.5,
+    "pKa": "Neutral salt",
+    "reactivity": "Moderately reactive",
+    "stability": "Light sensitive",
+    "oxidizingProperties": "Moderate oxidizing agent",
+    "reducingProperties": "None"
+  },
+  "safetyData": {
+    "hazardClass": "Toxic, Corrosive",
+    "riskPhrases": ["R34", "R50", "R53"],
+    "safetyPhrases": ["S26", "S36", "S37", "S39", "S45", "S60", "S61"],
+    "flashPoint": "Non-flammable",
+    "autoIgnition": "Non-flammable",
+    "explosiveLimits": "Non-explosive",
+    "exposureLimits": {
+      "TWA": "0.01 mg/m³",
+      "STEL": "0.03 mg/m³"
+    },
+    "healthHazards": [
+      "Skin irritation",
+      "Eye damage",
+      "Toxic if ingested",
+      "Environmental hazard"
+    ],
+    "firstAid": {
+      "skin": "Rinse with plenty of water",
+      "eyes": "Rinse with plenty of water for 15 minutes",
+      "inhalation": "Move to fresh air",
+      "ingestion": "Do not induce vomiting, seek medical attention"
+    }
+  },
+  "behaviorData": {
+    "reactions": [
+      "Forms precipitates with halides",
+      "Reduces to silver metal",
+      "Photosensitive decomposition",
+      "Complexes with ammonia"
+    ],
+    "indicators": {
+      "phenolphthalein": "Colorless in neutral solution",
+      "methylOrange": "Yellow in neutral solution",
+      "litmus": "Purple in neutral solution"
+    },
+    "colorChanges": {
+      "inWater": "Colorless solution",
+      "withChloride": "White precipitate",
+      "withBromide": "Cream precipitate",
+      "withIodide": "Yellow precipitate"
+    }
+  },
+  "visualSettings": {
+    "color": "#FFFFFF",
+    "transparency": 0.8,
+    "texture": "crystalline",
+    "particleEffect": "none",
+    "glowEffect": "none"
+  },
+  "concentrations": [
+    {
+      "name": "0.1M",
+      "molarity": 0.1,
+      "normality": 0.1,
+      "density": 1.01,
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "1.0M",
+      "molarity": 1.0,
+      "normality": 1.0,
+      "density": 1.17,
+      "color": "#FFFFFF"
+    }
+  ],
+  "uses": [
+    "Qualitative analysis",
+    "Halide detection",
+    "Photography",
+    "Mirror making"
+  ],
+  "storage": {
+    "container": "Dark glass or plastic",
+    "conditions": "Dark, cool place",
+    "shelfLife": "Indefinite if properly stored",
+    "incompatibilities": ["Light", "Reducing agents", "Halides"]
+  }
+} 

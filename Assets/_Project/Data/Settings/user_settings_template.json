@@ -1,0 +1,289 @@
+{
+  "userSettings": {
+    "display": {
+      "resolution": {
+        "width": 1920,
+        "height": 1080,
+        "fullscreen": false,
+        "vsync": true
+      },
+      "graphics": {
+        "quality": "High",
+        "antialiasing": "MSAA_4x",
+        "shadows": true,
+        "reflections": true,
+        "particles": true,
+        "bloom": true,
+        "motionBlur": false
+      },
+      "ui": {
+        "scale": 1.0,
+        "theme": "Default",
+        "fontSize": 14,
+        "showTooltips": true,
+        "showHints": true,
+        "showProgressBars": true
+      },
+      "accessibility": {
+        "colorBlindMode": "None",
+        "highContrast": false,
+        "largeText": false,
+        "screenReader": false,
+        "subtitles": true,
+        "audioDescriptions": false
+      }
+    },
+    "audio": {
+      "masterVolume": 0.8,
+      "musicVolume": 0.6,
+      "sfxVolume": 0.7,
+      "voiceVolume": 0.8,
+      "ambientVolume": 0.5,
+      "spatialAudio": true,
+      "audioQuality": "High",
+      "outputDevice": "Default"
+    },
+    "controls": {
+      "mouseSensitivity": 1.0,
+      "invertMouseY": false,
+      "mouseAcceleration": false,
+      "keyboardLayout": "QWERTY",
+      "gamepadEnabled": true,
+      "gamepadSensitivity": 1.0,
+      "keyBindings": {
+        "moveForward": "W",
+        "moveBackward": "S",
+        "moveLeft": "A",
+        "moveRight": "D",
+        "interact": "E",
+        "inventory": "I",
+        "pause": "Escape",
+        "cameraReset": "R",
+        "zoomIn": "MouseWheelUp",
+        "zoomOut": "MouseWheelDown"
+      }
+    },
+    "gameplay": {
+      "difficulty": "Normal",
+      "tutorialEnabled": true,
+      "autoSave": true,
+      "autoSaveInterval": 300,
+      "checkpointSystem": true,
+      "hintsEnabled": true,
+      "timeLimit": 0,
+      "scoringSystem": true,
+      "achievements": true
+    },
+    "laboratory": {
+      "safetyMode": "Strict",
+      "realisticMode": true,
+      "errorTolerance": 0.05,
+      "timeScale": 1.0,
+      "autoCleanup": true,
+      "equipmentWear": true,
+      "chemicalReactions": true,
+      "physicsSimulation": true,
+      "temperatureSimulation": true,
+      "pressureSimulation": true
+    },
+    "experiments": {
+      "autoValidation": true,
+      "stepByStepGuidance": true,
+      "allowRetries": true,
+      "maxRetries": 3,
+      "showExpectedResults": false,
+      "realTimeFeedback": true,
+      "detailedLogging": true,
+      "experimentHistory": true,
+      "comparisonMode": false
+    },
+    "assessment": {
+      "autoAssessment": true,
+      "detailedFeedback": true,
+      "showScores": true,
+      "gradeDisplay": true,
+      "progressTracking": true,
+      "performanceAnalytics": true,
+      "learningObjectives": true,
+      "skillTracking": true
+    },
+    "multiplayer": {
+      "enabled": false,
+      "maxPlayers": 4,
+      "collaborationMode": true,
+      "competitionMode": false,
+      "teamMode": false,
+      "voiceChat": false,
+      "textChat": true,
+      "sharedWorkspace": true
+    },
+    "data": {
+      "autoBackup": true,
+      "backupInterval": 3600,
+      "cloudSync": false,
+      "dataRetention": 365,
+      "exportFormat": "JSON",
+      "privacyMode": false,
+      "analytics": true,
+      "crashReporting": true
+    },
+    "accessibility": {
+      "visual": {
+        "colorBlindSupport": true,
+        "highContrastMode": false,
+        "textSize": "Normal",
+        "fontFamily": "Arial",
+        "lineSpacing": 1.2,
+        "reduceMotion": false,
+        "screenReader": false
+      },
+      "audio": {
+        "subtitles": true,
+        "audioDescriptions": false,
+        "volumeControl": true,
+        "audioCues": true,
+        "speechToText": false,
+        "textToSpeech": false
+      },
+      "motor": {
+        "oneHandedMode": false,
+        "stickyKeys": false,
+        "slowKeys": false,
+        "mouseKeys": false,
+        "eyeTracking": false,
+        "headTracking": false
+      },
+      "cognitive": {
+        "simplifiedUI": false,
+        "reducedDistractions": false,
+        "stepByStepMode": true,
+        "extraTime": false,
+        "breakReminders": false,
+        "progressIndicators": true
+      }
+    },
+    "performance": {
+      "targetFPS": 60,
+      "adaptiveQuality": true,
+      "powerSaving": false,
+      "backgroundProcessing": true,
+      "memoryOptimization": true,
+      "cacheSize": 1024,
+      "textureQuality": "High",
+      "modelDetail": "High"
+    },
+    "network": {
+      "connectionType": "Local",
+      "serverAddress": "localhost",
+      "port": 8080,
+      "timeout": 30,
+      "retryAttempts": 3,
+      "bandwidthLimit": 0,
+      "compression": true,
+      "encryption": false
+    },
+    "localization": {
+      "language": "en",
+      "region": "US",
+      "dateFormat": "MM/DD/YYYY",
+      "timeFormat": "12h",
+      "currency": "USD",
+      "units": "Metric",
+      "temperature": "Celsius"
+    },
+    "privacy": {
+      "dataCollection": true,
+      "analytics": true,
+      "crashReports": true,
+      "telemetry": false,
+      "personalization": true,
+      "advertising": false,
+      "thirdPartySharing": false,
+      "dataRetention": 365
+    },
+    "updates": {
+      "autoUpdate": true,
+      "checkFrequency": "Daily",
+      "betaUpdates": false,
+      "notifications": true,
+      "downloadSize": 0,
+      "installationType": "Automatic"
+    },
+    "developer": {
+      "debugMode": false,
+      "consoleEnabled": false,
+      "logLevel": "Info",
+      "profiling": false,
+      "testMode": false,
+      "experimentalFeatures": false,
+      "customScripts": false
+    }
+  },
+  "presets": {
+    "beginner": {
+      "display": {
+        "graphics": { "quality": "Medium" },
+        "ui": { "scale": 1.2, "showHints": true }
+      },
+      "gameplay": {
+        "difficulty": "Easy",
+        "tutorialEnabled": true,
+        "hintsEnabled": true
+      },
+      "laboratory": {
+        "safetyMode": "Strict",
+        "realisticMode": false,
+        "errorTolerance": 0.1
+      }
+    },
+    "advanced": {
+      "display": {
+        "graphics": { "quality": "Ultra" },
+        "ui": { "scale": 1.0, "showHints": false }
+      },
+      "gameplay": {
+        "difficulty": "Hard",
+        "tutorialEnabled": false,
+        "hintsEnabled": false
+      },
+      "laboratory": {
+        "safetyMode": "Realistic",
+        "realisticMode": true,
+        "errorTolerance": 0.01
+      }
+    },
+    "accessibility": {
+      "display": {
+        "ui": { "scale": 1.5, "fontSize": 18 },
+        "accessibility": { "highContrast": true, "largeText": true }
+      },
+      "audio": { "subtitles": true, "audioDescriptions": true },
+      "gameplay": { "timeLimit": 0, "hintsEnabled": true }
+    },
+    "performance": {
+      "display": {
+        "graphics": { "quality": "Low" },
+        "resolution": { "width": 1280, "height": 720 }
+      },
+      "performance": {
+        "targetFPS": 30,
+        "adaptiveQuality": true,
+        "powerSaving": true
+      }
+    }
+  },
+  "validation": {
+    "required": ["display", "audio", "controls", "gameplay"],
+    "ranges": {
+      "audio.masterVolume": [0.0, 1.0],
+      "controls.mouseSensitivity": [0.1, 5.0],
+      "gameplay.autoSaveInterval": [60, 3600],
+      "laboratory.errorTolerance": [0.001, 0.5]
+    },
+    "dependencies": {
+      "display.graphics.quality": ["display.graphics.antialiasing"],
+      "audio.spatialAudio": ["audio.outputDevice"],
+      "multiplayer.enabled": ["network.connectionType"]
+    }
+  }
+} 

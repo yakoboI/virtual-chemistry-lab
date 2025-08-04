@@ -1,0 +1,43 @@
+# 3D Model: Laboratory Pipette
+# Format: FBX (placeholder)
+# Description: Precision pipette for accurate liquid transfer
+# Dimensions: 10ml capacity, 25cm length, 0.8cm diameter
+# Material: Glass with precision markings
+# Usage: Precise liquid transfer and measurements
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Glassware
+- Subcategory: Pipettes
+- Capacity: 10ml
+- Material: Borosilicate Glass
+- Temperature Range: -40°C to +400°C
+- Graduation Marks: 0.1ml intervals
+- Spout: Yes (narrow tip)
+- Handle: No
+- Bulb: Optional (rubber)
+
+# Geometry Data (simplified):
+- Vertices: 256
+- Faces: 512
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- None (static object)
+
+# Collision:
+- Type: Cylinder
+- Radius: 0.4cm
+- Height: 25cm
+
+# LOD Levels:
+- LOD0: High detail (256 vertices)
+- LOD1: Medium detail (128 vertices)
+- LOD2: Low detail (64 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

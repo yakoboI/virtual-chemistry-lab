@@ -1,0 +1,43 @@
+# Erlenmeyer Flask Prefab
+# Unity Prefab File
+# Description: Conical flask for chemical reactions
+# Components: Mesh, Collider, Scripts, Liquid system
+
+# Main GameObject: ErlenmeyerFlask
+# - MeshFilter (Cone mesh)
+# - MeshRenderer (Glass material)
+# - CapsuleCollider (For interaction)
+# - FlaskController script
+# - InteractableObject script
+
+# Child Objects:
+# - Liquid (MeshRenderer with liquid material)
+# - GraduationMarks (Text elements)
+# - Stopper (Optional rubber stopper)
+
+# Script References:
+# - FlaskController
+# - LiquidSystem
+# - InteractableObject
+# - ChemicalReaction
+
+# Properties:
+# - Capacity: 250ml
+# - Graduation: 25ml intervals
+# - Material: Borosilicate glass
+# - Shape: Conical with narrow neck
+# - Temperature Range: -40°C to +400°C
+
+# Interactions:
+# - Add/remove liquid
+# - Heat/cool
+# - Mix contents
+# - Add stopper
+# - Read volume
+
+# Visual Effects:
+# - Liquid level indicator
+# - Graduation marks
+# - Temperature effects
+# - Reaction animations
+# - Bubbling effects 

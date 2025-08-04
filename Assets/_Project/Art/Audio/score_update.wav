@@ -1,0 +1,43 @@
+# Audio: Score Update Sound
+# Format: WAV (placeholder)
+# Description: Sound indicating score update during assessment
+# Duration: 0.4 seconds
+# Sample Rate: 44100 Hz
+# Bit Depth: 16-bit
+# Channels: Stereo
+# Usage: Score update notification
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: User Interface
+- Subcategory: Assessment
+- Volume: -12 dB
+- Pitch: 1.0
+- Spatial Blend: 0.2 (3D)
+- Priority: Normal
+- Loop: Disabled
+
+# Frequency Analysis:
+- Low Frequency: 400 Hz
+- Mid Frequency: 1200 Hz
+- High Frequency: 2800 Hz
+- Peak Frequency: 1800 Hz
+
+# Envelope:
+- Attack: 0.02s
+- Decay: 0.1s
+- Sustain: 0.2s
+- Release: 0.15s
+
+# Effects:
+- Reverb: Light laboratory reverb
+- Echo: None
+- Distortion: None
+- Filter: None
+
+# Export Settings:
+- Compression: PCM
+- Quality: High
+- Force To Mono: Disabled
+- Load Type: Compressed In Memory
+- Preload Audio Data: Enabled 

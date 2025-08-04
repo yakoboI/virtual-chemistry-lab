@@ -1,0 +1,269 @@
+{
+  "equipment": [
+    {
+      "id": "burette_50ml",
+      "name": "50ml Burette",
+      "category": "Glassware",
+      "subcategory": "Titration",
+      "specifications": {
+        "capacity": "50ml",
+        "graduation": "0.1ml",
+        "accuracy": "±0.05ml",
+        "material": "Borosilicate glass",
+        "stopcock": "PTFE",
+        "height": "60cm",
+        "diameter": "1cm"
+      },
+      "usage": [
+        "Titrations",
+        "Precise volume measurement",
+        "Standardization procedures"
+      ],
+      "maintenance": {
+        "cleaning": "Rinse with distilled water",
+        "calibration": "Annual",
+        "storage": "Vertical position",
+        "lifespan": "10+ years"
+      },
+      "safety": {
+        "hazards": ["Glass breakage", "Chemical exposure"],
+        "precautions": ["Handle carefully", "Wear gloves", "Check for cracks"]
+      }
+    },
+    {
+      "id": "erlenmeyer_250ml",
+      "name": "250ml Erlenmeyer Flask",
+      "category": "Glassware",
+      "subcategory": "Flasks",
+      "specifications": {
+        "capacity": "250ml",
+        "graduation": "25ml intervals",
+        "material": "Borosilicate glass",
+        "height": "12cm",
+        "base_diameter": "8cm",
+        "neck_diameter": "2.5cm"
+      },
+      "usage": [
+        "Chemical reactions",
+        "Titrations",
+        "Heating solutions",
+        "Mixing reagents"
+      ],
+      "maintenance": {
+        "cleaning": "Wash with detergent",
+        "calibration": "Not required",
+        "storage": "Clean and dry",
+        "lifespan": "5+ years"
+      },
+      "safety": {
+        "hazards": ["Glass breakage", "Thermal stress"],
+        "precautions": ["Handle carefully", "Use heat-resistant glass"]
+      }
+    },
+    {
+      "id": "pipette_25ml",
+      "name": "25ml Pipette",
+      "category": "Glassware",
+      "subcategory": "Pipettes",
+      "specifications": {
+        "capacity": "25ml",
+        "graduation": "0.1ml",
+        "accuracy": "±0.03ml",
+        "material": "Borosilicate glass",
+        "length": "35cm",
+        "diameter": "1.2cm"
+      },
+      "usage": [
+        "Precise volume transfer",
+        "Solution preparation",
+        "Dilution procedures"
+      ],
+      "maintenance": {
+        "cleaning": "Rinse thoroughly",
+        "calibration": "Annual",
+        "storage": "Vertical rack",
+        "lifespan": "5+ years"
+      },
+      "safety": {
+        "hazards": ["Glass breakage", "Chemical exposure"],
+        "precautions": ["Use pipette bulb", "Check for cracks"]
+      }
+    },
+    {
+      "id": "ring_stand",
+      "name": "Ring Stand",
+      "category": "Support Equipment",
+      "subcategory": "Stands",
+      "specifications": {
+        "height": "60cm",
+        "base_diameter": "20cm",
+        "material": "Steel",
+        "finish": "Black powder coat",
+        "weight": "2kg"
+      },
+      "usage": [
+        "Supporting equipment",
+        "Burette mounting",
+        "Heating apparatus"
+      ],
+      "maintenance": {
+        "cleaning": "Wipe with damp cloth",
+        "calibration": "Not required",
+        "storage": "Dry location",
+        "lifespan": "20+ years"
+      },
+      "safety": {
+        "hazards": ["Tip-over risk", "Pinch points"],
+        "precautions": ["Secure base", "Check stability"]
+      }
+    },
+    {
+      "id": "bunsen_burner",
+      "name": "Bunsen Burner",
+      "category": "Heating Equipment",
+      "subcategory": "Burners",
+      "specifications": {
+        "fuel": "Natural gas",
+        "height": "20cm",
+        "base_diameter": "8cm",
+        "material": "Brass and steel",
+        "flame_temperature": "1500°C"
+      },
+      "usage": [
+        "Heating solutions",
+        "Flame tests",
+        "Sterilization",
+        "Evaporation"
+      ],
+      "maintenance": {
+        "cleaning": "Clean burner tip",
+        "calibration": "Not required",
+        "storage": "Clean and dry",
+        "lifespan": "10+ years"
+      },
+      "safety": {
+        "hazards": ["Fire", "Burns", "Gas leaks"],
+        "precautions": ["Check gas connections", "Use in fume hood", "Never leave unattended"]
+      }
+    },
+    {
+      "id": "test_tube_rack",
+      "name": "Test Tube Rack",
+      "category": "Support Equipment",
+      "subcategory": "Racks",
+      "specifications": {
+        "capacity": "12 test tubes",
+        "material": "Plastic or wood",
+        "dimensions": "15cm x 8cm x 3cm",
+        "hole_diameter": "1.5cm"
+      },
+      "usage": [
+        "Test tube organization",
+        "Sample storage",
+        "Reaction monitoring"
+      ],
+      "maintenance": {
+        "cleaning": "Wash with detergent",
+        "calibration": "Not required",
+        "storage": "Clean and dry",
+        "lifespan": "5+ years"
+      },
+      "safety": {
+        "hazards": ["Tip-over risk"],
+        "precautions": ["Secure placement", "Check stability"]
+      }
+    },
+    {
+      "id": "wire_gauze",
+      "name": "Wire Gauze",
+      "category": "Support Equipment",
+      "subcategory": "Screens",
+      "specifications": {
+        "diameter": "15cm",
+        "material": "Steel wire",
+        "center": "Ceramic",
+        "thickness": "0.5cm",
+        "heat_resistance": "1000°C"
+      },
+      "usage": [
+        "Heat distribution",
+        "Glassware support",
+        "Even heating"
+      ],
+      "maintenance": {
+        "cleaning": "Brush off debris",
+        "calibration": "Not required",
+        "storage": "Dry location",
+        "lifespan": "10+ years"
+      },
+      "safety": {
+        "hazards": ["Hot surface", "Sharp edges"],
+        "precautions": ["Use tongs", "Allow to cool"]
+      }
+    },
+    {
+      "id": "tripod",
+      "name": "Laboratory Tripod",
+      "category": "Support Equipment",
+      "subcategory": "Stands",
+      "specifications": {
+        "height": "15cm",
+        "base_diameter": "20cm",
+        "material": "Steel",
+        "legs": "3 adjustable",
+        "top": "Ceramic or wire gauze"
+      },
+      "usage": [
+        "Supporting equipment",
+        "Heating apparatus",
+        "Evaporation dishes"
+      ],
+      "maintenance": {
+        "cleaning": "Wipe clean",
+        "calibration": "Not required",
+        "storage": "Dry location",
+        "lifespan": "15+ years"
+      },
+      "safety": {
+        "hazards": ["Hot surface", "Tip-over risk"],
+        "precautions": ["Use tongs", "Check stability"]
+      }
+    }
+  ],
+  "categories": {
+    "glassware": {
+      "description": "Laboratory glassware for reactions and measurements",
+      "subcategories": ["Titration", "Flasks", "Pipettes", "Cylinders", "Dishes"]
+    },
+    "support_equipment": {
+      "description": "Equipment for supporting and organizing laboratory work",
+      "subcategories": ["Stands", "Racks", "Screens", "Clamps"]
+    },
+    "heating_equipment": {
+      "description": "Equipment for heating and temperature control",
+      "subcategories": ["Burners", "Hot plates", "Ovens", "Water baths"]
+    }
+  },
+  "maintenance_schedule": {
+    "daily": [
+      "Clean work surfaces",
+      "Check equipment condition",
+      "Dispose of waste properly"
+    ],
+    "weekly": [
+      "Deep clean glassware",
+      "Check calibration",
+      "Restock supplies"
+    ],
+    "monthly": [
+      "Equipment inspection",
+      "Safety equipment check",
+      "Inventory update"
+    ],
+    "annually": [
+      "Equipment calibration",
+      "Safety training",
+      "Equipment replacement"
+    ]
+  }
+} 

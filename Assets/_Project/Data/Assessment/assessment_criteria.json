@@ -1,0 +1,591 @@
+{
+  "assessmentCriteria": {
+    "technique": {
+      "id": "technique",
+      "name": "Laboratory Technique",
+      "description": "Proper use of laboratory equipment and procedures",
+      "weight": 0.25,
+      "maxScore": 10,
+      "subcriteria": [
+        {
+          "name": "Equipment Handling",
+          "description": "Proper handling and use of laboratory equipment",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Perfect equipment handling with no errors"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Good equipment handling with minor errors"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Adequate equipment handling with some errors"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Poor equipment handling with many errors"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Unsafe or incorrect equipment handling"
+            }
+          }
+        },
+        {
+          "name": "Procedure Following",
+          "description": "Following experimental procedures correctly",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Follows all procedures perfectly"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Follows most procedures with minor deviations"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Follows basic procedures with some errors"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Frequently deviates from procedures"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Does not follow procedures at all"
+            }
+          }
+        },
+        {
+          "name": "Time Management",
+          "description": "Efficient use of laboratory time",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Completes experiment efficiently within time limit"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Completes experiment with minor time overrun"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Completes experiment with moderate time overrun"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Significant time overrun"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Does not complete experiment in time"
+            }
+          }
+        },
+        {
+          "name": "Organization",
+          "description": "Keeping work area organized and clean",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Excellent organization and cleanliness"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Good organization with minor issues"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Adequate organization with some issues"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Poor organization and cleanliness"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Unsafe or unsanitary conditions"
+            }
+          }
+        }
+      ]
+    },
+    "accuracy": {
+      "id": "accuracy",
+      "name": "Accuracy and Precision",
+      "description": "Accuracy and precision of experimental results",
+      "weight": 0.30,
+      "maxScore": 10,
+      "subcriteria": [
+        {
+          "name": "Measurement Accuracy",
+          "description": "Accuracy of measurements and readings",
+          "maxScore": 3.0,
+          "levels": {
+            "excellent": {
+              "score": 3.0,
+              "description": "All measurements within 1% of expected values"
+            },
+            "good": {
+              "score": 2.4,
+              "description": "Most measurements within 2% of expected values"
+            },
+            "satisfactory": {
+              "score": 1.8,
+              "description": "Measurements within 5% of expected values"
+            },
+            "poor": {
+              "score": 1.2,
+              "description": "Measurements within 10% of expected values"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Measurements more than 10% from expected values"
+            }
+          }
+        },
+        {
+          "name": "Result Precision",
+          "description": "Consistency of repeated measurements",
+          "maxScore": 3.0,
+          "levels": {
+            "excellent": {
+              "score": 3.0,
+              "description": "Standard deviation less than 1%"
+            },
+            "good": {
+              "score": 2.4,
+              "description": "Standard deviation less than 2%"
+            },
+            "satisfactory": {
+              "score": 1.8,
+              "description": "Standard deviation less than 5%"
+            },
+            "poor": {
+              "score": 1.2,
+              "description": "Standard deviation less than 10%"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Standard deviation more than 10%"
+            }
+          }
+        },
+        {
+          "name": "Calculation Accuracy",
+          "description": "Accuracy of calculations and data processing",
+          "maxScore": 2.0,
+          "levels": {
+            "excellent": {
+              "score": 2.0,
+              "description": "All calculations correct"
+            },
+            "good": {
+              "score": 1.6,
+              "description": "Most calculations correct with minor errors"
+            },
+            "satisfactory": {
+              "score": 1.2,
+              "description": "Basic calculations correct with some errors"
+            },
+            "poor": {
+              "score": 0.8,
+              "description": "Many calculation errors"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Major calculation errors"
+            }
+          }
+        },
+        {
+          "name": "Data Recording",
+          "description": "Accuracy and completeness of data recording",
+          "maxScore": 2.0,
+          "levels": {
+            "excellent": {
+              "score": 2.0,
+              "description": "Complete and accurate data recording"
+            },
+            "good": {
+              "score": 1.6,
+              "description": "Mostly complete and accurate recording"
+            },
+            "satisfactory": {
+              "score": 1.2,
+              "description": "Basic data recording with some omissions"
+            },
+            "poor": {
+              "score": 0.8,
+              "description": "Incomplete or inaccurate recording"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "No or very poor data recording"
+            }
+          }
+        }
+      ]
+    },
+    "safety": {
+      "id": "safety",
+      "name": "Safety Practices",
+      "description": "Adherence to safety protocols and procedures",
+      "weight": 0.20,
+      "maxScore": 10,
+      "subcriteria": [
+        {
+          "name": "PPE Usage",
+          "description": "Proper use of personal protective equipment",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Always wears appropriate PPE"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Usually wears appropriate PPE"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Sometimes wears appropriate PPE"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Rarely wears appropriate PPE"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Never wears appropriate PPE"
+            }
+          }
+        },
+        {
+          "name": "Chemical Handling",
+          "description": "Safe handling of chemicals and reagents",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Perfect chemical handling safety"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Good chemical handling with minor lapses"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Adequate chemical handling with some concerns"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Poor chemical handling practices"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Unsafe chemical handling"
+            }
+          }
+        },
+        {
+          "name": "Equipment Safety",
+          "description": "Safe use of laboratory equipment",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Perfect equipment safety practices"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Good equipment safety with minor lapses"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Adequate equipment safety with some concerns"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Poor equipment safety practices"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Unsafe equipment use"
+            }
+          }
+        },
+        {
+          "name": "Emergency Response",
+          "description": "Knowledge and response to emergency situations",
+          "maxScore": 2.5,
+          "levels": {
+            "excellent": {
+              "score": 2.5,
+              "description": "Perfect emergency response knowledge"
+            },
+            "good": {
+              "score": 2.0,
+              "description": "Good emergency response knowledge"
+            },
+            "satisfactory": {
+              "score": 1.5,
+              "description": "Basic emergency response knowledge"
+            },
+            "poor": {
+              "score": 1.0,
+              "description": "Poor emergency response knowledge"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "No emergency response knowledge"
+            }
+          }
+        }
+      ]
+    },
+    "understanding": {
+      "id": "understanding",
+      "name": "Conceptual Understanding",
+      "description": "Understanding of experimental concepts and principles",
+      "weight": 0.15,
+      "maxScore": 10,
+      "subcriteria": [
+        {
+          "name": "Theory Knowledge",
+          "description": "Understanding of underlying theoretical concepts",
+          "maxScore": 3.0,
+          "levels": {
+            "excellent": {
+              "score": 3.0,
+              "description": "Complete understanding of theory"
+            },
+            "good": {
+              "score": 2.4,
+              "description": "Good understanding of theory"
+            },
+            "satisfactory": {
+              "score": 1.8,
+              "description": "Basic understanding of theory"
+            },
+            "poor": {
+              "score": 1.2,
+              "description": "Limited understanding of theory"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "No understanding of theory"
+            }
+          }
+        },
+        {
+          "name": "Procedure Understanding",
+          "description": "Understanding of experimental procedures",
+          "maxScore": 3.0,
+          "levels": {
+            "excellent": {
+              "score": 3.0,
+              "description": "Complete understanding of procedures"
+            },
+            "good": {
+              "score": 2.4,
+              "description": "Good understanding of procedures"
+            },
+            "satisfactory": {
+              "score": 1.8,
+              "description": "Basic understanding of procedures"
+            },
+            "poor": {
+              "score": 1.2,
+              "description": "Limited understanding of procedures"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "No understanding of procedures"
+            }
+          }
+        },
+        {
+          "name": "Result Interpretation",
+          "description": "Ability to interpret experimental results",
+          "maxScore": 2.0,
+          "levels": {
+            "excellent": {
+              "score": 2.0,
+              "description": "Excellent result interpretation"
+            },
+            "good": {
+              "score": 1.6,
+              "description": "Good result interpretation"
+            },
+            "satisfactory": {
+              "score": 1.2,
+              "description": "Basic result interpretation"
+            },
+            "poor": {
+              "score": 0.8,
+              "description": "Poor result interpretation"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "No result interpretation"
+            }
+          }
+        },
+        {
+          "name": "Problem Solving",
+          "description": "Ability to solve experimental problems",
+          "maxScore": 2.0,
+          "levels": {
+            "excellent": {
+              "score": 2.0,
+              "description": "Excellent problem-solving ability"
+            },
+            "good": {
+              "score": 1.6,
+              "description": "Good problem-solving ability"
+            },
+            "satisfactory": {
+              "score": 1.2,
+              "description": "Basic problem-solving ability"
+            },
+            "poor": {
+              "score": 0.8,
+              "description": "Poor problem-solving ability"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "No problem-solving ability"
+            }
+          }
+        }
+      ]
+    },
+    "communication": {
+      "id": "communication",
+      "name": "Communication and Documentation",
+      "description": "Quality of written and oral communication",
+      "weight": 0.10,
+      "maxScore": 10,
+      "subcriteria": [
+        {
+          "name": "Report Quality",
+          "description": "Quality of written laboratory reports",
+          "maxScore": 4.0,
+          "levels": {
+            "excellent": {
+              "score": 4.0,
+              "description": "Excellent report quality"
+            },
+            "good": {
+              "score": 3.2,
+              "description": "Good report quality"
+            },
+            "satisfactory": {
+              "score": 2.4,
+              "description": "Satisfactory report quality"
+            },
+            "poor": {
+              "score": 1.6,
+              "description": "Poor report quality"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Very poor report quality"
+            }
+          }
+        },
+        {
+          "name": "Data Presentation",
+          "description": "Quality of data presentation and graphs",
+          "maxScore": 3.0,
+          "levels": {
+            "excellent": {
+              "score": 3.0,
+              "description": "Excellent data presentation"
+            },
+            "good": {
+              "score": 2.4,
+              "description": "Good data presentation"
+            },
+            "satisfactory": {
+              "score": 1.8,
+              "description": "Satisfactory data presentation"
+            },
+            "poor": {
+              "score": 1.2,
+              "description": "Poor data presentation"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Very poor data presentation"
+            }
+          }
+        },
+        {
+          "name": "Oral Communication",
+          "description": "Quality of oral presentations and discussions",
+          "maxScore": 3.0,
+          "levels": {
+            "excellent": {
+              "score": 3.0,
+              "description": "Excellent oral communication"
+            },
+            "good": {
+              "score": 2.4,
+              "description": "Good oral communication"
+            },
+            "satisfactory": {
+              "score": 1.8,
+              "description": "Satisfactory oral communication"
+            },
+            "poor": {
+              "score": 1.2,
+              "description": "Poor oral communication"
+            },
+            "fail": {
+              "score": 0.0,
+              "description": "Very poor oral communication"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "gradingScale": {
+    "A": {
+      "range": "90-100",
+      "description": "Excellent performance"
+    },
+    "B": {
+      "range": "80-89",
+      "description": "Good performance"
+    },
+    "C": {
+      "range": "70-79",
+      "description": "Satisfactory performance"
+    },
+    "D": {
+      "range": "60-69",
+      "description": "Poor performance"
+    },
+    "F": {
+      "range": "0-59",
+      "description": "Failing performance"
+    }
+  },
+  "feedbackTemplates": {
+    "excellent": "Excellent work! You have demonstrated mastery of the concepts and techniques.",
+    "good": "Good work! You have shown solid understanding with minor areas for improvement.",
+    "satisfactory": "Satisfactory work. You have met the basic requirements but need improvement.",
+    "poor": "Poor performance. You need significant improvement in multiple areas.",
+    "fail": "Failing performance. You need to review the material and retake the assessment."
+  }
+} 

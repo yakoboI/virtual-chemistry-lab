@@ -1,0 +1,404 @@
+{
+  "gasLawsExperiments": [
+    {
+      "id": "boyles_law",
+      "title": "Boyle's Law: Pressure-Volume Relationship",
+      "description": "Investigate the relationship between pressure and volume of a gas at constant temperature",
+      "category": "Gas Laws",
+      "difficulty": "Intermediate",
+      "estimatedDuration": 60,
+      "learningObjectives": [
+        "Understand Boyle's Law",
+        "Learn pressure measurement",
+        "Practice volume calculations",
+        "Analyze inverse relationships"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "air",
+          "name": "Air",
+          "formula": "N₂ + O₂",
+          "type": "Gas",
+          "volume": 100.0,
+          "unit": "mL"
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "syringe",
+          "name": "Gas Syringe",
+          "capacity": 100.0,
+          "unit": "mL",
+          "precision": 1.0
+        },
+        {
+          "id": "pressure_sensor",
+          "name": "Digital Pressure Sensor",
+          "range": [0, 200],
+          "unit": "kPa",
+          "precision": 0.1
+        },
+        {
+          "id": "thermometer",
+          "name": "Digital Thermometer",
+          "precision": 0.1,
+          "unit": "°C"
+        },
+        {
+          "id": "data_logger",
+          "name": "Data Logger",
+          "channels": 3,
+          "sampling_rate": 1.0,
+          "unit": "Hz"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Setup Apparatus",
+            "description": "Connect syringe to pressure sensor and data logger",
+            "instructions": "Connect gas syringe to pressure sensor. Ensure airtight connection. Connect to data logger.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "apparatus_setup",
+              "parameters": {
+                "connections": ["syringe", "pressure_sensor", "data_logger"],
+                "airtight": true
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Initial Measurements",
+            "description": "Record initial volume and pressure",
+            "instructions": "Set syringe to 100mL. Record initial pressure and temperature. Start data logging.",
+            "expectedDuration": 5,
+            "validation": {
+              "type": "initial_measurement",
+              "parameters": {
+                "initial_volume": 100.0,
+                "temperature_constant": true
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Volume Reduction",
+            "description": "Gradually reduce volume and record pressure",
+            "instructions": "Slowly compress syringe to 80mL, 60mL, 40mL, 20mL. Record pressure at each volume.",
+            "expectedDuration": 20,
+            "validation": {
+              "type": "volume_pressure_measurement",
+              "parameters": {
+                "volumes": [80, 60, 40, 20],
+                "measurement_interval": 5
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Data Collection",
+            "description": "Collect pressure-volume data points",
+            "instructions": "Record pressure and volume data. Ensure temperature remains constant throughout.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "data_collection",
+              "parameters": {
+                "data_points": 5,
+                "temperature_variation": 0.5
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Analysis and Graphing",
+            "description": "Plot P vs V and P vs 1/V graphs",
+            "instructions": "Plot pressure vs volume (P vs V) and pressure vs inverse volume (P vs 1/V). Calculate R² value.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "graph_analysis",
+              "parameters": {
+                "r_squared_min": 0.95,
+                "inverse_relationship": true
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "boylesConstant": 8000.0,
+        "unit": "kPa·mL",
+        "rSquared": 0.98,
+        "temperature": 25.0,
+        "unit_temp": "°C",
+        "pressureRange": [100, 500],
+        "unit_pressure": "kPa"
+      },
+      "calculations": [
+        {
+          "type": "boyles_law",
+          "formula": "P₁V₁ = P₂V₂ = k",
+          "description": "Boyle's Law: Pressure times volume equals constant at constant temperature"
+        },
+        {
+          "type": "boyles_constant",
+          "formula": "k = P × V",
+          "description": "Calculate Boyle's constant from pressure-volume data"
+        },
+        {
+          "type": "linear_regression",
+          "formula": "P = k × (1/V)",
+          "description": "Linear relationship between pressure and inverse volume"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Apparatus Setup", "maxScore": 10},
+              {"name": "Measurement Accuracy", "maxScore": 10},
+              {"name": "Data Collection", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Analysis",
+            "weight": 0.35,
+            "subcriteria": [
+              {"name": "Graph Plotting", "maxScore": 15},
+              {"name": "Calculations", "maxScore": 10},
+              {"name": "R² Value", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Boyle's Law", "maxScore": 10},
+              {"name": "Inverse Relationship", "maxScore": 10},
+              {"name": "Gas Behavior", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.15,
+            "subcriteria": [
+              {"name": "Equipment Safety", "maxScore": 10},
+              {"name": "Pressure Safety", "maxScore": 5}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    },
+    {
+      "id": "charles_law",
+      "title": "Charles's Law: Volume-Temperature Relationship",
+      "description": "Investigate the relationship between volume and temperature of a gas at constant pressure",
+      "category": "Gas Laws",
+      "difficulty": "Intermediate",
+      "estimatedDuration": 75,
+      "learningObjectives": [
+        "Understand Charles's Law",
+        "Learn temperature measurement",
+        "Practice volume calculations",
+        "Analyze linear relationships"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "air",
+          "name": "Air",
+          "formula": "N₂ + O₂",
+          "purity": 0.99,
+          "initial_temperature": 25.0,
+          "unit": "°C"
+        },
+        {
+          "id": "water",
+          "name": "Water",
+          "formula": "H₂O",
+          "temperature_range": [0, 100],
+          "unit": "°C"
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "charles_law_apparatus",
+          "name": "Charles's Law Apparatus",
+          "type": "capillary_tube_with_mercury",
+          "volume_range": [0, 10],
+          "unit": "mL"
+        },
+        {
+          "id": "water_bath",
+          "name": "Temperature-Controlled Water Bath",
+          "temperature_range": [0, 100],
+          "unit": "°C",
+          "precision": 0.5
+        },
+        {
+          "id": "thermometer",
+          "name": "Digital Thermometer",
+          "precision": 0.1,
+          "unit": "°C"
+        },
+        {
+          "id": "ruler",
+          "name": "Digital Caliper",
+          "precision": 0.01,
+          "unit": "mm"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Setup Apparatus",
+            "description": "Assemble Charles's Law apparatus and fill with air",
+            "instructions": "Fill capillary tube with air. Seal one end. Place in water bath.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "apparatus_setup",
+              "parameters": {
+                "air_filled": true,
+                "sealed": true
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Initial Measurements",
+            "description": "Record initial volume and temperature",
+            "instructions": "Set water bath to 25°C. Record initial volume and temperature.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "initial_measurement",
+              "parameters": {
+                "temperature": 25.0,
+                "volume_range": [5, 15]
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Heat Gas",
+            "description": "Gradually heat gas and record measurements",
+            "instructions": "Heat water bath to 35°C, 45°C, 55°C, 65°C, 75°C. Record volume at each temperature.",
+            "expectedDuration": 30,
+            "validation": {
+              "type": "heating_measurement",
+              "parameters": {
+                "temperatures": [35, 45, 55, 65, 75],
+                "equilibration_time": 60
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Cool Gas",
+            "description": "Gradually cool gas and record measurements",
+            "instructions": "Cool water bath to 65°C, 55°C, 45°C, 35°C, 25°C. Record volume at each temperature.",
+            "expectedDuration": 30,
+            "validation": {
+              "type": "cooling_measurement",
+              "parameters": {
+                "temperatures": [65, 55, 45, 35, 25],
+                "equilibration_time": 60
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Analyze Data",
+            "description": "Plot V vs T and calculate Charles's Law constant",
+            "instructions": "Plot volume vs temperature. Extrapolate to absolute zero. Calculate V/T ratio.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "data_analysis",
+              "parameters": {
+                "plot_required": true,
+                "extrapolation": true,
+                "constant_calculation": true
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "charlesConstant": 0.2,
+        "unit": "mL/K",
+        "absoluteZero": -273.15,
+        "unit_temp": "°C",
+        "linearRelationship": true,
+        "correlationCoefficient": 0.98,
+        "percentError": 3.0
+      },
+      "calculations": [
+        {
+          "type": "charles_law",
+          "formula": "V₁/T₁ = V₂/T₂",
+          "description": "Charles's Law: Volume divided by temperature is constant at constant pressure"
+        },
+        {
+          "type": "kelvin_conversion",
+          "formula": "T(K) = T(°C) + 273.15",
+          "description": "Convert Celsius to Kelvin temperature scale"
+        },
+        {
+          "type": "volume_calculation",
+          "formula": "V = πr²h",
+          "description": "Volume of cylinder equals pi times radius squared times height"
+        },
+        {
+          "type": "constant_verification",
+          "formula": "k = V/T",
+          "description": "Charles's Law constant equals volume divided by temperature"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Apparatus Setup", "maxScore": 10},
+              {"name": "Temperature Control", "maxScore": 10},
+              {"name": "Volume Measurement", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Analysis",
+            "weight": 0.35,
+            "subcriteria": [
+              {"name": "Data Collection", "maxScore": 15},
+              {"name": "Graph Plotting", "maxScore": 10},
+              {"name": "Calculations", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Charles's Law", "maxScore": 10},
+              {"name": "Linear Relationships", "maxScore": 10},
+              {"name": "Absolute Zero", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.15,
+            "subcriteria": [
+              {"name": "Temperature Safety", "maxScore": 10},
+              {"name": "Equipment Handling", "maxScore": 5}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    }
+  ]
+} 

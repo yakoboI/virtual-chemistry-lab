@@ -1,0 +1,433 @@
+{
+  "synthesisExperiments": [
+    {
+      "id": "aspirin_synthesis",
+      "title": "Synthesis of Aspirin (Acetylsalicylic Acid)",
+      "description": "Synthesize aspirin from salicylic acid and acetic anhydride using sulfuric acid as a catalyst",
+      "category": "Organic Synthesis",
+      "difficulty": "Advanced",
+      "estimatedDuration": 90,
+      "learningObjectives": [
+        "Understand esterification reactions",
+        "Learn recrystallization techniques",
+        "Practice vacuum filtration",
+        "Calculate theoretical and actual yields"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "salicylic_acid",
+          "name": "Salicylic Acid",
+          "formula": "C₇H₆O₃",
+          "amount": 2.0,
+          "unit": "g",
+          "purity": 0.99
+        },
+        {
+          "id": "acetic_anhydride",
+          "name": "Acetic Anhydride",
+          "formula": "C₄H₆O₃",
+          "amount": 5.0,
+          "unit": "mL",
+          "purity": 0.98
+        },
+        {
+          "id": "sulfuric_acid",
+          "name": "Sulfuric Acid",
+          "formula": "H₂SO₄",
+          "amount": 3.0,
+          "unit": "drops",
+          "concentration": 0.18
+        },
+        {
+          "id": "ethanol",
+          "name": "Ethanol",
+          "formula": "C₂H₅OH",
+          "amount": 10.0,
+          "unit": "mL",
+          "concentration": 0.95
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "round_bottom_flask",
+          "name": "Round Bottom Flask",
+          "capacity": 50.0,
+          "unit": "mL"
+        },
+        {
+          "id": "condenser",
+          "name": "Reflux Condenser",
+          "type": "water-cooled"
+        },
+        {
+          "id": "heating_mantle",
+          "name": "Heating Mantle",
+          "maxTemp": 200.0,
+          "unit": "°C"
+        },
+        {
+          "id": "vacuum_filter",
+          "name": "Vacuum Filtration Apparatus",
+          "type": "Buchner funnel"
+        },
+        {
+          "id": "melting_point_apparatus",
+          "name": "Melting Point Apparatus",
+          "precision": 0.1,
+          "unit": "°C"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Setup Reflux Apparatus",
+            "description": "Assemble the round bottom flask with condenser and heating mantle",
+            "instructions": "Place 2.0g salicylic acid in 50mL round bottom flask. Add 5.0mL acetic anhydride and 3 drops concentrated sulfuric acid. Attach reflux condenser.",
+            "expectedDuration": 10,
+            "safetyNotes": "Wear gloves and safety goggles. Work in fume hood.",
+            "validation": {
+              "type": "apparatus_assembled",
+              "parameters": {
+                "components": ["flask", "condenser", "heating_mantle"]
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Heat Reaction Mixture",
+            "description": "Heat the mixture under reflux for 30 minutes",
+            "instructions": "Heat to gentle reflux (85-90°C) for 30 minutes. Monitor temperature and reflux rate.",
+            "expectedDuration": 30,
+            "safetyNotes": "Monitor heating carefully. Avoid overheating.",
+            "validation": {
+              "type": "reflux_heating",
+              "parameters": {
+                "temperature": 85.0,
+                "duration": 30.0,
+                "tolerance": 5.0
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Cool and Crystallize",
+            "description": "Cool the reaction mixture and allow crystallization",
+            "instructions": "Cool to room temperature, then in ice bath. Add 10mL cold water to precipitate aspirin.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "crystallization",
+              "parameters": {
+                "temperature": 0.0,
+                "water_volume": 10.0
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Filter and Dry",
+            "description": "Filter the crystals and determine yield",
+            "instructions": "Vacuum filter crystals. Wash with cold water. Dry and weigh product.",
+            "expectedDuration": 20,
+            "validation": {
+              "type": "filtration_drying",
+              "parameters": {
+                "method": "vacuum",
+                "wash_solvent": "water"
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Determine Melting Point",
+            "description": "Measure melting point to verify purity",
+            "instructions": "Determine melting point of dried aspirin crystals.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "melting_point",
+              "parameters": {
+                "expected_range": [134.0, 136.0],
+                "tolerance": 2.0
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "theoreticalYield": 2.61,
+        "expectedYield": 2.0,
+        "meltingPoint": 135.0,
+        "meltingPointRange": [134.0, 136.0],
+        "purity": 0.95
+      },
+      "calculations": [
+        {
+          "type": "theoretical_yield",
+          "formula": "moles_salicylic_acid × molecular_weight_aspirin",
+          "description": "Calculate theoretical yield based on limiting reactant"
+        },
+        {
+          "type": "actual_yield",
+          "formula": "mass_product / theoretical_yield × 100",
+          "description": "Calculate percentage yield"
+        },
+        {
+          "type": "purity_assessment",
+          "formula": "melting_point_measured / melting_point_expected",
+          "description": "Assess purity based on melting point"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Apparatus Setup", "maxScore": 10},
+              {"name": "Temperature Control", "maxScore": 10},
+              {"name": "Filtration Technique", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Yield",
+            "weight": 0.30,
+            "subcriteria": [
+              {"name": "Actual Yield", "maxScore": 15},
+              {"name": "Purity", "maxScore": 10},
+              {"name": "Melting Point", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.20,
+            "subcriteria": [
+              {"name": "PPE Usage", "maxScore": 10},
+              {"name": "Chemical Handling", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Reaction Mechanism", "maxScore": 10},
+              {"name": "Calculations", "maxScore": 10},
+              {"name": "Troubleshooting", "maxScore": 5}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 70
+      },
+      "safetyNotes": [
+        "Acetic anhydride is corrosive and flammable",
+        "Sulfuric acid is highly corrosive",
+        "Work in fume hood with proper ventilation",
+        "Wear appropriate PPE (gloves, goggles, lab coat)",
+        "Dispose of waste properly"
+      ],
+      "troubleshooting": [
+        {
+          "problem": "Low yield",
+          "causes": ["Incomplete reaction", "Poor crystallization", "Loss during filtration"],
+          "solutions": ["Increase reaction time", "Use proper cooling", "Improve filtration technique"]
+        },
+        {
+          "problem": "Impure product",
+          "causes": ["Incomplete washing", "Poor recrystallization", "Contamination"],
+          "solutions": ["Wash thoroughly", "Recrystallize from ethanol", "Clean apparatus properly"]
+        },
+        {
+          "problem": "Wrong melting point",
+          "causes": ["Impure product", "Incorrect measurement", "Decomposition"],
+          "solutions": ["Recrystallize", "Calibrate apparatus", "Check for decomposition"]
+        }
+      ],
+      "references": [
+        "Organic Chemistry Laboratory Manual",
+        "Vogel's Textbook of Practical Organic Chemistry",
+        "Journal of Chemical Education - Aspirin Synthesis"
+      ]
+    },
+    {
+      "id": "ester_synthesis",
+      "title": "Synthesis of Methyl Salicylate (Oil of Wintergreen)",
+      "description": "Synthesize methyl salicylate from salicylic acid and methanol using sulfuric acid catalyst",
+      "category": "Organic Synthesis",
+      "difficulty": "Intermediate",
+      "estimatedDuration": 60,
+      "learningObjectives": [
+        "Understand Fischer esterification",
+        "Learn distillation techniques",
+        "Practice liquid-liquid extraction",
+        "Identify organic compounds by smell"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "salicylic_acid",
+          "name": "Salicylic Acid",
+          "formula": "C₇H₆O₃",
+          "amount": 1.5,
+          "unit": "g",
+          "purity": 0.99
+        },
+        {
+          "id": "methanol",
+          "name": "Methanol",
+          "formula": "CH₃OH",
+          "amount": 15.0,
+          "unit": "mL",
+          "purity": 0.99
+        },
+        {
+          "id": "sulfuric_acid",
+          "name": "Sulfuric Acid",
+          "formula": "H₂SO₄",
+          "amount": 1.0,
+          "unit": "mL",
+          "concentration": 0.18
+        },
+        {
+          "id": "sodium_bicarbonate",
+          "name": "Sodium Bicarbonate",
+          "formula": "NaHCO₃",
+          "amount": 5.0,
+          "unit": "g",
+          "purity": 0.99
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "round_bottom_flask",
+          "name": "Round Bottom Flask",
+          "capacity": 25.0,
+          "unit": "mL"
+        },
+        {
+          "id": "condenser",
+          "name": "Reflux Condenser",
+          "type": "water-cooled"
+        },
+        {
+          "id": "distillation_apparatus",
+          "name": "Distillation Apparatus",
+          "type": "simple distillation"
+        },
+        {
+          "id": "separatory_funnel",
+          "name": "Separatory Funnel",
+          "capacity": 125.0,
+          "unit": "mL"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Setup Esterification",
+            "description": "Combine reactants in round bottom flask",
+            "instructions": "Add 1.5g salicylic acid, 15mL methanol, and 1mL concentrated sulfuric acid to flask.",
+            "expectedDuration": 5,
+            "safetyNotes": "Wear gloves and safety goggles. Work in fume hood.",
+            "validation": {
+              "type": "reactants_combined",
+              "parameters": {
+                "salicylic_acid": 1.5,
+                "methanol": 15.0,
+                "sulfuric_acid": 1.0
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Reflux Reaction",
+            "description": "Heat under reflux for 30 minutes",
+            "instructions": "Heat to gentle reflux (65-70°C) for 30 minutes.",
+            "expectedDuration": 30,
+            "validation": {
+              "type": "reflux_heating",
+              "parameters": {
+                "temperature": 67.5,
+                "duration": 30.0
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Neutralize and Extract",
+            "description": "Neutralize acid and extract product",
+            "instructions": "Cool, add sodium bicarbonate to neutralize. Extract with ether.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "neutralization_extraction",
+              "parameters": {
+                "pH_target": 7.0,
+                "extraction_solvent": "ether"
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Distill Product",
+            "description": "Distill to isolate methyl salicylate",
+            "instructions": "Distill at 220-225°C to collect methyl salicylate.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "distillation",
+              "parameters": {
+                "boiling_point": 222.0,
+                "tolerance": 5.0
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "theoreticalYield": 1.8,
+        "expectedYield": 1.2,
+        "boilingPoint": 222.0,
+        "density": 1.17,
+        "characteristicOdor": "wintergreen"
+      },
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.30,
+            "subcriteria": [
+              {"name": "Reflux Setup", "maxScore": 10},
+              {"name": "Distillation", "maxScore": 10},
+              {"name": "Extraction", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Yield",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Actual Yield", "maxScore": 15},
+              {"name": "Purity", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.20,
+            "subcriteria": [
+              {"name": "PPE Usage", "maxScore": 10},
+              {"name": "Chemical Handling", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Reaction Mechanism", "maxScore": 10},
+              {"name": "Product Identification", "maxScore": 10},
+              {"name": "Calculations", "maxScore": 5}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 70
+      }
+    }
+  ]
+} 

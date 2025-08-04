@@ -1,0 +1,32 @@
+# Audio: Emergency Alarm Sound
+# Format: WAV (placeholder)
+# Description: Urgent alarm sound for safety emergencies
+# Duration: 3.0 seconds (looping)
+# Usage: Safety violations and emergency situations
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: Safety Sounds
+- Subcategory: Alarms
+- Format: WAV
+- Sample Rate: 44.1 kHz
+- Bit Depth: 16-bit
+- Channels: Stereo
+- Compression: PCM
+
+# Sound Characteristics:
+- Frequency Range: 500 Hz - 2 kHz
+- Peak Frequency: 1 kHz
+- Decay Time: 0.5s
+- Attack Time: 0.1s
+- Sustain Level: -5 dB
+- Release Time: 0.5s
+
+# Usage Context:
+- Safety violations
+- Emergency situations
+- Hazard warnings
+- Evacuation alerts
+
+# File Size: ~264KB
+# Memory Usage: ~264KB 

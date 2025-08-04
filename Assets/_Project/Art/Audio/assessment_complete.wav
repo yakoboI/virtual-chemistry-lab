@@ -1,0 +1,43 @@
+# Audio: Assessment Complete Sound
+# Format: WAV (placeholder)
+# Description: Sound indicating experiment assessment completion
+# Duration: 1.0 seconds
+# Sample Rate: 44100 Hz
+# Bit Depth: 16-bit
+# Channels: Stereo
+# Usage: Assessment completion notification
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: User Interface
+- Subcategory: Assessment
+- Volume: -8 dB
+- Pitch: 1.0
+- Spatial Blend: 0.2 (3D)
+- Priority: High
+- Loop: Disabled
+
+# Frequency Analysis:
+- Low Frequency: 500 Hz
+- Mid Frequency: 1500 Hz
+- High Frequency: 3500 Hz
+- Peak Frequency: 2500 Hz
+
+# Envelope:
+- Attack: 0.05s
+- Decay: 0.2s
+- Sustain: 0.6s
+- Release: 0.3s
+
+# Effects:
+- Reverb: Light laboratory reverb
+- Echo: None
+- Distortion: None
+- Filter: None
+
+# Export Settings:
+- Compression: PCM
+- Quality: High
+- Force To Mono: Disabled
+- Load Type: Compressed In Memory
+- Preload Audio Data: Enabled 

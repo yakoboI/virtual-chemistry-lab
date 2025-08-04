@@ -1,0 +1,32 @@
+# Audio: Ventilation Fan Sound
+# Format: WAV (placeholder)
+# Description: Continuous ventilation system fan noise
+# Duration: 5.0 seconds (looping)
+# Usage: Laboratory ventilation and air circulation
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: Safety Sounds
+- Subcategory: Ventilation
+- Format: WAV
+- Sample Rate: 44.1 kHz
+- Bit Depth: 16-bit
+- Channels: Stereo
+- Compression: PCM
+
+# Sound Characteristics:
+- Frequency Range: 100 Hz - 1 kHz
+- Peak Frequency: 400 Hz
+- Decay Time: 2.0s
+- Attack Time: 0.5s
+- Sustain Level: -20 dB
+- Release Time: 1.0s
+
+# Usage Context:
+- Laboratory ventilation
+- Air circulation
+- Fume hood operation
+- Safety equipment
+
+# File Size: ~440KB
+# Memory Usage: ~440KB 

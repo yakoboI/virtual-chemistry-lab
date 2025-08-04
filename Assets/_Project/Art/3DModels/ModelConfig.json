@@ -1,0 +1,439 @@
+{
+  "modelCategories": {
+    "glassware": {
+      "description": "Laboratory glassware 3D models",
+      "models": [
+        {
+          "id": "beaker_100ml",
+          "name": "100ml Beaker",
+          "filename": "beaker_100ml.fbx",
+          "description": "100ml glass beaker",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 100.0
+        },
+        {
+          "id": "beaker_250ml",
+          "name": "250ml Beaker",
+          "filename": "beaker_250ml.fbx",
+          "description": "250ml glass beaker",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 250.0
+        },
+        {
+          "id": "flask_erlenmeyer",
+          "name": "Erlenmeyer Flask",
+          "filename": "flask_erlenmeyer.fbx",
+          "description": "Erlenmeyer flask",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 250.0
+        },
+        {
+          "id": "flask_volumetric",
+          "name": "Volumetric Flask",
+          "filename": "flask_volumetric.fbx",
+          "description": "Volumetric flask with graduation",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 100.0
+        },
+        {
+          "id": "burette_50ml",
+          "name": "50ml Burette",
+          "filename": "burette_50ml.fbx",
+          "description": "50ml burette with stopcock",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 50.0
+        },
+        {
+          "id": "pipette_10ml",
+          "name": "10ml Pipette",
+          "filename": "pipette_10ml.fbx",
+          "description": "10ml graduated pipette",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 10.0
+        },
+        {
+          "id": "test_tube",
+          "name": "Test Tube",
+          "filename": "test_tube.fbx",
+          "description": "Standard test tube",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 15.0
+        },
+        {
+          "id": "funnel",
+          "name": "Glass Funnel",
+          "filename": "funnel.fbx",
+          "description": "Glass funnel",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cone",
+          "interactable": true,
+          "capacity": 0.0
+        }
+      ]
+    },
+    "equipment": {
+      "description": "Laboratory equipment 3D models",
+      "models": [
+        {
+          "id": "bunsen_burner",
+          "name": "Bunsen Burner",
+          "filename": "bunsen_burner.fbx",
+          "description": "Bunsen burner with gas connection",
+          "scale": 1.0,
+          "material": "metal_brass",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "tripod",
+          "name": "Tripod",
+          "filename": "tripod.fbx",
+          "description": "Laboratory tripod stand",
+          "scale": 1.0,
+          "material": "metal_stainless",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "wire_gauze",
+          "name": "Wire Gauze",
+          "filename": "wire_gauze.fbx",
+          "description": "Wire gauze for tripod",
+          "scale": 1.0,
+          "material": "metal_stainless",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "clamp_burette",
+          "name": "Burette Clamp",
+          "filename": "clamp_burette.fbx",
+          "description": "Clamp for holding burette",
+          "scale": 1.0,
+          "material": "metal_stainless",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "ring_stand",
+          "name": "Ring Stand",
+          "filename": "ring_stand.fbx",
+          "description": "Ring stand with base",
+          "scale": 1.0,
+          "material": "metal_stainless",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "stirring_rod",
+          "name": "Glass Stirring Rod",
+          "filename": "stirring_rod.fbx",
+          "description": "Glass stirring rod",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "thermometer",
+          "name": "Thermometer",
+          "filename": "thermometer.fbx",
+          "description": "Laboratory thermometer",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "balance",
+          "name": "Analytical Balance",
+          "filename": "balance.fbx",
+          "description": "Analytical balance",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        }
+      ]
+    },
+    "safety": {
+      "description": "Safety equipment 3D models",
+      "models": [
+        {
+          "id": "safety_goggles",
+          "name": "Safety Goggles",
+          "filename": "safety_goggles.fbx",
+          "description": "Safety goggles",
+          "scale": 1.0,
+          "material": "plastic_clear",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "lab_coat",
+          "name": "Lab Coat",
+          "filename": "lab_coat.fbx",
+          "description": "Laboratory coat",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "gloves",
+          "name": "Safety Gloves",
+          "filename": "gloves.fbx",
+          "description": "Safety gloves",
+          "scale": 1.0,
+          "material": "rubber_black",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "fire_extinguisher",
+          "name": "Fire Extinguisher",
+          "filename": "fire_extinguisher.fbx",
+          "description": "Fire extinguisher",
+          "scale": 1.0,
+          "material": "plastic_red",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "eyewash_station",
+          "name": "Eye Wash Station",
+          "filename": "eyewash_station.fbx",
+          "description": "Eye wash station",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "emergency_shower",
+          "name": "Emergency Shower",
+          "filename": "emergency_shower.fbx",
+          "description": "Emergency shower",
+          "scale": 1.0,
+          "material": "metal_stainless",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        }
+      ]
+    },
+    "environment": {
+      "description": "Laboratory environment 3D models",
+      "models": [
+        {
+          "id": "workbench",
+          "name": "Laboratory Workbench",
+          "filename": "workbench.fbx",
+          "description": "Laboratory workbench",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": false,
+          "capacity": 0.0
+        },
+        {
+          "id": "fume_hood",
+          "name": "Fume Hood",
+          "filename": "fume_hood.fbx",
+          "description": "Fume hood with ventilation",
+          "scale": 1.0,
+          "material": "metal_stainless",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "sink",
+          "name": "Laboratory Sink",
+          "filename": "sink.fbx",
+          "description": "Laboratory sink",
+          "scale": 1.0,
+          "material": "ceramic_white",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "cabinet",
+          "name": "Storage Cabinet",
+          "filename": "cabinet.fbx",
+          "description": "Storage cabinet",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "shelving",
+          "name": "Shelving Unit",
+          "filename": "shelving.fbx",
+          "description": "Shelving unit",
+          "scale": 1.0,
+          "material": "metal_stainless",
+          "collider": "box",
+          "interactable": false,
+          "capacity": 0.0
+        },
+        {
+          "id": "lighting",
+          "name": "Laboratory Lighting",
+          "filename": "lighting.fbx",
+          "description": "Laboratory lighting fixture",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": false,
+          "capacity": 0.0
+        }
+      ]
+    },
+    "chemicals": {
+      "description": "Chemical container 3D models",
+      "models": [
+        {
+          "id": "bottle_reagent",
+          "name": "Reagent Bottle",
+          "filename": "bottle_reagent.fbx",
+          "description": "Reagent bottle with stopper",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 500.0
+        },
+        {
+          "id": "bottle_dropper",
+          "name": "Dropper Bottle",
+          "filename": "bottle_dropper.fbx",
+          "description": "Dropper bottle",
+          "scale": 1.0,
+          "material": "plastic_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 30.0
+        },
+        {
+          "id": "jar_wide",
+          "name": "Wide Mouth Jar",
+          "filename": "jar_wide.fbx",
+          "description": "Wide mouth jar",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 250.0
+        },
+        {
+          "id": "vial_small",
+          "name": "Small Vial",
+          "filename": "vial_small.fbx",
+          "description": "Small glass vial",
+          "scale": 1.0,
+          "material": "glass_clear",
+          "collider": "cylinder",
+          "interactable": true,
+          "capacity": 5.0
+        }
+      ]
+    },
+    "ui": {
+      "description": "User interface 3D models",
+      "models": [
+        {
+          "id": "ui_panel",
+          "name": "UI Panel",
+          "filename": "ui_panel.fbx",
+          "description": "UI panel background",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": false,
+          "capacity": 0.0
+        },
+        {
+          "id": "ui_button",
+          "name": "UI Button",
+          "filename": "ui_button.fbx",
+          "description": "UI button",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "ui_slider",
+          "name": "UI Slider",
+          "filename": "ui_slider.fbx",
+          "description": "UI slider control",
+          "scale": 1.0,
+          "material": "plastic_white",
+          "collider": "box",
+          "interactable": true,
+          "capacity": 0.0
+        },
+        {
+          "id": "ui_display",
+          "name": "UI Display",
+          "filename": "ui_display.fbx",
+          "description": "UI display screen",
+          "scale": 1.0,
+          "material": "plastic_black",
+          "collider": "box",
+          "interactable": false,
+          "capacity": 0.0
+        }
+      ]
+    }
+  },
+  "modelSettings": {
+    "importScale": 1.0,
+    "generateColliders": true,
+    "generateLightmapUVs": true,
+    "optimizeMesh": true,
+    "maxPolygonCount": 10000,
+    "compressionQuality": "high",
+    "enableLOD": true
+  }
+} 

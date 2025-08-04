@@ -1,0 +1,209 @@
+{
+  "id": "halide_analysis",
+  "title": "Qualitative Analysis of Halides",
+  "description": "Identification of chloride, bromide, and iodide ions using silver nitrate",
+  "difficulty": "Beginner",
+  "duration": "30 minutes",
+  "category": "Qualitative Analysis",
+  "subcategory": "Anion Analysis",
+  "learningObjectives": [
+    "Understand precipitation reactions",
+    "Learn to identify halides by color",
+    "Practice proper laboratory technique",
+    "Understand solubility rules"
+  ],
+  "prerequisites": [
+    "Basic understanding of ionic compounds",
+    "Knowledge of precipitation reactions",
+    "Familiarity with laboratory safety"
+  ],
+  "chemicalRequirements": [
+    {
+      "id": "agno3",
+      "name": "Silver Nitrate",
+      "concentration": "0.1M",
+      "volume": "50ml",
+      "purpose": "Reagent"
+    },
+    {
+      "id": "nacl",
+      "name": "Sodium Chloride",
+      "concentration": "0.1M",
+      "volume": "10ml",
+      "purpose": "Test sample"
+    },
+    {
+      "id": "nabr",
+      "name": "Sodium Bromide",
+      "concentration": "0.1M",
+      "volume": "10ml",
+      "purpose": "Test sample"
+    },
+    {
+      "id": "nai",
+      "name": "Sodium Iodide",
+      "concentration": "0.1M",
+      "volume": "10ml",
+      "purpose": "Test sample"
+    },
+    {
+      "id": "nh3",
+      "name": "Ammonia",
+      "concentration": "6M",
+      "volume": "20ml",
+      "purpose": "Complexing agent"
+    }
+  ],
+  "apparatusRequirements": [
+    {
+      "id": "test_tube",
+      "name": "Test Tubes",
+      "quantity": 6,
+      "purpose": "Reaction vessels"
+    },
+    {
+      "id": "test_tube_rack",
+      "name": "Test Tube Rack",
+      "quantity": 1,
+      "purpose": "Test tube holder"
+    },
+    {
+      "id": "pipette",
+      "name": "Pasteur Pipettes",
+      "quantity": 4,
+      "purpose": "Solution transfer"
+    }
+  ],
+  "procedure": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Sample Preparation",
+        "description": "Label test tubes and add 2ml of each halide solution",
+        "duration": "5 minutes",
+        "safetyNotes": ["Wear safety goggles", "Label clearly"],
+        "validation": {
+          "type": "sample_check",
+          "parameters": ["samples_prepared", "labels_correct"]
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": "Silver Nitrate Addition",
+        "description": "Add 1ml of AgNO3 solution to each test tube",
+        "duration": "5 minutes",
+        "safetyNotes": ["Add slowly", "Observe reactions"],
+        "validation": {
+          "type": "reaction_check",
+          "parameters": ["precipitate_formed", "color_observed"]
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": "Ammonia Test",
+        "description": "Add NH3 solution to test solubility of precipitates",
+        "duration": "10 minutes",
+        "safetyNotes": ["Work in fume hood", "Add dropwise"],
+        "validation": {
+          "type": "solubility_check",
+          "parameters": ["precipitate_dissolved", "color_changes"]
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": "Observations",
+        "description": "Record all observations and identify halides",
+        "duration": "10 minutes",
+        "safetyNotes": ["Record accurately", "Dispose properly"],
+        "validation": {
+          "type": "identification_check",
+          "parameters": ["halides_identified", "observations_recorded"]
+        }
+      }
+    ]
+  },
+  "expectedResults": {
+    "chloride": {
+      "precipitate": "White",
+      "solubility": "Soluble in NH3",
+      "formula": "AgCl"
+    },
+    "bromide": {
+      "precipitate": "Cream",
+      "solubility": "Slightly soluble in NH3",
+      "formula": "AgBr"
+    },
+    "iodide": {
+      "precipitate": "Yellow",
+      "solubility": "Insoluble in NH3",
+      "formula": "AgI"
+    }
+  },
+  "calculations": [
+    {
+      "name": "Solubility Product",
+      "formula": "Ksp = [Ag+][X-]",
+      "description": "Calculate solubility product for each halide",
+      "variables": {
+        "Ag+": "Silver ion concentration",
+        "X-": "Halide ion concentration"
+      }
+    }
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "name": "Technique",
+        "weight": 0.3,
+        "maxScore": 10,
+        "description": "Proper laboratory technique and observations"
+      },
+      {
+        "name": "Identification",
+        "weight": 0.4,
+        "maxScore": 10,
+        "description": "Correct identification of halides"
+      },
+      {
+        "name": "Observations",
+        "weight": 0.2,
+        "maxScore": 10,
+        "description": "Accurate recording of observations"
+      },
+      {
+        "name": "Safety",
+        "weight": 0.1,
+        "maxScore": 10,
+        "description": "Proper safety practices"
+      }
+    ],
+    "passingScore": 7.0,
+    "excellentScore": 9.0
+  },
+  "safetyNotes": [
+    "Wear appropriate PPE (goggles, lab coat, gloves)",
+    "Work in fume hood when using ammonia",
+    "Handle silver nitrate carefully (stains skin)",
+    "Dispose of waste properly",
+    "Wash hands after experiment"
+  ],
+  "troubleshooting": [
+    {
+      "problem": "No precipitate formed",
+      "solution": "Check concentrations, ensure proper mixing"
+    },
+    {
+      "problem": "Wrong color observed",
+      "solution": "Check sample purity, repeat with fresh solutions"
+    },
+    {
+      "problem": "Precipitate dissolves unexpectedly",
+      "solution": "Check ammonia concentration, observe carefully"
+    }
+  ],
+  "references": [
+    "Vogel, A.I. Qualitative Inorganic Analysis",
+    "Harris, D.C. Quantitative Chemical Analysis",
+    "Skoog, D.A. Fundamentals of Analytical Chemistry"
+  ]
+} 

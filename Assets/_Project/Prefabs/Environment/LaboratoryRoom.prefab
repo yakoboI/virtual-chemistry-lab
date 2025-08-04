@@ -1,0 +1,48 @@
+# Laboratory Room Prefab
+# Unity Prefab File
+# Description: Complete laboratory environment
+# Components: Walls, Floor, Ceiling, Lighting, Equipment
+
+# Main GameObject: LaboratoryRoom
+# - EnvironmentController script
+# - LightingController script
+# - SafetySystem script
+
+# Child Objects:
+# - Walls (MeshRenderer with wall material)
+# - Floor (MeshRenderer with floor material)
+# - Ceiling (MeshRenderer with ceiling material)
+# - Lighting (DirectionalLight, PointLights)
+# - Ventilation (ParticleSystem)
+# - SafetyEquipment (Fire extinguisher, eye wash, etc.)
+# - WorkBenches (Multiple bench prefabs)
+# - Storage (Cabinets, shelves)
+
+# Script References:
+# - EnvironmentController
+# - LightingController
+# - SafetySystem
+# - VentilationSystem
+# - EquipmentManager
+
+# Properties:
+# - Room Size: 10m x 8m x 3m
+# - Lighting: Fluorescent + LED
+# - Ventilation: Fume hoods + general
+# - Safety: Emergency equipment
+# - Temperature: 20°C
+# - Humidity: 50%
+
+# Features:
+# - Adjustable lighting
+# - Ventilation control
+# - Safety monitoring
+# - Equipment placement
+# - Environmental controls
+
+# Interactions:
+# - Toggle lights
+# - Adjust ventilation
+# - Emergency procedures
+# - Equipment access
+# - Safety checks 

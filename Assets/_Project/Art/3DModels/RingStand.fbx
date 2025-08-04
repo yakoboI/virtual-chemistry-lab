@@ -1,0 +1,42 @@
+# 3D Model: Laboratory Ring Stand
+# Format: FBX (placeholder)
+# Description: Metal ring stand for supporting laboratory equipment
+# Dimensions: 60cm height, 20cm base diameter, adjustable rings
+# Material: Steel with black finish
+# Usage: Supporting flasks, beakers, and other equipment
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Support Equipment
+- Subcategory: Stands
+- Material: Steel
+- Finish: Black powder coat
+- Height: 60cm
+- Base Diameter: 20cm
+- Ring Sizes: 5cm, 8cm, 12cm
+- Adjustable: Yes
+
+# Geometry Data (simplified):
+- Vertices: 256
+- Faces: 512
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- Ring height adjustment (0-50cm)
+
+# Collision:
+- Type: Cylinder
+- Radius: 10cm
+- Height: 60cm
+
+# LOD Levels:
+- LOD0: High detail (256 vertices)
+- LOD1: Medium detail (128 vertices)
+- LOD2: Low detail (64 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

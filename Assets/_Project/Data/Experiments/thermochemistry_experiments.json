@@ -1,0 +1,432 @@
+{
+  "thermochemistryExperiments": [
+    {
+      "id": "calorimetry_heat_capacity",
+      "title": "Determination of Heat Capacity by Calorimetry",
+      "description": "Measure the heat capacity of a metal using a calorimeter and determine specific heat capacity",
+      "category": "Thermochemistry",
+      "difficulty": "Intermediate",
+      "estimatedDuration": 75,
+      "learningObjectives": [
+        "Understand calorimetry principles",
+        "Learn heat capacity calculations",
+        "Practice temperature measurements",
+        "Analyze heat transfer processes"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "distilled_water",
+          "name": "Distilled Water",
+          "formula": "H₂O",
+          "volume": 100.0,
+          "unit": "mL",
+          "temperature": 25.0
+        },
+        {
+          "id": "metal_sample",
+          "name": "Metal Sample",
+          "formula": "Cu",
+          "mass": 50.0,
+          "unit": "g",
+          "initial_temperature": 100.0
+        },
+        {
+          "id": "thermometer_fluid",
+          "name": "Thermometer Fluid",
+          "type": "mercury",
+          "range": [0, 150],
+          "unit": "°C"
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "calorimeter",
+          "name": "Coffee Cup Calorimeter",
+          "material": "polystyrene",
+          "capacity": 150.0,
+          "unit": "mL"
+        },
+        {
+          "id": "thermometer",
+          "name": "Digital Thermometer",
+          "precision": 0.1,
+          "unit": "°C",
+          "range": [-10, 150]
+        },
+        {
+          "id": "balance",
+          "name": "Digital Balance",
+          "precision": 0.01,
+          "unit": "g",
+          "capacity": 500.0
+        },
+        {
+          "id": "hot_plate",
+          "name": "Hot Plate",
+          "max_temp": 200.0,
+          "unit": "°C"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Setup Calorimeter",
+            "description": "Prepare the calorimeter and measure initial water temperature",
+            "instructions": "Add 100mL distilled water to calorimeter. Measure and record initial temperature.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "temperature_measurement",
+              "parameters": {
+                "temperature_range": [20, 30],
+                "precision": 0.1
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Heat Metal Sample",
+            "description": "Heat the metal sample to a known temperature",
+            "instructions": "Place metal sample in boiling water for 10 minutes to reach 100°C.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "heating_process",
+              "parameters": {
+                "target_temperature": 100.0,
+                "tolerance": 2.0
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Transfer Metal to Calorimeter",
+            "description": "Quickly transfer hot metal to calorimeter and monitor temperature",
+            "instructions": "Remove metal from hot water and immediately transfer to calorimeter. Stir gently.",
+            "expectedDuration": 5,
+            "validation": {
+              "type": "transfer_process",
+              "parameters": {
+                "time_limit": 10,
+                "temperature_monitoring": true
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Monitor Temperature Change",
+            "description": "Record temperature changes until equilibrium is reached",
+            "instructions": "Monitor temperature every 30 seconds until stable. Record final temperature.",
+            "expectedDuration": 20,
+            "validation": {
+              "type": "equilibrium_detection",
+              "parameters": {
+                "stability_threshold": 0.1,
+                "monitoring_duration": 300
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Calculate Heat Capacity",
+            "description": "Calculate specific heat capacity using calorimetry data",
+            "instructions": "Use q = mcΔT to calculate heat capacity. Compare with literature values.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "calculation_verification",
+              "parameters": {
+                "expected_range": [0.3, 0.5],
+                "unit": "J/g°C",
+                "accuracy": 0.95
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "specificHeatCapacity": 0.385,
+        "unit": "J/g°C",
+        "temperatureChange": 15.0,
+        "heatTransfer": 1925.0,
+        "unit_heat": "J",
+        "percentError": 5.0
+      },
+      "calculations": [
+        {
+          "type": "heat_transfer",
+          "formula": "q = mcΔT",
+          "description": "Heat transferred equals mass times specific heat capacity times temperature change"
+        },
+        {
+          "type": "calorimeter_heat",
+          "formula": "q_water = m_water × c_water × ΔT_water",
+          "description": "Heat absorbed by water in calorimeter"
+        },
+        {
+          "type": "metal_heat",
+          "formula": "q_metal = m_metal × c_metal × ΔT_metal",
+          "description": "Heat lost by metal sample"
+        },
+        {
+          "type": "heat_balance",
+          "formula": "q_water = -q_metal",
+          "description": "Heat gained equals heat lost (conservation of energy)"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Calorimeter Setup", "maxScore": 10},
+              {"name": "Temperature Measurement", "maxScore": 10},
+              {"name": "Transfer Technique", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Analysis",
+            "weight": 0.35,
+            "subcriteria": [
+              {"name": "Data Collection", "maxScore": 15},
+              {"name": "Calculations", "maxScore": 10},
+              {"name": "Accuracy", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Calorimetry Principles", "maxScore": 10},
+              {"name": "Heat Transfer", "maxScore": 10},
+              {"name": "Error Analysis", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.15,
+            "subcriteria": [
+              {"name": "Hot Equipment Handling", "maxScore": 10},
+              {"name": "Temperature Safety", "maxScore": 5}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    },
+    {
+      "id": "heat_of_reaction",
+      "title": "Heat of Neutralization Reaction",
+      "description": "Determine the heat of neutralization for acid-base reactions using calorimetry",
+      "category": "Thermochemistry",
+      "difficulty": "Advanced",
+      "estimatedDuration": 60,
+      "learningObjectives": [
+        "Understand enthalpy of reaction",
+        "Learn neutralization reactions",
+        "Practice calorimetry techniques",
+        "Calculate heat of reaction"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "hydrochloric_acid",
+          "name": "Hydrochloric Acid",
+          "formula": "HCl",
+          "concentration": 1.0,
+          "unit": "M",
+          "volume": 50.0,
+          "unit_volume": "mL"
+        },
+        {
+          "id": "sodium_hydroxide",
+          "name": "Sodium Hydroxide",
+          "formula": "NaOH",
+          "concentration": 1.0,
+          "unit": "M",
+          "volume": 50.0,
+          "unit_volume": "mL"
+        },
+        {
+          "id": "distilled_water",
+          "name": "Distilled Water",
+          "formula": "H₂O",
+          "volume": 100.0,
+          "unit": "mL"
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "calorimeter",
+          "name": "Coffee Cup Calorimeter",
+          "material": "polystyrene",
+          "capacity": 200.0,
+          "unit": "mL"
+        },
+        {
+          "id": "thermometer",
+          "name": "Digital Thermometer",
+          "precision": 0.1,
+          "unit": "°C"
+        },
+        {
+          "id": "graduated_cylinder",
+          "name": "Graduated Cylinder",
+          "capacity": 100.0,
+          "unit": "mL"
+        },
+        {
+          "id": "magnetic_stirrer",
+          "name": "Magnetic Stirrer",
+          "speed_range": [0, 1000],
+          "unit": "rpm"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Prepare Solutions",
+            "description": "Prepare 1M HCl and 1M NaOH solutions",
+            "instructions": "Measure 50mL of 1M HCl and 50mL of 1M NaOH. Record initial temperatures.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "solution_preparation",
+              "parameters": {
+                "concentrations": [1.0, 1.0],
+                "volumes": [50.0, 50.0]
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Setup Calorimeter",
+            "description": "Add HCl solution to calorimeter and measure temperature",
+            "instructions": "Add 50mL HCl to calorimeter. Measure and record temperature.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "temperature_measurement",
+              "parameters": {
+                "temperature_range": [20, 30],
+                "stability_time": 60
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Add NaOH Solution",
+            "description": "Add NaOH solution and monitor temperature change",
+            "instructions": "Quickly add 50mL NaOH to calorimeter. Start stirring and monitor temperature.",
+            "expectedDuration": 5,
+            "validation": {
+              "type": "reaction_initiation",
+              "parameters": {
+                "mixing_time": 5,
+                "temperature_monitoring": true
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Monitor Temperature Rise",
+            "description": "Record temperature changes during neutralization",
+            "instructions": "Monitor temperature every 15 seconds until maximum temperature is reached.",
+            "expectedDuration": 20,
+            "validation": {
+              "type": "temperature_monitoring",
+              "parameters": {
+                "monitoring_interval": 15,
+                "duration": 300
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Calculate Heat of Reaction",
+            "description": "Calculate enthalpy of neutralization",
+            "instructions": "Use q = mcΔT to calculate heat released. Convert to kJ/mol.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "enthalpy_calculation",
+              "parameters": {
+                "expected_range": [-55, -65],
+                "unit": "kJ/mol",
+                "accuracy": 0.90
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "heatOfNeutralization": -57.3,
+        "unit": "kJ/mol",
+        "temperatureRise": 6.8,
+        "unit_temp": "°C",
+        "heatReleased": 1425.0,
+        "unit_heat": "J",
+        "percentError": 3.0
+      },
+      "calculations": [
+        {
+          "type": "heat_calculation",
+          "formula": "q = mcΔT",
+          "description": "Calculate heat absorbed by solution"
+        },
+        {
+          "type": "moles_calculation",
+          "formula": "n = c × V",
+          "description": "Calculate moles of acid/base used"
+        },
+        {
+          "type": "enthalpy_calculation",
+          "formula": "ΔH = q / n",
+          "description": "Calculate enthalpy change per mole"
+        },
+        {
+          "type": "theoretical_comparison",
+          "formula": "Percent Error = |Experimental - Theoretical| / Theoretical × 100",
+          "description": "Compare with theoretical value"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.30,
+            "subcriteria": [
+              {"name": "Solution Preparation", "maxScore": 10},
+              {"name": "Calorimeter Setup", "maxScore": 10},
+              {"name": "Temperature Monitoring", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Analysis",
+            "weight": 0.35,
+            "subcriteria": [
+              {"name": "Data Collection", "maxScore": 15},
+              {"name": "Calculations", "maxScore": 10},
+              {"name": "Accuracy", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Neutralization Reactions", "maxScore": 10},
+              {"name": "Enthalpy Concepts", "maxScore": 10},
+              {"name": "Error Analysis", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.10,
+            "subcriteria": [
+              {"name": "Chemical Handling", "maxScore": 10}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    }
+  ]
+} 

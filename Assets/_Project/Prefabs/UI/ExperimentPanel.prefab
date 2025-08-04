@@ -1,0 +1,36 @@
+# Experiment Panel Prefab
+# Unity Prefab File
+# Description: UI panel for experiment interface
+# Components: Canvas, Panel, Buttons, Text elements
+
+# Main GameObject: ExperimentPanel
+# - Canvas component
+# - CanvasScaler component  
+# - GraphicRaycaster component
+# - ExperimentPanelController script
+
+# Child Objects:
+# - Background (Image)
+# - Title (Text)
+# - Instructions (Text)
+# - ProgressBar (Slider)
+# - NextButton (Button)
+# - PreviousButton (Button)
+# - CloseButton (Button)
+
+# Script References:
+# - ExperimentPanelController
+# - UIManager
+# - ExperimentManager
+
+# Event Handlers:
+# - OnNextButtonClick
+# - OnPreviousButtonClick
+# - OnCloseButtonClick
+# - OnProgressUpdate
+
+# Layout:
+# - Anchor: Stretch to fill screen
+# - Background: Semi-transparent overlay
+# - Content: Centered with proper spacing
+# - Buttons: Bottom aligned with proper spacing 

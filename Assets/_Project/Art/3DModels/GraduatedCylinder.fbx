@@ -1,0 +1,43 @@
+# 3D Model: Graduated Cylinder
+# Format: FBX (placeholder)
+# Description: Cylindrical container for volume measurement
+# Dimensions: 100ml capacity, 25cm height, 3cm diameter
+# Material: Glass with measurement markings
+# Usage: Volume measurements and liquid transfer
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Glassware
+- Subcategory: Cylinders
+- Capacity: 100ml
+- Material: Borosilicate Glass
+- Temperature Range: -40°C to +400°C
+- Graduation Marks: 1ml intervals
+- Spout: Yes (small lip)
+- Handle: No
+- Base: Flat circular base
+
+# Geometry Data (simplified):
+- Vertices: 384
+- Faces: 768
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- None (static object)
+
+# Collision:
+- Type: Cylinder
+- Radius: 1.5cm
+- Height: 25cm
+
+# LOD Levels:
+- LOD0: High detail (384 vertices)
+- LOD1: Medium detail (192 vertices)
+- LOD2: Low detail (96 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

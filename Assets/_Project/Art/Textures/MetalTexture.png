@@ -1,0 +1,43 @@
+# Texture: Metal Surface
+# Format: PNG (placeholder)
+# Description: Brushed steel texture with metallic reflections and surface detail
+# Resolution: 1024x1024 pixels
+# Usage: Laboratory equipment, tools, and hardware
+
+# Texture Properties:
+- Type: Albedo/Normal/Metallic
+- Category: Materials
+- Subcategory: Metal
+- Format: PNG
+- Compression: DXT1
+- Mipmaps: Yes
+- Filter Mode: Bilinear
+- Wrap Mode: Repeat
+- Anisotropic Level: 16
+
+# Color Information:
+- Base Color: Steel gray (0.7, 0.7, 0.7, 1.0)
+- Metallic: 0.8
+- Roughness: 0.3
+- Reflection: 80%
+- Specular: 0.5
+
+# Surface Properties:
+- Roughness: 0.3 (brushed finish)
+- Metallic: 0.8
+- Normal Strength: 0.5
+- Height: 0.1
+- Occlusion: 0.8
+
+# UV Mapping:
+- Tiling: 2x2
+- Offset: 0,0
+- Rotation: 0°
+
+# Generation Method:
+- Procedural brushed metal pattern
+- Directional scratches and wear
+- Realistic metallic response
+
+# File Size: ~512KB (compressed)
+# Memory Usage: ~4MB (uncompressed) 

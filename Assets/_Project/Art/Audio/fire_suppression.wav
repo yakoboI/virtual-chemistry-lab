@@ -1,0 +1,32 @@
+# Audio: Fire Suppression Sound
+# Format: WAV (placeholder)
+# Description: Fire suppression system activation sound
+# Duration: 2.5 seconds
+# Usage: Fire suppression and emergency response
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: Safety Sounds
+- Subcategory: Fire Suppression
+- Format: WAV
+- Sample Rate: 44.1 kHz
+- Bit Depth: 16-bit
+- Channels: Stereo
+- Compression: PCM
+
+# Sound Characteristics:
+- Frequency Range: 200 Hz - 3 kHz
+- Peak Frequency: 1.5 kHz
+- Decay Time: 1.5s
+- Attack Time: 0.2s
+- Sustain Level: -8 dB
+- Release Time: 0.8s
+
+# Usage Context:
+- Fire suppression
+- Emergency response
+- Safety systems
+- Hazard control
+
+# File Size: ~220KB
+# Memory Usage: ~220KB 

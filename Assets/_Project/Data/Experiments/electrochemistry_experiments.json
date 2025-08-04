@@ -1,0 +1,219 @@
+{
+  "electrochemistryExperiments": [
+    {
+      "id": "galvanic_cell",
+      "title": "Galvanic Cell Construction and Measurement",
+      "description": "Construct a galvanic cell using zinc and copper electrodes and measure cell potential",
+      "category": "Electrochemistry",
+      "difficulty": "Advanced",
+      "estimatedDuration": 90,
+      "learningObjectives": [
+        "Understand redox reactions",
+        "Learn about electrode potentials",
+        "Measure cell voltage",
+        "Calculate standard cell potential"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "zinc_sulfate",
+          "name": "Zinc Sulfate",
+          "formula": "ZnSO₄",
+          "concentration": 1.0,
+          "unit": "M"
+        },
+        {
+          "id": "copper_sulfate",
+          "name": "Copper Sulfate",
+          "formula": "CuSO₄",
+          "concentration": 1.0,
+          "unit": "M"
+        },
+        {
+          "id": "sodium_chloride",
+          "name": "Sodium Chloride",
+          "formula": "NaCl",
+          "concentration": 1.0,
+          "unit": "M"
+        },
+        {
+          "id": "zinc_metal",
+          "name": "Zinc Metal",
+          "formula": "Zn",
+          "purity": 0.99
+        },
+        {
+          "id": "copper_metal",
+          "name": "Copper Metal",
+          "formula": "Cu",
+          "purity": 0.99
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "voltmeter",
+          "name": "Digital Voltmeter",
+          "precision": 0.001,
+          "unit": "V"
+        },
+        {
+          "id": "salt_bridge",
+          "name": "Salt Bridge",
+          "type": "agar-salt bridge"
+        },
+        {
+          "id": "beakers",
+          "name": "Beakers",
+          "capacities": [100, 100],
+          "unit": "mL"
+        },
+        {
+          "id": "electrodes",
+          "name": "Metal Electrodes",
+          "materials": ["zinc", "copper"]
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Prepare Solutions",
+            "description": "Prepare 1M solutions of zinc sulfate and copper sulfate",
+            "instructions": "Dissolve appropriate amounts of ZnSO₄ and CuSO₄ in separate beakers with 100mL distilled water.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "solution_preparation",
+              "parameters": {
+                "concentrations": [1.0, 1.0],
+                "volumes": [100, 100]
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Setup Galvanic Cell",
+            "description": "Construct the galvanic cell with salt bridge",
+            "instructions": "Place Zn electrode in ZnSO₄ solution and Cu electrode in CuSO₄ solution. Connect with salt bridge.",
+            "expectedDuration": 20,
+            "validation": {
+              "type": "cell_assembly",
+              "parameters": {
+                "electrodes": ["zinc", "copper"],
+                "solutions": ["zinc_sulfate", "copper_sulfate"]
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Measure Cell Potential",
+            "description": "Measure the voltage of the galvanic cell",
+            "instructions": "Connect voltmeter to electrodes and record cell potential. Measure over time.",
+            "expectedDuration": 30,
+            "validation": {
+              "type": "voltage_measurement",
+              "parameters": {
+                "expected_range": [1.0, 1.2],
+                "tolerance": 0.1
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Observe Reactions",
+            "description": "Observe changes at electrodes and in solutions",
+            "instructions": "Monitor color changes, gas evolution, and electrode appearance over time.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "reaction_observation",
+              "parameters": {
+                "expected_changes": ["zinc_dissolution", "copper_deposition"]
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Calculate Standard Potential",
+            "description": "Calculate theoretical cell potential and compare with measured value",
+            "instructions": "Use standard reduction potentials to calculate E°cell and compare with measured value.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "potential_calculation",
+              "parameters": {
+                "theoretical_value": 1.10,
+                "accuracy": 0.95
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "cellPotential": 1.10,
+        "unit": "V",
+        "zincOxidation": "Zn → Zn²⁺ + 2e⁻",
+        "copperReduction": "Cu²⁺ + 2e⁻ → Cu",
+        "overallReaction": "Zn + Cu²⁺ → Zn²⁺ + Cu",
+        "colorChanges": {
+          "zinc_solution": "clear to colorless",
+          "copper_solution": "blue to lighter blue"
+        }
+      },
+      "calculations": [
+        {
+          "type": "standard_cell_potential",
+          "formula": "E°cell = E°cathode - E°anode",
+          "description": "Calculate standard cell potential using reduction potentials"
+        },
+        {
+          "type": "nernst_equation",
+          "formula": "E = E° - (RT/nF)lnQ",
+          "description": "Calculate cell potential under non-standard conditions"
+        },
+        {
+          "type": "gibbs_free_energy",
+          "formula": "ΔG = -nFE",
+          "description": "Calculate Gibbs free energy change for the cell reaction"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Cell Assembly", "maxScore": 10},
+              {"name": "Measurement Accuracy", "maxScore": 10},
+              {"name": "Observation Skills", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Analysis",
+            "weight": 0.35,
+            "subcriteria": [
+              {"name": "Voltage Measurement", "maxScore": 15},
+              {"name": "Calculations", "maxScore": 10},
+              {"name": "Data Interpretation", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Redox Concepts", "maxScore": 10},
+              {"name": "Electrochemical Principles", "maxScore": 10},
+              {"name": "Cell Theory", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.15,
+            "subcriteria": [
+              {"name": "Chemical Handling", "maxScore": 10},
+              {"name": "Electrical Safety", "maxScore": 5}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    }
+  ]
+} 

@@ -1,0 +1,229 @@
+{
+  "safetyProtocols": {
+    "general": {
+      "ppe": {
+        "required": [
+          "Safety goggles",
+          "Lab coat",
+          "Closed-toe shoes",
+          "Gloves (when handling chemicals)"
+        ],
+        "optional": [
+          "Face shield",
+          "Respirator",
+          "Apron"
+        ]
+      },
+      "behavior": [
+        "No eating or drinking in lab",
+        "No running or horseplay",
+        "Keep work area clean",
+        "Report accidents immediately"
+      ],
+      "emergency": {
+        "contacts": {
+          "emergency": "911",
+          "lab_supervisor": "555-0123",
+          "safety_officer": "555-0124"
+        },
+        "procedures": [
+          "Evacuate if alarm sounds",
+          "Know location of emergency equipment",
+          "Follow evacuation routes",
+          "Assemble at designated meeting point"
+        ]
+      }
+    },
+    "chemicalSafety": {
+      "handling": [
+        "Read MSDS before use",
+        "Use fume hood for volatile chemicals",
+        "Never taste or smell chemicals",
+        "Use smallest amount necessary"
+      ],
+      "storage": [
+        "Store in appropriate containers",
+        "Keep incompatible chemicals separate",
+        "Label all containers clearly",
+        "Store in designated areas"
+      ],
+      "disposal": [
+        "Follow waste disposal procedures",
+        "Never pour down drain without permission",
+        "Use designated waste containers",
+        "Label waste containers properly"
+      ],
+      "spills": {
+        "small": [
+          "Wear appropriate PPE",
+          "Contain spill with absorbent material",
+          "Clean up thoroughly",
+          "Dispose of waste properly"
+        ],
+        "large": [
+          "Evacuate area immediately",
+          "Call emergency services",
+          "Do not attempt cleanup",
+          "Follow emergency procedures"
+        ]
+      }
+    },
+    "fireSafety": {
+      "prevention": [
+        "Keep flammable materials away from heat",
+        "Use fume hood for flammable solvents",
+        "Never leave heating equipment unattended",
+        "Know location of fire extinguishers"
+      ],
+      "response": {
+        "small_fire": [
+          "Use appropriate fire extinguisher",
+          "Aim at base of fire",
+          "Call for help if needed",
+          "Evacuate if fire spreads"
+        ],
+        "large_fire": [
+          "Evacuate immediately",
+          "Pull fire alarm",
+          "Call emergency services",
+          "Do not attempt to fight fire"
+        ]
+      },
+      "equipment": {
+        "fire_extinguisher": {
+          "type": "ABC",
+          "location": "Near exits",
+          "inspection": "Monthly"
+        },
+        "fire_alarm": {
+          "location": "Near exits",
+          "testing": "Monthly"
+        },
+        "sprinkler_system": {
+          "coverage": "Entire lab",
+          "inspection": "Quarterly"
+        }
+      }
+    },
+    "electricalSafety": {
+      "equipment": [
+        "Inspect cords regularly",
+        "Do not overload circuits",
+        "Keep electrical equipment away from water",
+        "Unplug equipment when not in use"
+      ],
+      "emergency": [
+        "Know location of circuit breakers",
+        "Do not touch electrical equipment during emergency",
+        "Call maintenance for electrical issues",
+        "Report damaged equipment immediately"
+      ]
+    },
+    "biologicalSafety": {
+      "handling": [
+        "Use appropriate containment",
+        "Wear appropriate PPE",
+        "Decontaminate work surfaces",
+        "Dispose of biological waste properly"
+      ],
+      "emergency": [
+        "Report exposures immediately",
+        "Seek medical attention if needed",
+        "Document incident thoroughly",
+        "Follow decontamination procedures"
+      ]
+    },
+    "radiationSafety": {
+      "principles": [
+        "Time: Minimize exposure time",
+        "Distance: Maximize distance from source",
+        "Shielding: Use appropriate shielding"
+      ],
+      "monitoring": [
+        "Wear dosimeter if required",
+        "Monitor radiation levels",
+        "Report unusual readings",
+        "Follow ALARA principles"
+      ]
+    }
+  },
+  "emergencyProcedures": {
+    "fire": {
+      "steps": [
+        "Pull fire alarm",
+        "Evacuate building",
+        "Call emergency services",
+        "Assemble at meeting point"
+      ],
+      "equipment": ["Fire extinguisher", "Fire alarm", "Evacuation routes"]
+    },
+    "chemical_spill": {
+      "steps": [
+        "Assess spill size and hazard",
+        "Evacuate if necessary",
+        "Contain spill if safe",
+        "Call for assistance"
+      ],
+      "equipment": ["Spill kit", "PPE", "Absorbent materials"]
+    },
+    "injury": {
+      "steps": [
+        "Assess injury severity",
+        "Provide first aid if trained",
+        "Call emergency services if needed",
+        "Document incident"
+      ],
+      "equipment": ["First aid kit", "Emergency phone", "Eye wash station"]
+    },
+    "power_outage": {
+      "steps": [
+        "Secure experiments safely",
+        "Use emergency lighting",
+        "Follow evacuation procedures if needed",
+        "Wait for power restoration"
+      ],
+      "equipment": ["Emergency lighting", "Backup power", "Flashlights"]
+    }
+  },
+  "training": {
+    "required": [
+      "General lab safety",
+      "Chemical safety",
+      "Fire safety",
+      "Emergency procedures"
+    ],
+    "frequency": {
+      "initial": "Before starting work",
+      "refresher": "Annually",
+      "specialized": "As needed"
+    },
+    "documentation": {
+      "required": [
+        "Training completion certificate",
+        "Safety quiz results",
+        "Equipment-specific training"
+      ],
+      "retention": "3 years"
+    }
+  },
+  "inspections": {
+    "daily": [
+      "Check emergency equipment",
+      "Inspect work areas",
+      "Verify ventilation",
+      "Check chemical storage"
+    ],
+    "weekly": [
+      "Test emergency equipment",
+      "Inspect safety equipment",
+      "Check waste disposal",
+      "Review safety procedures"
+    ],
+    "monthly": [
+      "Comprehensive safety audit",
+      "Equipment maintenance",
+      "Safety training review",
+      "Incident review"
+    ]
+  }
+} 

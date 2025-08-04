@@ -1,0 +1,241 @@
+{
+  "crystallizationExperiments": [
+    {
+      "id": "recrystallization_purification",
+      "title": "Recrystallization and Purification of Benzoic Acid",
+      "description": "Purify benzoic acid using recrystallization technique and determine purity by melting point",
+      "category": "Crystallization",
+      "difficulty": "Intermediate",
+      "estimatedDuration": 90,
+      "learningObjectives": [
+        "Understand recrystallization principles",
+        "Learn solvent selection",
+        "Practice purification techniques",
+        "Determine compound purity"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "impure_benzoic_acid",
+          "name": "Impure Benzoic Acid",
+          "formula": "C₇H₆O₂",
+          "mass": 2.0,
+          "unit": "g",
+          "purity": 0.85
+        },
+        {
+          "id": "hot_water",
+          "name": "Hot Water",
+          "formula": "H₂O",
+          "temperature": 80.0,
+          "unit": "°C",
+          "volume": 50.0,
+          "unit_volume": "mL"
+        },
+        {
+          "id": "ice_water",
+          "name": "Ice Water",
+          "formula": "H₂O",
+          "temperature": 0.0,
+          "unit": "°C",
+          "volume": 100.0,
+          "unit_volume": "mL"
+        },
+        {
+          "id": "activated_charcoal",
+          "name": "Activated Charcoal",
+          "mass": 0.1,
+          "unit": "g"
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "erlenmeyer_flask",
+          "name": "Erlenmeyer Flask",
+          "capacity": 125.0,
+          "unit": "mL"
+        },
+        {
+          "id": "bunsen_burner",
+          "name": "Bunsen Burner",
+          "max_temp": 1000.0,
+          "unit": "°C"
+        },
+        {
+          "id": "filter_paper",
+          "name": "Filter Paper",
+          "type": "Whatman No. 1",
+          "diameter": 11.0,
+          "unit": "cm"
+        },
+        {
+          "id": "melting_point_apparatus",
+          "name": "Melting Point Apparatus",
+          "precision": 0.1,
+          "unit": "°C"
+        },
+        {
+          "id": "watch_glass",
+          "name": "Watch Glass",
+          "diameter": 10.0,
+          "unit": "cm"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Dissolve Impure Sample",
+            "description": "Dissolve impure benzoic acid in hot water",
+            "instructions": "Add 2.0g impure benzoic acid to 50mL hot water. Heat to near boiling with stirring.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "dissolution",
+              "parameters": {
+                "temperature": 80.0,
+                "complete_dissolution": true
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Add Decolorizing Agent",
+            "description": "Add activated charcoal to remove colored impurities",
+            "instructions": "Add small amount of activated charcoal. Heat for 2-3 minutes, then filter hot solution.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "decolorization",
+              "parameters": {
+                "charcoal_amount": 0.1,
+                "heating_time": 180
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Hot Filtration",
+            "description": "Filter hot solution to remove charcoal and insoluble impurities",
+            "instructions": "Filter hot solution through pre-warmed filter paper. Collect filtrate in clean flask.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "filtration",
+              "parameters": {
+                "filtration_method": "gravity",
+                "temperature_maintained": true
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Crystallization",
+            "description": "Allow solution to cool slowly for crystal formation",
+            "instructions": "Cover flask and allow to cool slowly to room temperature, then in ice bath.",
+            "expectedDuration": 30,
+            "validation": {
+              "type": "crystallization",
+              "parameters": {
+                "cooling_rate": "slow",
+                "crystal_formation": true
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Collect and Dry Crystals",
+            "description": "Filter crystals and determine yield and purity",
+            "instructions": "Filter crystals, wash with cold water, and dry on watch glass. Weigh and determine melting point.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "crystal_collection",
+              "parameters": {
+                "washing_solvent": "cold_water",
+                "drying_method": "air_dry"
+              }
+            }
+          },
+          {
+            "stepNumber": 6,
+            "title": "Determine Purity",
+            "description": "Measure melting point to assess purity",
+            "instructions": "Determine melting point of purified crystals. Compare with literature value.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "melting_point",
+              "parameters": {
+                "expected_range": [121, 123],
+                "unit": "°C",
+                "tolerance": 2.0
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "yield": 1.6,
+        "unit": "g",
+        "percentYield": 80.0,
+        "meltingPoint": 122.0,
+        "unit_temp": "°C",
+        "purity": 0.98,
+        "color": "white"
+      },
+      "calculations": [
+        {
+          "type": "percent_yield",
+          "formula": "Percent Yield = (Actual Yield / Theoretical Yield) × 100",
+          "description": "Calculate percentage yield of purified product"
+        },
+        {
+          "type": "purity_assessment",
+          "formula": "Purity = (Experimental MP / Literature MP) × 100",
+          "description": "Assess purity based on melting point"
+        },
+        {
+          "type": "solubility_calculation",
+          "formula": "Solubility = (Mass Dissolved / Volume Solvent) × 100",
+          "description": "Calculate solubility in chosen solvent"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Dissolution", "maxScore": 10},
+              {"name": "Filtration", "maxScore": 10},
+              {"name": "Crystallization", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Results",
+            "weight": 0.30,
+            "subcriteria": [
+              {"name": "Yield", "maxScore": 15},
+              {"name": "Purity", "maxScore": 10},
+              {"name": "Appearance", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Recrystallization Principles", "maxScore": 10},
+              {"name": "Solvent Selection", "maxScore": 10},
+              {"name": "Purification Theory", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.20,
+            "subcriteria": [
+              {"name": "Hot Equipment", "maxScore": 10},
+              {"name": "Chemical Handling", "maxScore": 10}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    }
+  ]
+} 

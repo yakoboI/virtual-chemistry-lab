@@ -1,0 +1,43 @@
+# Texture: Plastic Surface
+# Format: PNG (placeholder)
+# Description: Semi-glossy plastic texture with subtle surface detail
+# Resolution: 1024x1024 pixels
+# Usage: Plastic laboratory equipment and containers
+
+# Texture Properties:
+- Type: Albedo/Normal
+- Category: Materials
+- Subcategory: Plastic
+- Format: PNG
+- Compression: DXT1
+- Mipmaps: Yes
+- Filter Mode: Bilinear
+- Wrap Mode: Repeat
+- Anisotropic Level: 16
+
+# Color Information:
+- Base Color: Off-white (0.9, 0.9, 0.9, 1.0)
+- Metallic: 0.1
+- Roughness: 0.4
+- Reflection: 40%
+- Specular: 0.3
+
+# Surface Properties:
+- Roughness: 0.4 (semi-glossy)
+- Metallic: 0.1
+- Normal Strength: 0.3
+- Height: 0.02
+- Occlusion: 0.8
+
+# UV Mapping:
+- Tiling: 1x1
+- Offset: 0,0
+- Rotation: 0°
+
+# Generation Method:
+- Procedural plastic surface
+- Subtle mold lines
+- Semi-reflective finish
+
+# File Size: ~256KB (compressed)
+# Memory Usage: ~4MB (uncompressed) 

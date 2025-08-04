@@ -1,0 +1,377 @@
+{
+  "spectroscopyExperiments": [
+    {
+      "id": "uv_vis_analysis",
+      "title": "UV-Visible Spectroscopy Analysis",
+      "description": "Analyze the absorption spectra of various compounds and determine concentration using Beer's Law",
+      "category": "Spectroscopy",
+      "difficulty": "Intermediate",
+      "estimatedDuration": 75,
+      "learningObjectives": [
+        "Understand Beer-Lambert Law",
+        "Learn spectrophotometer operation",
+        "Practice calibration curve preparation",
+        "Analyze absorption spectra"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "potassium_permanganate",
+          "name": "Potassium Permanganate",
+          "formula": "KMnO₄",
+          "concentration": 0.001,
+          "unit": "M"
+        },
+        {
+          "id": "cobalt_chloride",
+          "name": "Cobalt Chloride",
+          "formula": "CoCl₂",
+          "concentration": 0.1,
+          "unit": "M"
+        },
+        {
+          "id": "copper_sulfate",
+          "name": "Copper Sulfate",
+          "formula": "CuSO₄",
+          "concentration": 0.1,
+          "unit": "M"
+        },
+        {
+          "id": "distilled_water",
+          "name": "Distilled Water",
+          "formula": "H₂O",
+          "purity": 0.999
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "spectrophotometer",
+          "name": "UV-Vis Spectrophotometer",
+          "wavelengthRange": [200, 800],
+          "unit": "nm",
+          "accuracy": 0.1
+        },
+        {
+          "id": "cuvettes",
+          "name": "Quartz Cuvettes",
+          "pathLength": 1.0,
+          "unit": "cm",
+          "material": "quartz"
+        },
+        {
+          "id": "volumetric_flasks",
+          "name": "Volumetric Flasks",
+          "capacities": [10, 25, 50, 100],
+          "unit": "mL"
+        },
+        {
+          "id": "pipettes",
+          "name": "Graduated Pipettes",
+          "capacities": [1, 2, 5, 10],
+          "unit": "mL"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Prepare Standard Solutions",
+            "description": "Create a series of standard solutions for calibration",
+            "instructions": "Prepare 0.0001M, 0.0002M, 0.0005M, 0.001M, 0.002M KMnO₄ solutions using volumetric flasks.",
+            "expectedDuration": 20,
+            "validation": {
+              "type": "standard_solutions",
+              "parameters": {
+                "concentrations": [0.0001, 0.0002, 0.0005, 0.001, 0.002],
+                "tolerance": 0.0001
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Calibrate Spectrophotometer",
+            "description": "Set up spectrophotometer and calibrate with blank",
+            "instructions": "Turn on spectrophotometer, set wavelength to 525nm, calibrate with distilled water blank.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "calibration",
+              "parameters": {
+                "wavelength": 525.0,
+                "blank": "distilled_water"
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Measure Absorbance",
+            "description": "Measure absorbance of standard solutions",
+            "instructions": "Measure absorbance of each standard solution at 525nm. Record data.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "absorbance_measurement",
+              "parameters": {
+                "wavelength": 525.0,
+                "solutions": 5
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Create Calibration Curve",
+            "description": "Plot absorbance vs concentration",
+            "instructions": "Plot absorbance (y-axis) vs concentration (x-axis). Determine slope and R² value.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "calibration_curve",
+              "parameters": {
+                "min_r_squared": 0.99,
+                "data_points": 5
+              }
+            }
+          },
+          {
+            "stepNumber": 5,
+            "title": "Analyze Unknown Sample",
+            "description": "Determine concentration of unknown KMnO₄ solution",
+            "instructions": "Measure absorbance of unknown solution. Use calibration curve to determine concentration.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "unknown_analysis",
+              "parameters": {
+                "concentration_range": [0.0001, 0.002],
+                "accuracy": 0.95
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "molarAbsorptivity": 2200,
+        "unit": "L/mol·cm",
+        "linearRange": [0.0001, 0.002],
+        "detectionLimit": 0.00005,
+        "precision": 0.02
+      },
+      "calculations": [
+        {
+          "type": "beer_lambert_law",
+          "formula": "A = εbc",
+          "description": "Absorbance = molar absorptivity × path length × concentration"
+        },
+        {
+          "type": "calibration_slope",
+          "formula": "slope = εb",
+          "description": "Slope of calibration curve equals molar absorptivity times path length"
+        },
+        {
+          "type": "concentration_calculation",
+          "formula": "c = A / (εb)",
+          "description": "Calculate concentration from absorbance using Beer's Law"
+        }
+      ],
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Solution Preparation", "maxScore": 10},
+              {"name": "Instrument Operation", "maxScore": 10},
+              {"name": "Data Collection", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Analysis",
+            "weight": 0.35,
+            "subcriteria": [
+              {"name": "Calibration Curve", "maxScore": 15},
+              {"name": "Concentration Calculation", "maxScore": 10},
+              {"name": "Accuracy", "maxScore": 10}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.25,
+            "subcriteria": [
+              {"name": "Beer's Law", "maxScore": 10},
+              {"name": "Spectroscopy Principles", "maxScore": 10},
+              {"name": "Error Analysis", "maxScore": 5}
+            ]
+          },
+          {
+            "name": "Safety",
+            "weight": 0.15,
+            "subcriteria": [
+              {"name": "Chemical Handling", "maxScore": 10},
+              {"name": "Equipment Safety", "maxScore": 5}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    },
+    {
+      "id": "ir_spectroscopy",
+      "title": "Infrared Spectroscopy Analysis",
+      "description": "Analyze functional groups in organic compounds using IR spectroscopy",
+      "category": "Spectroscopy",
+      "difficulty": "Advanced",
+      "estimatedDuration": 60,
+      "learningObjectives": [
+        "Understand IR spectroscopy principles",
+        "Identify functional groups",
+        "Interpret IR spectra",
+        "Prepare samples for IR analysis"
+      ],
+      "requiredChemicals": [
+        {
+          "id": "ethanol",
+          "name": "Ethanol",
+          "formula": "C₂H₅OH",
+          "purity": 0.99
+        },
+        {
+          "id": "acetone",
+          "name": "Acetone",
+          "formula": "C₃H₆O",
+          "purity": 0.99
+        },
+        {
+          "id": "benzoic_acid",
+          "name": "Benzoic Acid",
+          "formula": "C₇H₆O₂",
+          "purity": 0.99
+        },
+        {
+          "id": "potassium_bromide",
+          "name": "Potassium Bromide",
+          "formula": "KBr",
+          "purity": 0.99
+        }
+      ],
+      "requiredApparatus": [
+        {
+          "id": "ir_spectrometer",
+          "name": "IR Spectrometer",
+          "wavelengthRange": [4000, 400],
+          "unit": "cm⁻¹",
+          "resolution": 4
+        },
+        {
+          "id": "kbr_pellet_press",
+          "name": "KBr Pellet Press",
+          "pressure": 10000,
+          "unit": "psi"
+        },
+        {
+          "id": "mortar_pestle",
+          "name": "Mortar and Pestle",
+          "material": "agate"
+        }
+      ],
+      "procedure": {
+        "steps": [
+          {
+            "stepNumber": 1,
+            "title": "Prepare KBr Pellets",
+            "description": "Prepare sample pellets for IR analysis",
+            "instructions": "Grind 1mg sample with 100mg KBr. Press into pellet using pellet press.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "pellet_preparation",
+              "parameters": {
+                "sample_ratio": 0.01,
+                "pressure": 10000
+              }
+            }
+          },
+          {
+            "stepNumber": 2,
+            "title": "Calibrate IR Spectrometer",
+            "description": "Set up and calibrate IR spectrometer",
+            "instructions": "Turn on spectrometer, allow warm-up, calibrate with polystyrene standard.",
+            "expectedDuration": 10,
+            "validation": {
+              "type": "ir_calibration",
+              "parameters": {
+                "warm_up_time": 15,
+                "calibration_standard": "polystyrene"
+              }
+            }
+          },
+          {
+            "stepNumber": 3,
+            "title": "Record IR Spectra",
+            "description": "Record IR spectra of samples",
+            "instructions": "Place KBr pellet in sample holder. Record spectrum from 4000-400 cm⁻¹.",
+            "expectedDuration": 20,
+            "validation": {
+              "type": "spectrum_recording",
+              "parameters": {
+                "wavelength_range": [4000, 400],
+                "resolution": 4
+              }
+            }
+          },
+          {
+            "stepNumber": 4,
+            "title": "Analyze Functional Groups",
+            "description": "Identify functional groups from IR spectra",
+            "instructions": "Analyze peaks and identify functional groups. Compare with reference spectra.",
+            "expectedDuration": 15,
+            "validation": {
+              "type": "functional_group_analysis",
+              "parameters": {
+                "min_peaks_identified": 3,
+                "accuracy": 0.90
+              }
+            }
+          }
+        ]
+      },
+      "expectedResults": {
+        "functionalGroups": {
+          "ethanol": ["O-H", "C-H", "C-O"],
+          "acetone": ["C=O", "C-H"],
+          "benzoic_acid": ["O-H", "C=O", "C-H", "C-C"]
+        },
+        "characteristicPeaks": {
+          "O-H": [3200, 3600],
+          "C=O": [1650, 1750],
+          "C-H": [2850, 3000],
+          "C-O": [1000, 1300]
+        }
+      },
+      "assessment": {
+        "criteria": [
+          {
+            "name": "Technique",
+            "weight": 0.30,
+            "subcriteria": [
+              {"name": "Sample Preparation", "maxScore": 15},
+              {"name": "Instrument Operation", "maxScore": 15}
+            ]
+          },
+          {
+            "name": "Analysis",
+            "weight": 0.40,
+            "subcriteria": [
+              {"name": "Peak Identification", "maxScore": 20},
+              {"name": "Functional Group Analysis", "maxScore": 20}
+            ]
+          },
+          {
+            "name": "Understanding",
+            "weight": 0.30,
+            "subcriteria": [
+              {"name": "IR Principles", "maxScore": 15},
+              {"name": "Spectrum Interpretation", "maxScore": 15}
+            ]
+          }
+        ],
+        "maxScore": 100,
+        "passingScore": 75
+      }
+    }
+  ]
+} 

@@ -1,0 +1,41 @@
+{
+  "id": "hcl",
+  "name": "Hydrochloric Acid",
+  "formula": "HCl",
+  "type": "Acid",
+  "state": "Liquid",
+  "physicalProperties": {
+    "molarMass": 36.46,
+    "density": 1.18,
+    "color": "#FFFFCC",
+    "meltingPoint": -114.2,
+    "boilingPoint": -85.1,
+    "solubility": 720.0
+  },
+  "chemicalProperties": {
+    "concentration": 0.1,
+    "pH": 1.0,
+    "isAcid": true,
+    "isBase": false,
+    "isOxidizing": false,
+    "isReducing": false
+  },
+  "safety": {
+    "hazards": ["Corrosive", "Toxic"],
+    "safetyNotes": "Highly corrosive. Wear protective equipment. Use in fume hood.",
+    "requiresVentilation": true,
+    "requiresGloves": true
+  },
+  "behavior": {
+    "canReact": true,
+    "canMix": true,
+    "canEvaporate": true,
+    "evaporationRate": 0.5
+  },
+  "visualSettings": {
+    "materialColor": "#FFFFCC",
+    "particleEffect": "acid_vapor",
+    "pourSound": "liquid_pour",
+    "reactionSound": "fizz"
+  }
+} 

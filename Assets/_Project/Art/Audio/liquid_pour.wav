@@ -1,0 +1,32 @@
+# Audio: Liquid Pouring Sound
+# Format: WAV (placeholder)
+# Description: Continuous liquid pouring and splashing sounds
+# Duration: 2.0 seconds
+# Usage: Liquid transfer and chemical mixing
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: Laboratory Sounds
+- Subcategory: Liquids
+- Format: WAV
+- Sample Rate: 44.1 kHz
+- Bit Depth: 16-bit
+- Channels: Stereo
+- Compression: PCM
+
+# Sound Characteristics:
+- Frequency Range: 500 Hz - 3 kHz
+- Peak Frequency: 1.5 kHz
+- Decay Time: 1.5s
+- Attack Time: 0.1s
+- Sustain Level: -15 dB
+- Release Time: 0.5s
+
+# Usage Context:
+- Liquid transfer
+- Chemical mixing
+- Solution preparation
+- Titration procedures
+
+# File Size: ~176KB
+# Memory Usage: ~176KB 

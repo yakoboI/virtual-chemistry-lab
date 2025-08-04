@@ -1,0 +1,43 @@
+# 3D Model: Erlenmeyer Flask
+# Format: FBX (placeholder)
+# Description: Conical flask for chemical reactions and titrations
+# Dimensions: 500ml capacity, 20cm height, 12cm base diameter
+# Material: Glass with measurement markings
+# Usage: Chemical reactions, titrations, and heating
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Glassware
+- Subcategory: Flasks
+- Capacity: 500ml
+- Material: Borosilicate Glass
+- Temperature Range: -40°C to +400°C
+- Graduation Marks: 50ml intervals
+- Spout: No
+- Handle: No
+- Stopper: Optional (ground glass)
+
+# Geometry Data (simplified):
+- Vertices: 768
+- Faces: 1536
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- None (static object)
+
+# Collision:
+- Type: Cone
+- Base Radius: 6cm
+- Height: 20cm
+
+# LOD Levels:
+- LOD0: High detail (768 vertices)
+- LOD1: Medium detail (384 vertices)
+- LOD2: Low detail (192 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

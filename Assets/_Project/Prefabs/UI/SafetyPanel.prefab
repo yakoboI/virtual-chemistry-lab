@@ -1,0 +1,44 @@
+# Safety Panel Prefab
+# Unity Prefab File
+# Description: UI panel for safety information and warnings
+# Components: Canvas, Panel, Warning elements, Safety controls
+
+# Main GameObject: SafetyPanel
+# - Canvas component
+# - CanvasScaler component
+# - GraphicRaycaster component
+# - SafetyPanelController script
+
+# Child Objects:
+# - Background (Image with warning colors)
+# - WarningIcon (Image)
+# - WarningText (Text)
+# - SafetyInstructions (Text)
+# - EmergencyButton (Button)
+# - AcknowledgeButton (Button)
+# - SafetyStatus (Text)
+
+# Script References:
+# - SafetyPanelController
+# - SafetyManager
+# - UIManager
+# - EmergencySystem
+
+# Event Handlers:
+# - OnEmergencyButtonClick
+# - OnAcknowledgeButtonClick
+# - OnSafetyViolation
+# - OnEmergencyActivated
+
+# Visual Elements:
+# - Warning colors (red, yellow, orange)
+# - Flashing effects for emergencies
+# - Safety icons and symbols
+# - Status indicators
+
+# Safety Features:
+# - Emergency shutdown
+# - Safety violation alerts
+# - PPE reminders
+# - Chemical spill warnings
+# - Fire alarm integration 

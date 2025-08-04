@@ -1,0 +1,329 @@
+{
+  "id": "3.1.2_double_indicator",
+  "title": "Volumetric Analysis with Double Indicator",
+  "description": "Determine the concentration of sodium carbonate solution using hydrochloric acid with phenolphthalein and methyl orange indicators",
+  "category": "Volumetric Analysis",
+  "difficulty": "Intermediate",
+  "estimatedDuration": 45,
+  "requiredChemicals": [
+    {
+      "id": "na2co3",
+      "name": "Sodium Carbonate",
+      "volume": 25.0,
+      "concentration": 0.1
+    },
+    {
+      "id": "hcl",
+      "name": "Hydrochloric Acid",
+      "volume": 50.0,
+      "concentration": 0.1
+    },
+    {
+      "id": "phenolphthalein",
+      "name": "Phenolphthalein Indicator",
+      "volume": 5.0,
+      "concentration": 0.01
+    },
+    {
+      "id": "methyl_orange",
+      "name": "Methyl Orange Indicator",
+      "volume": 5.0,
+      "concentration": 0.01
+    }
+  ],
+  "requiredApparatus": [
+    {
+      "id": "burette",
+      "name": "Burette",
+      "capacity": 50.0,
+      "precision": 0.05
+    },
+    {
+      "id": "pipette",
+      "name": "Pipette",
+      "capacity": 25.0,
+      "precision": 0.05
+    },
+    {
+      "id": "conical_flask",
+      "name": "Conical Flask",
+      "capacity": 250.0
+    },
+    {
+      "id": "white_tile",
+      "name": "White Tile",
+      "purpose": "Background for color observation"
+    }
+  ],
+  "procedure": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Prepare the Burette",
+        "description": "Rinse the burette with hydrochloric acid solution and fill it to the zero mark",
+        "instructions": "Clean the burette with distilled water, then rinse with HCl solution. Fill to 0.00 mL mark",
+        "expectedDuration": 5,
+        "safetyNotes": "Wear gloves when handling HCl",
+        "validation": {
+          "type": "burette_filled",
+          "parameters": {
+            "chemical": "hcl",
+            "volume": 50.0
+          }
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": "Prepare the Sample",
+        "description": "Pipette 25.0 mL of sodium carbonate solution into a conical flask",
+        "instructions": "Use the pipette to transfer exactly 25.0 mL of Na₂CO₃ solution to the flask",
+        "expectedDuration": 3,
+        "validation": {
+          "type": "pipette_used",
+          "parameters": {
+            "chemical": "na2co3",
+            "volume": 25.0,
+            "tolerance": 0.1
+          }
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": "Add First Indicator",
+        "description": "Add 2-3 drops of phenolphthalein indicator to the solution",
+        "instructions": "Add phenolphthalein drops until the solution turns pink",
+        "expectedDuration": 2,
+        "validation": {
+          "type": "indicator_added",
+          "parameters": {
+            "indicator": "phenolphthalein",
+            "drops": 3
+          }
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": "First Titration",
+        "description": "Titrate with HCl until the pink color disappears",
+        "instructions": "Slowly add HCl from the burette while swirling the flask. Stop when pink color disappears",
+        "expectedDuration": 10,
+        "validation": {
+          "type": "color_change",
+          "parameters": {
+            "fromColor": "pink",
+            "toColor": "colorless",
+            "indicator": "phenolphthalein"
+          }
+        }
+      },
+      {
+        "stepNumber": 5,
+        "title": "Record First Endpoint",
+        "description": "Record the burette reading at the first endpoint",
+        "instructions": "Note the volume of HCl used to reach the first endpoint",
+        "expectedDuration": 1,
+        "validation": {
+          "type": "volume_recorded",
+          "parameters": {
+            "expectedRange": [12.0, 13.0],
+            "tolerance": 0.5
+          }
+        }
+      },
+      {
+        "stepNumber": 6,
+        "title": "Add Second Indicator",
+        "description": "Add 2-3 drops of methyl orange indicator to the same solution",
+        "instructions": "Add methyl orange drops to the solution in the flask",
+        "expectedDuration": 2,
+        "validation": {
+          "type": "indicator_added",
+          "parameters": {
+            "indicator": "methyl_orange",
+            "drops": 3
+          }
+        }
+      },
+      {
+        "stepNumber": 7,
+        "title": "Second Titration",
+        "description": "Continue titrating with HCl until the solution turns orange",
+        "instructions": "Continue adding HCl until the solution changes from yellow to orange",
+        "expectedDuration": 10,
+        "validation": {
+          "type": "color_change",
+          "parameters": {
+            "fromColor": "yellow",
+            "toColor": "orange",
+            "indicator": "methyl_orange"
+          }
+        }
+      },
+      {
+        "stepNumber": 8,
+        "title": "Record Second Endpoint",
+        "description": "Record the total burette reading at the second endpoint",
+        "instructions": "Note the total volume of HCl used for both endpoints",
+        "expectedDuration": 1,
+        "validation": {
+          "type": "volume_recorded",
+          "parameters": {
+            "expectedRange": [24.0, 26.0],
+            "tolerance": 0.5
+          }
+        }
+      }
+    ]
+  },
+  "assessment": {
+    "criteria": [
+      {
+        "criterion": "Accuracy",
+        "description": "How close the measured titre value is to the expected value",
+        "weight": 40,
+        "scoring": {
+          "excellent": {
+            "range": [24.5, 25.5],
+            "score": 40
+          },
+          "good": {
+            "range": [24.0, 26.0],
+            "score": 30
+          },
+          "satisfactory": {
+            "range": [23.0, 27.0],
+            "score": 20
+          },
+          "poor": {
+            "range": [0, 50],
+            "score": 10
+          }
+        }
+      },
+      {
+        "criterion": "Technique",
+        "description": "Proper use of apparatus and following procedure",
+        "weight": 30,
+        "scoring": {
+          "excellent": {
+            "description": "Perfect technique with no errors",
+            "score": 30
+          },
+          "good": {
+            "description": "Minor errors but generally correct",
+            "score": 25
+          },
+          "satisfactory": {
+            "description": "Some errors but procedure followed",
+            "score": 20
+          },
+          "poor": {
+            "description": "Major errors or unsafe practices",
+            "score": 10
+          }
+        }
+      },
+      {
+        "criterion": "Safety",
+        "description": "Adherence to safety protocols",
+        "weight": 20,
+        "scoring": {
+          "excellent": {
+            "description": "No safety violations",
+            "score": 20
+          },
+          "good": {
+            "description": "Minor safety issues",
+            "score": 15
+          },
+          "satisfactory": {
+            "description": "Some safety concerns",
+            "score": 10
+          },
+          "poor": {
+            "description": "Major safety violations",
+            "score": 0
+          }
+        }
+      },
+      {
+        "criterion": "Time Management",
+        "description": "Completing the experiment within reasonable time",
+        "weight": 10,
+        "scoring": {
+          "excellent": {
+            "range": [0, 35],
+            "score": 10
+          },
+          "good": {
+            "range": [35, 50],
+            "score": 8
+          },
+          "satisfactory": {
+            "range": [50, 70],
+            "score": 5
+          },
+          "poor": {
+            "range": [70, 999],
+            "score": 0
+          }
+        }
+      }
+    ],
+    "expectedResults": {
+      "firstEndpoint": {
+        "volume": 12.5,
+        "tolerance": 0.5,
+        "description": "Volume of HCl for first endpoint (phenolphthalein)"
+      },
+      "secondEndpoint": {
+        "volume": 25.0,
+        "tolerance": 0.5,
+        "description": "Total volume of HCl for second endpoint (methyl orange)"
+      },
+      "concentration": {
+        "value": 0.1,
+        "tolerance": 0.01,
+        "description": "Calculated concentration of Na₂CO₃ solution"
+      }
+    },
+    "calculations": [
+      {
+        "name": "First Endpoint Calculation",
+        "formula": "V1 = Volume of HCl for first endpoint",
+        "description": "This represents the volume needed to convert Na₂CO₃ to NaHCO₃"
+      },
+      {
+        "name": "Second Endpoint Calculation",
+        "formula": "V2 = Total volume of HCl for second endpoint",
+        "description": "This represents the volume needed to convert Na₂CO₃ to H₂CO₃"
+      },
+      {
+        "name": "Concentration Calculation",
+        "formula": "C(Na₂CO₃) = (C(HCl) × V2) / (2 × V(Na₂CO₃))",
+        "description": "Calculate the concentration of sodium carbonate solution"
+      }
+    ]
+  },
+  "learningObjectives": [
+    "Understand the concept of double indicator titration",
+    "Learn to use burette and pipette accurately",
+    "Understand the chemistry of carbonate titration",
+    "Practice proper laboratory safety procedures",
+    "Develop skills in endpoint detection"
+  ],
+  "safetyNotes": [
+    "Wear safety goggles and lab coat",
+    "Handle hydrochloric acid with care",
+    "Use fume hood if available",
+    "Clean up spills immediately",
+    "Wash hands after the experiment"
+  ],
+  "tips": [
+    "Ensure the burette is properly cleaned and rinsed",
+    "Add indicators drop by drop to avoid excess",
+    "Swirl the flask gently during titration",
+    "Take readings at eye level for accuracy",
+    "Record all measurements immediately"
+  ]
+} 

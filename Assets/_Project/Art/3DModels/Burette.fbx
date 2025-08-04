@@ -1,0 +1,43 @@
+# 3D Model: Laboratory Burette
+# Format: FBX (placeholder)
+# Description: Precision glass burette for accurate volume measurement
+# Dimensions: 50ml capacity, 60cm height, 1cm diameter
+# Material: Glass with precision markings
+# Usage: Titrations and precise volume measurements
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Glassware
+- Subcategory: Burettes
+- Capacity: 50ml
+- Material: Borosilicate Glass
+- Temperature Range: -40°C to +400°C
+- Graduation Marks: 0.1ml intervals
+- Spout: Yes (with stopcock)
+- Handle: No
+- Stopcock: Yes (PTFE)
+
+# Geometry Data (simplified):
+- Vertices: 512
+- Faces: 1024
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- Stopcock rotation (0-90 degrees)
+
+# Collision:
+- Type: Cylinder
+- Radius: 0.5cm
+- Height: 60cm
+
+# LOD Levels:
+- LOD0: High detail (512 vertices)
+- LOD1: Medium detail (256 vertices)
+- LOD2: Low detail (128 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

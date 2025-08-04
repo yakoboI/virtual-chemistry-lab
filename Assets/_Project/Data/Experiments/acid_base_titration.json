@@ -1,0 +1,230 @@
+{
+  "id": "acid_base_titration",
+  "title": "Acid-Base Titration: HCl vs NaOH",
+  "description": "Standardization of hydrochloric acid using sodium hydroxide solution",
+  "difficulty": "Intermediate",
+  "duration": "45 minutes",
+  "category": "Volumetric Analysis",
+  "subcategory": "Titration",
+  "learningObjectives": [
+    "Understand the principles of acid-base titration",
+    "Learn proper titration technique",
+    "Calculate concentration from titration data",
+    "Identify titration endpoints using indicators"
+  ],
+  "prerequisites": [
+    "Basic understanding of acids and bases",
+    "Knowledge of pH and indicators",
+    "Familiarity with laboratory safety"
+  ],
+  "chemicalRequirements": [
+    {
+      "id": "hcl",
+      "name": "Hydrochloric Acid",
+      "concentration": "0.1M",
+      "volume": "50ml",
+      "purpose": "Analyte"
+    },
+    {
+      "id": "naoh",
+      "name": "Sodium Hydroxide",
+      "concentration": "0.1M",
+      "volume": "100ml",
+      "purpose": "Titrant"
+    },
+    {
+      "id": "phenolphthalein",
+      "name": "Phenolphthalein",
+      "concentration": "1%",
+      "volume": "5ml",
+      "purpose": "Indicator"
+    }
+  ],
+  "apparatusRequirements": [
+    {
+      "id": "burette",
+      "name": "50ml Burette",
+      "quantity": 1,
+      "purpose": "Titrant delivery"
+    },
+    {
+      "id": "erlenmeyer_flask",
+      "name": "250ml Erlenmeyer Flask",
+      "quantity": 3,
+      "purpose": "Reaction vessel"
+    },
+    {
+      "id": "pipette",
+      "name": "25ml Pipette",
+      "quantity": 1,
+      "purpose": "Analyte transfer"
+    },
+    {
+      "id": "ring_stand",
+      "name": "Ring Stand",
+      "quantity": 1,
+      "purpose": "Burette support"
+    },
+    {
+      "id": "clamp",
+      "name": "Burette Clamp",
+      "quantity": 1,
+      "purpose": "Burette holder"
+    }
+  ],
+  "procedure": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Setup",
+        "description": "Assemble the titration apparatus with the burette filled with NaOH solution",
+        "duration": "5 minutes",
+        "safetyNotes": ["Wear safety goggles", "Handle NaOH carefully"],
+        "validation": {
+          "type": "equipment_check",
+          "parameters": ["burette_filled", "apparatus_assembled"]
+        }
+      },
+      {
+        "stepNumber": 2,
+        "title": "Sample Preparation",
+        "description": "Transfer 25ml of HCl solution to each of three Erlenmeyer flasks",
+        "duration": "10 minutes",
+        "safetyNotes": ["Use pipette correctly", "Avoid spills"],
+        "validation": {
+          "type": "volume_check",
+          "parameters": ["volume_transferred", "accuracy"]
+        }
+      },
+      {
+        "stepNumber": 3,
+        "title": "Indicator Addition",
+        "description": "Add 2-3 drops of phenolphthalein to each flask",
+        "duration": "2 minutes",
+        "safetyNotes": ["Use minimal indicator", "Avoid contamination"],
+        "validation": {
+          "type": "indicator_check",
+          "parameters": ["indicator_added", "color_observed"]
+        }
+      },
+      {
+        "stepNumber": 4,
+        "title": "Titration",
+        "description": "Titrate each sample with NaOH until the endpoint is reached",
+        "duration": "20 minutes",
+        "safetyNotes": ["Add titrant slowly", "Swirl continuously"],
+        "validation": {
+          "type": "endpoint_check",
+          "parameters": ["color_change", "volume_used"]
+        }
+      },
+      {
+        "stepNumber": 5,
+        "title": "Data Recording",
+        "description": "Record the volume of NaOH used for each titration",
+        "duration": "5 minutes",
+        "safetyNotes": ["Record data accurately", "Calculate results"],
+        "validation": {
+          "type": "calculation_check",
+          "parameters": ["volume_recorded", "calculations_correct"]
+        }
+      }
+    ]
+  },
+  "expectedResults": {
+    "endpointVolume": {
+      "expected": "25.0ml",
+      "tolerance": "±0.1ml",
+      "unit": "ml"
+    },
+    "concentration": {
+      "expected": "0.1M",
+      "tolerance": "±0.01M",
+      "unit": "M"
+    },
+    "colorChange": {
+      "before": "Colorless",
+      "after": "Pink",
+      "indicator": "Phenolphthalein"
+    }
+  },
+  "calculations": [
+    {
+      "name": "Molarity Calculation",
+      "formula": "M1V1 = M2V2",
+      "description": "Calculate HCl concentration from titration data",
+      "variables": {
+        "M1": "NaOH concentration",
+        "V1": "NaOH volume used",
+        "M2": "HCl concentration (unknown)",
+        "V2": "HCl volume"
+      }
+    },
+    {
+      "name": "Average Calculation",
+      "formula": "Average = (Trial1 + Trial2 + Trial3) / 3",
+      "description": "Calculate average volume from three trials",
+      "variables": {
+        "Trial1": "First titration volume",
+        "Trial2": "Second titration volume",
+        "Trial3": "Third titration volume"
+      }
+    }
+  ],
+  "assessment": {
+    "criteria": [
+      {
+        "name": "Technique",
+        "weight": 0.3,
+        "maxScore": 10,
+        "description": "Proper titration technique and endpoint detection"
+      },
+      {
+        "name": "Accuracy",
+        "weight": 0.4,
+        "maxScore": 10,
+        "description": "Accuracy of results within acceptable range"
+      },
+      {
+        "name": "Precision",
+        "weight": 0.2,
+        "maxScore": 10,
+        "description": "Consistency between trials"
+      },
+      {
+        "name": "Safety",
+        "weight": 0.1,
+        "maxScore": 10,
+        "description": "Proper safety practices throughout experiment"
+      }
+    ],
+    "passingScore": 7.0,
+    "excellentScore": 9.0
+  },
+  "safetyNotes": [
+    "Wear appropriate PPE (goggles, lab coat, gloves)",
+    "Handle acids and bases with care",
+    "Work in well-ventilated area",
+    "Dispose of waste properly",
+    "Wash hands after experiment"
+  ],
+  "troubleshooting": [
+    {
+      "problem": "Endpoint overshot",
+      "solution": "Start over with fresh sample, add titrant more slowly"
+    },
+    {
+      "problem": "No color change",
+      "solution": "Check indicator addition, ensure proper concentration"
+    },
+    {
+      "problem": "Inconsistent results",
+      "solution": "Check equipment calibration, improve technique"
+    }
+  ],
+  "references": [
+    "Harris, D.C. Quantitative Chemical Analysis",
+    "Vogel, A.I. Textbook of Quantitative Chemical Analysis",
+    "ASTM E200-16 Standard Practice for Preparation, Standardization, and Storage of Standard and Reagent Solutions for Chemical Analysis"
+  ]
+} 

@@ -1,0 +1,43 @@
+# Texture: Rubber Surface
+# Format: PNG (placeholder)
+# Description: Matte rubber texture with subtle surface imperfections
+# Resolution: 1024x1024 pixels
+# Usage: Rubber stoppers, tubing, and non-slip surfaces
+
+# Texture Properties:
+- Type: Albedo/Normal
+- Category: Materials
+- Subcategory: Rubber
+- Format: PNG
+- Compression: DXT1
+- Mipmaps: Yes
+- Filter Mode: Bilinear
+- Wrap Mode: Repeat
+- Anisotropic Level: 16
+
+# Color Information:
+- Base Color: Dark gray-black (0.1, 0.1, 0.1, 1.0)
+- Metallic: 0.0
+- Roughness: 0.8
+- Reflection: 10%
+- Specular: 0.1
+
+# Surface Properties:
+- Roughness: 0.8 (matte finish)
+- Metallic: 0.0
+- Normal Strength: 0.2
+- Height: 0.05
+- Occlusion: 0.7
+
+# UV Mapping:
+- Tiling: 1x1
+- Offset: 0,0
+- Rotation: 0°
+
+# Generation Method:
+- Procedural rubber surface
+- Subtle texture variations
+- Non-reflective finish
+
+# File Size: ~256KB (compressed)
+# Memory Usage: ~4MB (uncompressed) 

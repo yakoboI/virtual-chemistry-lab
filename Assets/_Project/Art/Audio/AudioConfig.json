@@ -1,0 +1,320 @@
+{
+  "audioCategories": {
+    "music": {
+      "description": "Background music and ambient sounds",
+      "volume": 0.7,
+      "files": [
+        {
+          "id": "main_menu_music",
+          "name": "Main Menu Music",
+          "filename": "main_menu_music.ogg",
+          "description": "Calm, scientific background music for main menu",
+          "duration": 180.0,
+          "loop": true
+        },
+        {
+          "id": "experiment_music",
+          "name": "Experiment Music",
+          "filename": "experiment_music.ogg",
+          "description": "Focused, laboratory ambient music",
+          "duration": 240.0,
+          "loop": true
+        },
+        {
+          "id": "success_music",
+          "name": "Success Music",
+          "filename": "success_music.ogg",
+          "description": "Triumphant music for experiment completion",
+          "duration": 30.0,
+          "loop": false
+        }
+      ]
+    },
+    "sfx": {
+      "description": "Sound effects for UI and interactions",
+      "volume": 0.8,
+      "files": [
+        {
+          "id": "button_click",
+          "name": "Button Click",
+          "filename": "button_click.wav",
+          "description": "UI button click sound",
+          "duration": 0.2,
+          "loop": false
+        },
+        {
+          "id": "button_hover",
+          "name": "Button Hover",
+          "filename": "button_hover.wav",
+          "description": "UI button hover sound",
+          "duration": 0.1,
+          "loop": false
+        },
+        {
+          "id": "menu_open",
+          "name": "Menu Open",
+          "filename": "menu_open.wav",
+          "description": "Menu opening sound",
+          "duration": 0.3,
+          "loop": false
+        },
+        {
+          "id": "menu_close",
+          "name": "Menu Close",
+          "filename": "menu_close.wav",
+          "description": "Menu closing sound",
+          "duration": 0.2,
+          "loop": false
+        },
+        {
+          "id": "notification",
+          "name": "Notification",
+          "filename": "notification.wav",
+          "description": "General notification sound",
+          "duration": 0.5,
+          "loop": false
+        }
+      ]
+    },
+    "laboratory": {
+      "description": "Laboratory equipment and chemical sounds",
+      "volume": 0.6,
+      "files": [
+        {
+          "id": "glass_clink",
+          "name": "Glass Clink",
+          "filename": "glass_clink.wav",
+          "description": "Glassware clinking sound",
+          "duration": 0.4,
+          "loop": false
+        },
+        {
+          "id": "liquid_pour",
+          "name": "Liquid Pour",
+          "filename": "liquid_pour.wav",
+          "description": "Liquid pouring sound",
+          "duration": 1.5,
+          "loop": false
+        },
+        {
+          "id": "burette_drop",
+          "name": "Burette Drop",
+          "filename": "burette_drop.wav",
+          "description": "Burette drop sound",
+          "duration": 0.1,
+          "loop": false
+        },
+        {
+          "id": "pipette_suction",
+          "name": "Pipette Suction",
+          "filename": "pipette_suction.wav",
+          "description": "Pipette suction sound",
+          "duration": 0.8,
+          "loop": false
+        },
+        {
+          "id": "flask_swirl",
+          "name": "Flask Swirl",
+          "filename": "flask_swirl.wav",
+          "description": "Flask swirling sound",
+          "duration": 2.0,
+          "loop": false
+        },
+        {
+          "id": "bunsen_burner",
+          "name": "Bunsen Burner",
+          "filename": "bunsen_burner.wav",
+          "description": "Bunsen burner flame sound",
+          "duration": 5.0,
+          "loop": true
+        },
+        {
+          "id": "stirring",
+          "name": "Stirring",
+          "filename": "stirring.wav",
+          "description": "Glass rod stirring sound",
+          "duration": 3.0,
+          "loop": false
+        }
+      ]
+    },
+    "chemicals": {
+      "description": "Chemical reaction and mixing sounds",
+      "volume": 0.7,
+      "files": [
+        {
+          "id": "acid_base_reaction",
+          "name": "Acid-Base Reaction",
+          "filename": "acid_base_reaction.wav",
+          "description": "Acid-base neutralization sound",
+          "duration": 2.5,
+          "loop": false
+        },
+        {
+          "id": "precipitation",
+          "name": "Precipitation",
+          "filename": "precipitation.wav",
+          "description": "Precipitation reaction sound",
+          "duration": 1.8,
+          "loop": false
+        },
+        {
+          "id": "gas_evolution",
+          "name": "Gas Evolution",
+          "filename": "gas_evolution.wav",
+          "description": "Gas bubbling sound",
+          "duration": 3.0,
+          "loop": false
+        },
+        {
+          "id": "color_change",
+          "name": "Color Change",
+          "filename": "color_change.wav",
+          "description": "Indicator color change sound",
+          "duration": 0.5,
+          "loop": false
+        },
+        {
+          "id": "endpoint_reached",
+          "name": "Endpoint Reached",
+          "filename": "endpoint_reached.wav",
+          "description": "Titration endpoint sound",
+          "duration": 1.0,
+          "loop": false
+        },
+        {
+          "id": "indicator_change",
+          "name": "Indicator Change",
+          "filename": "indicator_change.wav",
+          "description": "pH indicator change sound",
+          "duration": 0.8,
+          "loop": false
+        }
+      ]
+    },
+    "safety": {
+      "description": "Safety and emergency sounds",
+      "volume": 0.9,
+      "files": [
+        {
+          "id": "safety_warning",
+          "name": "Safety Warning",
+          "filename": "safety_warning.wav",
+          "description": "Safety protocol warning sound",
+          "duration": 1.5,
+          "loop": false
+        },
+        {
+          "id": "emergency_alarm",
+          "name": "Emergency Alarm",
+          "filename": "emergency_alarm.wav",
+          "description": "Emergency situation alarm",
+          "duration": 5.0,
+          "loop": true
+        },
+        {
+          "id": "ventilation_fan",
+          "name": "Ventilation Fan",
+          "filename": "ventilation_fan.wav",
+          "description": "Fume hood ventilation sound",
+          "duration": 10.0,
+          "loop": true
+        },
+        {
+          "id": "fire_suppression",
+          "name": "Fire Suppression",
+          "filename": "fire_suppression.wav",
+          "description": "Fire suppression system sound",
+          "duration": 8.0,
+          "loop": false
+        }
+      ]
+    },
+    "assessment": {
+      "description": "Assessment and feedback sounds",
+      "volume": 0.8,
+      "files": [
+        {
+          "id": "assessment_complete",
+          "name": "Assessment Complete",
+          "filename": "assessment_complete.wav",
+          "description": "Assessment completion sound",
+          "duration": 2.0,
+          "loop": false
+        },
+        {
+          "id": "score_update",
+          "name": "Score Update",
+          "filename": "score_update.wav",
+          "description": "Score update notification",
+          "duration": 0.5,
+          "loop": false
+        },
+        {
+          "id": "test_pass",
+          "name": "Test Pass",
+          "filename": "test_pass.wav",
+          "description": "Test passed sound",
+          "duration": 1.0,
+          "loop": false
+        },
+        {
+          "id": "test_fail",
+          "name": "Test Fail",
+          "filename": "test_fail.wav",
+          "description": "Test failed sound",
+          "duration": 1.0,
+          "loop": false
+        }
+      ]
+    },
+    "qualitative": {
+      "description": "Qualitative analysis test sounds",
+      "volume": 0.7,
+      "files": [
+        {
+          "id": "flame_test",
+          "name": "Flame Test",
+          "filename": "flame_test.wav",
+          "description": "Flame test sound",
+          "duration": 2.0,
+          "loop": false
+        },
+        {
+          "id": "precipitation_test",
+          "name": "Precipitation Test",
+          "filename": "precipitation_test.wav",
+          "description": "Precipitation test sound",
+          "duration": 1.5,
+          "loop": false
+        },
+        {
+          "id": "color_change_test",
+          "name": "Color Change Test",
+          "filename": "color_change_test.wav",
+          "description": "Color change test sound",
+          "duration": 1.0,
+          "loop": false
+        },
+        {
+          "id": "gas_evolution_test",
+          "name": "Gas Evolution Test",
+          "filename": "gas_evolution_test.wav",
+          "description": "Gas evolution test sound",
+          "duration": 2.5,
+          "loop": false
+        }
+      ]
+    }
+  },
+  "audioSettings": {
+    "masterVolume": 1.0,
+    "enable3DAudio": true,
+    "enableSpatialAudio": true,
+    "maxSimultaneousSounds": 10,
+    "audioQuality": "high",
+    "compressionFormat": "ogg",
+    "sampleRate": 44100,
+    "bitDepth": 16
+  }
+} 

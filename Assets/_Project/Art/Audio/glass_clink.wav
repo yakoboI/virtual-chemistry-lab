@@ -1,0 +1,32 @@
+# Audio: Glass Clink Sound
+# Format: WAV (placeholder)
+# Description: Sharp clinking sound when glassware touches
+# Duration: 0.5 seconds
+# Usage: Glassware interaction feedback
+
+# Audio Properties:
+- Type: Sound Effect
+- Category: Laboratory Sounds
+- Subcategory: Glassware
+- Format: WAV
+- Sample Rate: 44.1 kHz
+- Bit Depth: 16-bit
+- Channels: Stereo
+- Compression: PCM
+
+# Sound Characteristics:
+- Frequency Range: 2-8 kHz
+- Peak Frequency: 4 kHz
+- Decay Time: 0.3s
+- Attack Time: 0.01s
+- Sustain Level: -20 dB
+- Release Time: 0.2s
+
+# Usage Context:
+- Glassware collision
+- Equipment placement
+- Laboratory setup
+- Interactive feedback
+
+# File Size: ~44KB
+# Memory Usage: ~44KB 

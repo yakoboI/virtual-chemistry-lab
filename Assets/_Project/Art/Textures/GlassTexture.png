@@ -1,0 +1,43 @@
+# Texture: Glass Surface
+# Format: PNG (placeholder)
+# Description: Transparent glass texture with subtle reflections and refractions
+# Resolution: 1024x1024 pixels
+# Usage: Laboratory glassware surfaces
+
+# Texture Properties:
+- Type: Albedo/Normal
+- Category: Materials
+- Subcategory: Glass
+- Format: PNG
+- Compression: DXT5
+- Mipmaps: Yes
+- Filter Mode: Bilinear
+- Wrap Mode: Repeat
+- Anisotropic Level: 16
+
+# Color Information:
+- Base Color: Light blue-white (0.8, 0.9, 1.0, 0.3)
+- Transparency: 70%
+- Reflection: 95%
+- Refraction: 1.52 (glass index)
+- Fresnel: Enabled
+
+# Surface Properties:
+- Roughness: 0.05 (very smooth)
+- Metallic: 0.0
+- Normal Strength: 0.1
+- Height: 0.0
+- Occlusion: 1.0
+
+# UV Mapping:
+- Tiling: 1x1
+- Offset: 0,0
+- Rotation: 0°
+
+# Generation Method:
+- Procedural noise with glass-like properties
+- Subtle surface imperfections
+- Realistic light interaction
+
+# File Size: ~256KB (compressed)
+# Memory Usage: ~4MB (uncompressed) 

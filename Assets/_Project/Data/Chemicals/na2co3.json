@@ -1,0 +1,41 @@
+{
+  "id": "na2co3",
+  "name": "Sodium Carbonate",
+  "formula": "Na₂CO₃",
+  "type": "Salt",
+  "state": "Solid",
+  "physicalProperties": {
+    "molarMass": 105.99,
+    "density": 2.54,
+    "color": "#FFFFFF",
+    "meltingPoint": 851,
+    "boilingPoint": 1600,
+    "solubility": 22.0
+  },
+  "chemicalProperties": {
+    "concentration": 0.1,
+    "pH": 11.0,
+    "isAcid": false,
+    "isBase": true,
+    "isOxidizing": false,
+    "isReducing": false
+  },
+  "safety": {
+    "hazards": ["Irritant"],
+    "safetyNotes": "Avoid contact with eyes and skin. Use in well-ventilated area.",
+    "requiresVentilation": false,
+    "requiresGloves": true
+  },
+  "behavior": {
+    "canReact": true,
+    "canMix": true,
+    "canEvaporate": false,
+    "evaporationRate": 0.0
+  },
+  "visualSettings": {
+    "materialColor": "#FFFFFF",
+    "particleEffect": "none",
+    "pourSound": "powder_pour",
+    "reactionSound": "bubble"
+  }
+} 

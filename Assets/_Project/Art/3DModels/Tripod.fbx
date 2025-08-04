@@ -1,0 +1,43 @@
+# 3D Model: Laboratory Tripod
+# Format: FBX (placeholder)
+# Description: Three-legged support stand for heating equipment
+# Dimensions: 15cm height, 20cm base diameter, adjustable height
+# Material: Steel with ceramic or wire gauze top
+# Usage: Supporting equipment over heat sources
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Support Equipment
+- Subcategory: Stands
+- Material: Steel
+- Finish: Black powder coat
+- Height: 15cm (adjustable)
+- Base Diameter: 20cm
+- Top: Ceramic or wire gauze
+- Legs: Three adjustable legs
+
+# Geometry Data (simplified):
+- Vertices: 384
+- Faces: 768
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- Height adjustment (10-20cm)
+- Leg angle adjustment
+
+# Collision:
+- Type: Cylinder
+- Radius: 10cm
+- Height: 15cm
+
+# LOD Levels:
+- LOD0: High detail (384 vertices)
+- LOD1: Medium detail (192 vertices)
+- LOD2: Low detail (96 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

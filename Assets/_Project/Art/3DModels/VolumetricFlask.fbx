@@ -1,0 +1,43 @@
+# 3D Model: Volumetric Flask
+# Format: FBX (placeholder)
+# Description: Precision flask for accurate volume measurement
+# Dimensions: 100ml capacity, 15cm height, 6cm diameter
+# Material: Glass with precision markings
+# Usage: Precise volume measurements and solution preparation
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Glassware
+- Subcategory: Flasks
+- Capacity: 100ml
+- Material: Borosilicate Glass
+- Temperature Range: -40°C to +400°C
+- Graduation Marks: Single calibration mark
+- Spout: No
+- Handle: No
+- Stopper: Optional (ground glass)
+
+# Geometry Data (simplified):
+- Vertices: 512
+- Faces: 1024
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- None (static object)
+
+# Collision:
+- Type: Cylinder
+- Radius: 3cm
+- Height: 15cm
+
+# LOD Levels:
+- LOD0: High detail (512 vertices)
+- LOD1: Medium detail (256 vertices)
+- LOD2: Low detail (128 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

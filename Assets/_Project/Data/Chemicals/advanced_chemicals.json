@@ -1,0 +1,461 @@
+{
+  "advancedChemicals": [
+    {
+      "id": "methanol",
+      "name": "Methanol",
+      "formula": "CH₃OH",
+      "type": "Alcohol",
+      "state": "Liquid",
+      "physicalProperties": {
+        "molarMass": 32.04,
+        "density": 0.792,
+        "color": "#FFFFFF",
+        "meltingPoint": -97.6,
+        "boilingPoint": 64.7,
+        "solubility": 1000.0
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 7.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Flammable", "Toxic"],
+        "safetyNotes": "Highly flammable. Toxic if ingested. Use in fume hood.",
+        "requiresVentilation": true,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": true,
+        "evaporationRate": 2.0
+      },
+      "visualSettings": {
+        "materialColor": "#FFFFFF",
+        "particleEffect": "alcohol_vapor",
+        "pourSound": "liquid_pour",
+        "reactionSound": "bubble"
+      }
+    },
+    {
+      "id": "ethanol",
+      "name": "Ethanol",
+      "formula": "C₂H₅OH",
+      "type": "Alcohol",
+      "state": "Liquid",
+      "physicalProperties": {
+        "molarMass": 46.07,
+        "density": 0.789,
+        "color": "#FFFFFF",
+        "meltingPoint": -114.1,
+        "boilingPoint": 78.4,
+        "solubility": 1000.0
+      },
+      "chemicalProperties": {
+        "concentration": 0.95,
+        "pH": 7.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Flammable"],
+        "safetyNotes": "Flammable liquid. Keep away from open flames.",
+        "requiresVentilation": false,
+        "requiresGloves": false
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": true,
+        "evaporationRate": 1.5
+      },
+      "visualSettings": {
+        "materialColor": "#FFFFFF",
+        "particleEffect": "alcohol_vapor",
+        "pourSound": "liquid_pour",
+        "reactionSound": "bubble"
+      }
+    },
+    {
+      "id": "acetone",
+      "name": "Acetone",
+      "formula": "C₃H₆O",
+      "type": "Ketone",
+      "state": "Liquid",
+      "physicalProperties": {
+        "molarMass": 58.08,
+        "density": 0.791,
+        "color": "#FFFFFF",
+        "meltingPoint": -95.4,
+        "boilingPoint": 56.1,
+        "solubility": 1000.0
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 7.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Flammable", "Irritant"],
+        "safetyNotes": "Highly flammable. Irritating to eyes and skin.",
+        "requiresVentilation": true,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": true,
+        "evaporationRate": 3.0
+      },
+      "visualSettings": {
+        "materialColor": "#FFFFFF",
+        "particleEffect": "ketone_vapor",
+        "pourSound": "liquid_pour",
+        "reactionSound": "bubble"
+      }
+    },
+    {
+      "id": "benzoic_acid",
+      "name": "Benzoic Acid",
+      "formula": "C₇H₆O₂",
+      "type": "Carboxylic Acid",
+      "state": "Solid",
+      "physicalProperties": {
+        "molarMass": 122.12,
+        "density": 1.27,
+        "color": "#FFFFFF",
+        "meltingPoint": 122.4,
+        "boilingPoint": 249.2,
+        "solubility": 3.4
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 2.8,
+        "isAcid": true,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Irritant"],
+        "safetyNotes": "Irritating to skin and eyes. Avoid inhalation.",
+        "requiresVentilation": false,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": false,
+        "canEvaporate": false,
+        "evaporationRate": 0.0
+      },
+      "visualSettings": {
+        "materialColor": "#FFFFFF",
+        "particleEffect": "none",
+        "pourSound": "powder_pour",
+        "reactionSound": "fizz"
+      }
+    },
+    {
+      "id": "salicylic_acid",
+      "name": "Salicylic Acid",
+      "formula": "C₇H₆O₃",
+      "type": "Carboxylic Acid",
+      "state": "Solid",
+      "physicalProperties": {
+        "molarMass": 138.12,
+        "density": 1.44,
+        "color": "#FFFFFF",
+        "meltingPoint": 158.6,
+        "boilingPoint": 211.0,
+        "solubility": 1.8
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 2.4,
+        "isAcid": true,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Irritant", "Toxic"],
+        "safetyNotes": "Toxic if ingested. Irritating to skin and eyes.",
+        "requiresVentilation": false,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": false,
+        "canEvaporate": false,
+        "evaporationRate": 0.0
+      },
+      "visualSettings": {
+        "materialColor": "#FFFFFF",
+        "particleEffect": "none",
+        "pourSound": "powder_pour",
+        "reactionSound": "fizz"
+      }
+    },
+    {
+      "id": "acetic_anhydride",
+      "name": "Acetic Anhydride",
+      "formula": "C₄H₆O₃",
+      "type": "Anhydride",
+      "state": "Liquid",
+      "physicalProperties": {
+        "molarMass": 102.09,
+        "density": 1.08,
+        "color": "#FFFFFF",
+        "meltingPoint": -73.1,
+        "boilingPoint": 139.8,
+        "solubility": 12.0
+      },
+      "chemicalProperties": {
+        "concentration": 0.98,
+        "pH": 3.0,
+        "isAcid": true,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Corrosive", "Flammable"],
+        "safetyNotes": "Highly corrosive and flammable. Use in fume hood with extreme caution.",
+        "requiresVentilation": true,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": true,
+        "evaporationRate": 1.0
+      },
+      "visualSettings": {
+        "materialColor": "#FFFFFF",
+        "particleEffect": "acid_vapor",
+        "pourSound": "liquid_pour",
+        "reactionSound": "fizz"
+      }
+    },
+    {
+      "id": "potassium_permanganate",
+      "name": "Potassium Permanganate",
+      "formula": "KMnO₄",
+      "type": "Oxidizing Agent",
+      "state": "Solid",
+      "physicalProperties": {
+        "molarMass": 158.03,
+        "density": 2.7,
+        "color": "#800080",
+        "meltingPoint": 240.0,
+        "boilingPoint": 100.0,
+        "solubility": 6.4
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 7.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": true,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Oxidizing", "Toxic"],
+        "safetyNotes": "Strong oxidizing agent. Toxic if ingested. Stains skin and clothing.",
+        "requiresVentilation": false,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": false,
+        "evaporationRate": 0.0
+      },
+      "visualSettings": {
+        "materialColor": "#800080",
+        "particleEffect": "purple_solution",
+        "pourSound": "powder_pour",
+        "reactionSound": "bubble"
+      }
+    },
+    {
+      "id": "cobalt_chloride",
+      "name": "Cobalt Chloride",
+      "formula": "CoCl₂",
+      "type": "Salt",
+      "state": "Solid",
+      "physicalProperties": {
+        "molarMass": 129.84,
+        "density": 3.36,
+        "color": "#0000FF",
+        "meltingPoint": 735.0,
+        "boilingPoint": 1049.0,
+        "solubility": 52.9
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 5.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Toxic"],
+        "safetyNotes": "Toxic if ingested. Cobalt compounds are carcinogenic.",
+        "requiresVentilation": false,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": false,
+        "evaporationRate": 0.0
+      },
+      "visualSettings": {
+        "materialColor": "#0000FF",
+        "particleEffect": "blue_solution",
+        "pourSound": "powder_pour",
+        "reactionSound": "dissolve"
+      }
+    },
+    {
+      "id": "copper_sulfate",
+      "name": "Copper Sulfate",
+      "formula": "CuSO₄",
+      "type": "Salt",
+      "state": "Solid",
+      "physicalProperties": {
+        "molarMass": 159.61,
+        "density": 3.6,
+        "color": "#00FFFF",
+        "meltingPoint": 110.0,
+        "boilingPoint": 330.0,
+        "solubility": 32.0
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 4.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false
+      },
+      "safety": {
+        "hazards": ["Toxic"],
+        "safetyNotes": "Toxic if ingested. Harmful to aquatic life.",
+        "requiresVentilation": false,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": false,
+        "evaporationRate": 0.0
+      },
+      "visualSettings": {
+        "materialColor": "#00FFFF",
+        "particleEffect": "blue_solution",
+        "pourSound": "powder_pour",
+        "reactionSound": "dissolve"
+      }
+    },
+    {
+      "id": "phenolphthalein",
+      "name": "Phenolphthalein",
+      "formula": "C₂₀H₁₄O₄",
+      "type": "Indicator",
+      "state": "Solid",
+      "physicalProperties": {
+        "molarMass": 318.32,
+        "density": 1.3,
+        "color": "#FFFFFF",
+        "meltingPoint": 258.0,
+        "boilingPoint": 500.0,
+        "solubility": 0.4
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 7.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false,
+        "indicatorRange": [8.3, 10.0],
+        "acidColor": "colorless",
+        "baseColor": "pink"
+      },
+      "safety": {
+        "hazards": ["Toxic"],
+        "safetyNotes": "Toxic if ingested. Suspected carcinogen.",
+        "requiresVentilation": false,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": false,
+        "evaporationRate": 0.0
+      },
+      "visualSettings": {
+        "materialColor": "#FFFFFF",
+        "particleEffect": "indicator_change",
+        "pourSound": "powder_pour",
+        "reactionSound": "color_change"
+      }
+    },
+    {
+      "id": "methyl_orange",
+      "name": "Methyl Orange",
+      "formula": "C₁₄H₁₄N₃NaO₃S",
+      "type": "Indicator",
+      "state": "Solid",
+      "physicalProperties": {
+        "molarMass": 327.33,
+        "density": 1.28,
+        "color": "#FFA500",
+        "meltingPoint": 300.0,
+        "boilingPoint": 500.0,
+        "solubility": 5.0
+      },
+      "chemicalProperties": {
+        "concentration": 0.99,
+        "pH": 7.0,
+        "isAcid": false,
+        "isBase": false,
+        "isOxidizing": false,
+        "isReducing": false,
+        "indicatorRange": [3.1, 4.4],
+        "acidColor": "red",
+        "baseColor": "yellow"
+      },
+      "safety": {
+        "hazards": ["Toxic"],
+        "safetyNotes": "Toxic if ingested. Harmful to aquatic life.",
+        "requiresVentilation": false,
+        "requiresGloves": true
+      },
+      "behavior": {
+        "canReact": true,
+        "canMix": true,
+        "canEvaporate": false,
+        "evaporationRate": 0.0
+      },
+      "visualSettings": {
+        "materialColor": "#FFA500",
+        "particleEffect": "indicator_change",
+        "pourSound": "powder_pour",
+        "reactionSound": "color_change"
+      }
+    }
+  ]
+} 

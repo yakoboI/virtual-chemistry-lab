@@ -1,0 +1,45 @@
+# Fume Hood Prefab
+# Unity Prefab File
+# Description: Laboratory fume hood for safe chemical handling
+# Components: Enclosure, Ventilation, Safety features
+
+# Main GameObject: FumeHood
+# - FumeHoodController script
+# - VentilationSystem script
+# - SafetyController script
+
+# Child Objects:
+# - Enclosure (MeshRenderer with transparent material)
+# - Sash (Movable glass door)
+# - WorkSurface (MeshRenderer)
+# - Ventilation (ParticleSystem for air flow)
+# - Lighting (PointLight)
+# - SafetyAlarms (AudioSource)
+
+# Script References:
+# - FumeHoodController
+# - VentilationSystem
+# - SafetyController
+# - AirFlowSimulation
+# - ChemicalContainment
+
+# Properties:
+# - Dimensions: 1.2m x 0.6m x 0.8m
+# - Air Flow: 0.5 m/s
+# - Lighting: LED strip
+# - Material: Stainless steel
+# - Safety: Automatic sash control
+
+# Features:
+# - Adjustable sash height
+# - Air flow monitoring
+# - Chemical spill containment
+# - Emergency shutdown
+# - Lighting control
+
+# Safety Features:
+# - Sash position monitoring
+# - Air flow alarms
+# - Chemical spill detection
+# - Emergency ventilation
+# - Automatic shutdown 

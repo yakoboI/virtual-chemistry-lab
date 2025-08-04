@@ -1,0 +1,397 @@
+{
+  "materialCategories": {
+    "glass": {
+      "description": "Glass material definitions",
+      "materials": [
+        {
+          "id": "glass_transparent",
+          "name": "Transparent Glass",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.95,
+            "alpha": 0.3,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "glass_transparent",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "glass_clear",
+          "name": "Clear Glass",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.9,
+            "alpha": 0.1,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "glass_clear",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "glass_borosilicate",
+          "name": "Borosilicate Glass",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#F0F0F0",
+            "metallic": 0.0,
+            "smoothness": 0.85,
+            "alpha": 0.2,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "glass_borosilicate",
+          "renderingMode": "Transparent"
+        }
+      ]
+    },
+    "metals": {
+      "description": "Metal material definitions",
+      "materials": [
+        {
+          "id": "metal_stainless",
+          "name": "Stainless Steel",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#C0C0C0",
+            "metallic": 1.0,
+            "smoothness": 0.8,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "metal_stainless",
+          "renderingMode": "Opaque"
+        },
+        {
+          "id": "metal_brass",
+          "name": "Brass",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#B8860B",
+            "metallic": 1.0,
+            "smoothness": 0.7,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "metal_brass",
+          "renderingMode": "Opaque"
+        },
+        {
+          "id": "metal_aluminum",
+          "name": "Aluminum",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#A8A8A8",
+            "metallic": 1.0,
+            "smoothness": 0.6,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "metal_aluminum",
+          "renderingMode": "Opaque"
+        }
+      ]
+    },
+    "plastics": {
+      "description": "Plastic material definitions",
+      "materials": [
+        {
+          "id": "plastic_white",
+          "name": "White Plastic",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.3,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "plastic_white",
+          "renderingMode": "Opaque"
+        },
+        {
+          "id": "plastic_black",
+          "name": "Black Plastic",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#202020",
+            "metallic": 0.0,
+            "smoothness": 0.4,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "plastic_black",
+          "renderingMode": "Opaque"
+        },
+        {
+          "id": "plastic_clear",
+          "name": "Clear Plastic",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.5,
+            "alpha": 0.5,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "plastic_clear",
+          "renderingMode": "Transparent"
+        }
+      ]
+    },
+    "rubber": {
+      "description": "Rubber material definitions",
+      "materials": [
+        {
+          "id": "rubber_black",
+          "name": "Black Rubber",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#101010",
+            "metallic": 0.0,
+            "smoothness": 0.1,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "rubber_black",
+          "renderingMode": "Opaque"
+        },
+        {
+          "id": "rubber_white",
+          "name": "White Rubber",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#F0F0F0",
+            "metallic": 0.0,
+            "smoothness": 0.1,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "rubber_white",
+          "renderingMode": "Opaque"
+        }
+      ]
+    },
+    "ceramics": {
+      "description": "Ceramic material definitions",
+      "materials": [
+        {
+          "id": "ceramic_white",
+          "name": "White Ceramic",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.2,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "ceramic_white",
+          "renderingMode": "Opaque"
+        },
+        {
+          "id": "ceramic_porcelain",
+          "name": "Porcelain",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#F8F8F8",
+            "metallic": 0.0,
+            "smoothness": 0.3,
+            "alpha": 1.0,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "ceramic_porcelain",
+          "renderingMode": "Opaque"
+        }
+      ]
+    },
+    "liquids": {
+      "description": "Liquid material definitions",
+      "materials": [
+        {
+          "id": "liquid_clear",
+          "name": "Clear Liquid",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.95,
+            "alpha": 0.3,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "liquid_clear",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "liquid_blue",
+          "name": "Blue Liquid",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#0066CC",
+            "metallic": 0.0,
+            "smoothness": 0.9,
+            "alpha": 0.6,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "liquid_colored",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "liquid_red",
+          "name": "Red Liquid",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#CC0000",
+            "metallic": 0.0,
+            "smoothness": 0.9,
+            "alpha": 0.6,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "liquid_colored",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "liquid_yellow",
+          "name": "Yellow Liquid",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#CCCC00",
+            "metallic": 0.0,
+            "smoothness": 0.9,
+            "alpha": 0.6,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "liquid_colored",
+          "renderingMode": "Transparent"
+        }
+      ]
+    },
+    "precipitates": {
+      "description": "Precipitate material definitions",
+      "materials": [
+        {
+          "id": "precipitate_white",
+          "name": "White Precipitate",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.1,
+            "alpha": 0.8,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "precipitate_white",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "precipitate_yellow",
+          "name": "Yellow Precipitate",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#CCCC00",
+            "metallic": 0.0,
+            "smoothness": 0.1,
+            "alpha": 0.8,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "precipitate_colored",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "precipitate_brown",
+          "name": "Brown Precipitate",
+          "shader": "Standard",
+          "properties": {
+            "albedo": "#8B4513",
+            "metallic": 0.0,
+            "smoothness": 0.1,
+            "alpha": 0.8,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "precipitate_colored",
+          "renderingMode": "Transparent"
+        }
+      ]
+    },
+    "effects": {
+      "description": "Special effect material definitions",
+      "materials": [
+        {
+          "id": "flame",
+          "name": "Flame",
+          "shader": "Particles/Standard Unlit",
+          "properties": {
+            "albedo": "#FF6600",
+            "metallic": 0.0,
+            "smoothness": 0.0,
+            "alpha": 0.8,
+            "emission": "#FF4400",
+            "emissionIntensity": 2.0
+          },
+          "texture": "flame",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "smoke",
+          "name": "Smoke",
+          "shader": "Particles/Standard Unlit",
+          "properties": {
+            "albedo": "#808080",
+            "metallic": 0.0,
+            "smoothness": 0.0,
+            "alpha": 0.4,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "particle_smoke",
+          "renderingMode": "Transparent"
+        },
+        {
+          "id": "bubbles",
+          "name": "Bubbles",
+          "shader": "Particles/Standard Unlit",
+          "properties": {
+            "albedo": "#FFFFFF",
+            "metallic": 0.0,
+            "smoothness": 0.9,
+            "alpha": 0.3,
+            "emission": "#000000",
+            "emissionIntensity": 0.0
+          },
+          "texture": "bubbles",
+          "renderingMode": "Transparent"
+        }
+      ]
+    }
+  },
+  "materialSettings": {
+    "shaderQuality": "high",
+    "enableEmission": true,
+    "enableReflection": true,
+    "enableRefraction": true,
+    "maxTextureSize": 2048,
+    "compressionQuality": "high"
+  }
+} 

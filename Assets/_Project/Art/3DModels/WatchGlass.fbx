@@ -1,0 +1,43 @@
+# 3D Model: Watch Glass
+# Format: FBX (placeholder)
+# Description: Concave glass dish for evaporation and observation
+# Dimensions: 10cm diameter, 2cm depth, 1cm rim height
+# Material: Glass with curved surface
+# Usage: Evaporation, crystallization, and sample observation
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Glassware
+- Subcategory: Dishes
+- Diameter: 10cm
+- Material: Borosilicate Glass
+- Temperature Range: -40°C to +400°C
+- Graduation Marks: None
+- Spout: No
+- Handle: No
+- Shape: Concave circular dish
+
+# Geometry Data (simplified):
+- Vertices: 256
+- Faces: 512
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- None (static object)
+
+# Collision:
+- Type: Cylinder
+- Radius: 5cm
+- Height: 2cm
+
+# LOD Levels:
+- LOD0: High detail (256 vertices)
+- LOD1: Medium detail (128 vertices)
+- LOD2: Low detail (64 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 

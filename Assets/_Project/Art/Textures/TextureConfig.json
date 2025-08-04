@@ -1,0 +1,348 @@
+{
+  "textureCategories": {
+    "ui": {
+      "description": "User interface textures and elements",
+      "files": [
+        {
+          "id": "ui_background",
+          "name": "UI Background",
+          "filename": "ui_background.png",
+          "description": "Main UI background texture",
+          "size": "1920x1080",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "button_normal",
+          "name": "Button Normal",
+          "filename": "button_normal.png",
+          "description": "Normal button state texture",
+          "size": "256x64",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "button_hover",
+          "name": "Button Hover",
+          "filename": "button_hover.png",
+          "description": "Button hover state texture",
+          "size": "256x64",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "button_pressed",
+          "name": "Button Pressed",
+          "filename": "button_pressed.png",
+          "description": "Button pressed state texture",
+          "size": "256x64",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "panel_background",
+          "name": "Panel Background",
+          "filename": "panel_background.png",
+          "description": "Panel background texture",
+          "size": "512x512",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "icon_experiment",
+          "name": "Experiment Icon",
+          "filename": "icon_experiment.png",
+          "description": "Experiment icon",
+          "size": "64x64",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "icon_safety",
+          "name": "Safety Icon",
+          "filename": "icon_safety.png",
+          "description": "Safety icon",
+          "size": "64x64",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "icon_chemical",
+          "name": "Chemical Icon",
+          "filename": "icon_chemical.png",
+          "description": "Chemical icon",
+          "size": "64x64",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "icon_apparatus",
+          "name": "Apparatus Icon",
+          "filename": "icon_apparatus.png",
+          "description": "Apparatus icon",
+          "size": "64x64",
+          "format": "PNG",
+          "compression": "Normal"
+        }
+      ]
+    },
+    "laboratory": {
+      "description": "Laboratory environment textures",
+      "files": [
+        {
+          "id": "lab_floor",
+          "name": "Laboratory Floor",
+          "filename": "lab_floor.png",
+          "description": "Laboratory floor texture",
+          "size": "1024x1024",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "lab_wall",
+          "name": "Laboratory Wall",
+          "filename": "lab_wall.png",
+          "description": "Laboratory wall texture",
+          "size": "1024x1024",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "lab_ceiling",
+          "name": "Laboratory Ceiling",
+          "filename": "lab_ceiling.png",
+          "description": "Laboratory ceiling texture",
+          "size": "1024x1024",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "workbench_surface",
+          "name": "Workbench Surface",
+          "filename": "workbench_surface.png",
+          "description": "Workbench surface texture",
+          "size": "1024x1024",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "fume_hood",
+          "name": "Fume Hood",
+          "filename": "fume_hood.png",
+          "description": "Fume hood texture",
+          "size": "512x512",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "safety_signs",
+          "name": "Safety Signs",
+          "filename": "safety_signs.png",
+          "description": "Safety warning signs texture",
+          "size": "512x256",
+          "format": "PNG",
+          "compression": "Normal"
+        }
+      ]
+    },
+    "glassware": {
+      "description": "Laboratory glassware textures",
+      "files": [
+        {
+          "id": "glass_transparent",
+          "name": "Transparent Glass",
+          "filename": "glass_transparent.png",
+          "description": "Transparent glass material",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "glass_clear",
+          "name": "Clear Glass",
+          "filename": "glass_clear.png",
+          "description": "Clear glass material",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "glass_borosilicate",
+          "name": "Borosilicate Glass",
+          "filename": "glass_borosilicate.png",
+          "description": "Borosilicate glass material",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "glass_graduations",
+          "name": "Glass Graduations",
+          "filename": "glass_graduations.png",
+          "description": "Graduation marks texture",
+          "size": "128x512",
+          "format": "PNG",
+          "compression": "Normal"
+        }
+      ]
+    },
+    "chemicals": {
+      "description": "Chemical substance textures",
+      "files": [
+        {
+          "id": "liquid_clear",
+          "name": "Clear Liquid",
+          "filename": "liquid_clear.png",
+          "description": "Clear liquid texture",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "liquid_colored",
+          "name": "Colored Liquid",
+          "filename": "liquid_colored.png",
+          "description": "Colored liquid texture",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "precipitate_white",
+          "name": "White Precipitate",
+          "filename": "precipitate_white.png",
+          "description": "White precipitate texture",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "precipitate_colored",
+          "name": "Colored Precipitate",
+          "filename": "precipitate_colored.png",
+          "description": "Colored precipitate texture",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "bubbles",
+          "name": "Bubbles",
+          "filename": "bubbles.png",
+          "description": "Gas bubble texture",
+          "size": "128x128",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "flame",
+          "name": "Flame",
+          "filename": "flame.png",
+          "description": "Bunsen burner flame texture",
+          "size": "256x256",
+          "format": "PNG",
+          "compression": "Normal"
+        }
+      ]
+    },
+    "materials": {
+      "description": "Material and surface textures",
+      "files": [
+        {
+          "id": "metal_stainless",
+          "name": "Stainless Steel",
+          "filename": "metal_stainless.png",
+          "description": "Stainless steel material",
+          "size": "512x512",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "metal_brass",
+          "name": "Brass",
+          "filename": "metal_brass.png",
+          "description": "Brass material",
+          "size": "512x512",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "plastic_white",
+          "name": "White Plastic",
+          "filename": "plastic_white.png",
+          "description": "White plastic material",
+          "size": "512x512",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "rubber_black",
+          "name": "Black Rubber",
+          "filename": "rubber_black.png",
+          "description": "Black rubber material",
+          "size": "512x512",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "ceramic_white",
+          "name": "White Ceramic",
+          "filename": "ceramic_white.png",
+          "description": "White ceramic material",
+          "size": "512x512",
+          "format": "PNG",
+          "compression": "Normal"
+        }
+      ]
+    },
+    "particles": {
+      "description": "Particle effect textures",
+      "files": [
+        {
+          "id": "particle_smoke",
+          "name": "Smoke Particle",
+          "filename": "particle_smoke.png",
+          "description": "Smoke particle texture",
+          "size": "64x64",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "particle_spark",
+          "name": "Spark Particle",
+          "filename": "particle_spark.png",
+          "description": "Spark particle texture",
+          "size": "32x32",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "particle_bubble",
+          "name": "Bubble Particle",
+          "filename": "particle_bubble.png",
+          "description": "Bubble particle texture",
+          "size": "32x32",
+          "format": "PNG",
+          "compression": "Normal"
+        },
+        {
+          "id": "particle_dust",
+          "name": "Dust Particle",
+          "filename": "particle_dust.png",
+          "description": "Dust particle texture",
+          "size": "16x16",
+          "format": "PNG",
+          "compression": "Normal"
+        }
+      ]
+    }
+  },
+  "textureSettings": {
+    "maxTextureSize": 2048,
+    "compressionQuality": "high",
+    "generateMipMaps": true,
+    "filterMode": "bilinear",
+    "wrapMode": "repeat",
+    "anisotropicFiltering": true
+  }
+} 

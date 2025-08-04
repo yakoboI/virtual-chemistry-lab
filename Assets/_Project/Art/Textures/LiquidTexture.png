@@ -1,0 +1,43 @@
+# Texture: Liquid Surface
+# Format: PNG (placeholder)
+# Description: Transparent liquid texture with ripples and surface tension
+# Resolution: 1024x1024 pixels
+# Usage: Chemical solutions, water, and liquid substances
+
+# Texture Properties:
+- Type: Albedo/Normal
+- Category: Materials
+- Subcategory: Liquid
+- Format: PNG
+- Compression: DXT5
+- Mipmaps: Yes
+- Filter Mode: Bilinear
+- Wrap Mode: Repeat
+- Anisotropic Level: 16
+
+# Color Information:
+- Base Color: Blue-tinted (0.2, 0.6, 1.0, 0.8)
+- Transparency: 80%
+- Reflection: 60%
+- Refraction: 1.33 (water index)
+- Fresnel: Enabled
+
+# Surface Properties:
+- Roughness: 0.1 (smooth surface)
+- Metallic: 0.0
+- Normal Strength: 0.3
+- Height: 0.05
+- Occlusion: 0.9
+
+# UV Mapping:
+- Tiling: 1x1
+- Offset: 0,0
+- Rotation: 0°
+
+# Generation Method:
+- Procedural water ripples
+- Surface tension effects
+- Dynamic wave patterns
+
+# File Size: ~256KB (compressed)
+# Memory Usage: ~4MB (uncompressed) 

@@ -1,0 +1,41 @@
+# 3D Model: Laboratory Clamp
+# Format: FBX (placeholder)
+# Description: Adjustable clamp for securing laboratory equipment
+# Dimensions: 15cm length, adjustable opening 0-8cm
+# Material: Steel with rubber padding
+# Usage: Securing equipment to ring stands
+
+# Model Properties:
+- Type: Laboratory Equipment
+- Category: Support Equipment
+- Subcategory: Clamps
+- Material: Steel
+- Padding: Rubber
+- Length: 15cm
+- Max Opening: 8cm
+- Min Opening: 0cm
+- Adjustable: Yes
+
+# Geometry Data (simplified):
+- Vertices: 192
+- Faces: 384
+- UV Coordinates: Yes
+- Normals: Yes
+- Tangents: Yes
+
+# Animation:
+- Clamp opening/closing (0-8cm)
+
+# Collision:
+- Type: Box
+- Size: 15cm x 3cm x 2cm
+
+# LOD Levels:
+- LOD0: High detail (192 vertices)
+- LOD1: Medium detail (96 vertices)
+- LOD2: Low detail (48 vertices)
+
+# Export Settings:
+- Scale: 1.0
+- Rotation: 0,0,0
+- Position: 0,0,0 
